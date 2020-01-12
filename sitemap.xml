@@ -13,36 +13,6 @@
   </url>
   
   <url>
-    <loc>http://www.thoughtart.in/courses/c1/t5/s9/</loc>
-    <lastmod>2020-01-02T19:26:07+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.thoughtart.in/</loc>
-    <lastmod>2020-01-02T19:26:07+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.thoughtart.in/courses/c1/t5/s8/</loc>
-    <lastmod>2020-01-02T19:26:05+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.thoughtart.in/courses/c1/t5/n1/</loc>
-    <lastmod>2020-01-02T19:25:50+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.thoughtart.in/courses/c3/t5/s6/</loc>
-    <lastmod>2020-01-02T19:25:26+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.thoughtart.in/courses/c3/t5/s5/</loc>
-    <lastmod>2020-01-02T19:25:23+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.thoughtart.in/courses/c1/t5/</loc>
     <lastmod>2020-01-02T19:24:50+05:30</lastmod>
   </url>
@@ -53,7 +23,15 @@
   </url>
   
   <url>
+    <loc>http://www.thoughtart.in/about/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.thoughtart.in/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.thoughtart.in/contact/</loc>
   </url>
   
   <url>
@@ -61,7 +39,19 @@
   </url>
   
   <url>
+    <loc>http://www.thoughtart.in/follow/</loc>
+  </url>
+  
+  <url>
     <loc>http://www.thoughtart.in/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.thoughtart.in/terms/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.thoughtart.in/</loc>
   </url>
   
 </urlset>

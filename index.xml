@@ -6,54 +6,44 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jan 2020 19:26:07 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>S9</title>
-      <link>http://www.thoughtart.in/courses/c1/t5/s9/</link>
-      <pubDate>Thu, 02 Jan 2020 19:26:07 +0530</pubDate>
+      <title>About</title>
+      <link>http://www.thoughtart.in/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/c1/t5/s9/</guid>
-      <description>Cslides</description>
+      <guid>http://www.thoughtart.in/about/</guid>
+      <description>About page</description>
     </item>
     
     <item>
-      <title>S8</title>
-      <link>http://www.thoughtart.in/courses/c1/t5/s8/</link>
-      <pubDate>Thu, 02 Jan 2020 19:26:05 +0530</pubDate>
+      <title>Contact</title>
+      <link>http://www.thoughtart.in/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/c1/t5/s8/</guid>
-      <description>Cslides</description>
+      <guid>http://www.thoughtart.in/contact/</guid>
+      <description> Your Name Your Email* Message   </description>
     </item>
     
     <item>
-      <title>N1</title>
-      <link>http://www.thoughtart.in/courses/c1/t5/n1/</link>
-      <pubDate>Thu, 02 Jan 2020 19:25:50 +0530</pubDate>
+      <title>Follow</title>
+      <link>http://www.thoughtart.in/follow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/c1/t5/n1/</guid>
-      <description>Notes</description>
+      <guid>http://www.thoughtart.in/follow/</guid>
+      <description>Social page</description>
     </item>
     
     <item>
-      <title>S6</title>
-      <link>http://www.thoughtart.in/courses/c3/t5/s6/</link>
-      <pubDate>Thu, 02 Jan 2020 19:25:26 +0530</pubDate>
+      <title>Terms</title>
+      <link>http://www.thoughtart.in/terms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/c3/t5/s6/</guid>
-      <description>Cslides</description>
-    </item>
-    
-    <item>
-      <title>S5</title>
-      <link>http://www.thoughtart.in/courses/c3/t5/s5/</link>
-      <pubDate>Thu, 02 Jan 2020 19:25:23 +0530</pubDate>
-      
-      <guid>http://www.thoughtart.in/courses/c3/t5/s5/</guid>
-      <description>Cslides</description>
+      <guid>http://www.thoughtart.in/terms/</guid>
+      <description>Terms of usage</description>
     </item>
     
   </channel>
