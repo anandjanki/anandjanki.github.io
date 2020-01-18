@@ -1,44 +1,70 @@
-.zs {
+/* Definitions for numbers, colors, etc for use in creating new classes 
+where the Tachyons classes cannot be used directly. */
+* {
+  box-sizing: border-box; }
+
+body, .figs h4 {
   font-family: 'Zilla Slab', serif; }
 
-.ms {
-  font-family: 'Montserrat', sans-serif; }
-
-body {
-  font-family: 'Montserrat', sans-serif;
+body, .figs h4 {
   font-weight: 300; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Zilla Slab', serif;
-  font-weight: 600;
-  margin-top: 2rem;
-  color: #555555;
-  /* dark-grey */ }
+.hdrfnt-fw_lt, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Slab', serif; }
+
+.hdrfnt-fw_lt, h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+h1 {
+  text-align: center;
+  border-bottom: 1px solid #000; }
+
+h1 {
+  font-size: 4rem;
+  margin-top: 6rem; }
+
+h2 {
+  font-size: 2.25rem;
+  margin-top: 5rem; }
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem; }
+
+h4 {
+  font-size: 1.25rem;
+  margin-top: 2rem; }
+
+h5 {
+  font-size: 1rem;
+  margin-top: 1rem; }
+
+h6 {
+  font-size: .875rem;
+  margin-top: 1rem; }
+
+.sidefnt {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200; }
 
 strong {
-  font-weight: 500; }
+  font-weight: 600; }
 
 p {
-  line-height: 2em;
+  line-height: 1.2rem;
   text-align: justify; }
 
 li {
   line-height: 1.5em; }
 
-/* not used yet
-pre {
-  font-family: 'Roboto Mono', serif;
-  font-weight: 300;
-  font-size: 0.7em;
-  margin-left: 4em;
-} */
 a {
   color: #357EDD;
   /* blue */
   text-decoration: none;
   transition: color .15s ease-in; }
   a:visited {
-    color: red; }
+    color: #96CCFF;
+    /* light-blue */ }
   a:hover {
     color: #00449E;
     /* dark-blue */ }
@@ -50,9 +76,130 @@ a {
   color: #00449E;
   /* dark-blue */ }
 
-* {
-  box-sizing: border-box; }
+.hidden {
+  display: none; }
+
+.fixed-top-left {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.fixed-top-right {
+  position: fixed;
+  top: 0;
+  right: 0; }
+
+.flex1 {
+  flex: 1; }
+
+.flexi {
+  flex: initial; }
 
 /* Mobile Styles */
 /* Tablet Styles */
 /* Desktop Styles */
+/* Styling for Hugo internal/markdown generated HTML */
+code {
+  padding: 0 0.25rem;
+  color: #495057;
+  font-family: Courier New, serif; }
+
+pre {
+  padding: 1rem;
+  border: 0.5px solid #868e96;
+  overflow-x: auto;
+  margin-left: 1rem;
+  margin-right: 1rem; }
+
+blockquote {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem 0 0.75rem;
+  border-left: 0.25rem solid #e9ecef;
+  border-radius: 0.15rem; }
+  blockquote :first-child {
+    margin-top: 0; }
+  blockquote :last-child {
+    margin-bottom: 0; }
+
+.figs {
+  text-align: center; }
+  .figs h4 {
+    font-size: .8rem;
+    background-color: inherit; }
+
+/* Styling for custom shortcodes */
+.markdown-inner > :first-child {
+  margin-top: 0; }
+
+.markdown-inner > :last-child {
+  margin-bottom: 0; }
+
+.flex-1 {
+  flex: 1; }
+
+.book-columns > :first-child {
+  margin-left: 0;
+  margin-right: 2rem; }
+
+.book-columns > div {
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.book-columns > :last-child {
+  margin-left: 2rem;
+  margin-right: 0; }
+
+.book-hint.info {
+  border-left-color: #19A974;
+  background-color: rgba(25, 169, 116, 0.1);
+  padding-bottom: 0.5rem; }
+
+.book-hint.warning {
+  border-left-color: #FF6300;
+  background-color: rgba(255, 99, 0, 0.1);
+  padding-bottom: 0.5rem; }
+
+.book-hint.danger {
+  border-left-color: #FF4136;
+  background-color: rgba(255, 65, 54, 0.1);
+  padding-bottom: 0.5rem; }
+
+.book-expand {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 0.15rem;
+  overflow: hidden; }
+  .book-expand .book-expand-head {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    cursor: pointer; }
+  .book-expand .book-expand-content {
+    display: none;
+    padding: 1rem; }
+  .book-expand input[type="checkbox"]:checked + .book-expand-content {
+    display: block; }
+
+.book-tabs {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+  border-radius: 0.15rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap; }
+  .book-tabs label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px transparent;
+    cursor: pointer; }
+  .book-tabs .book-tabs-content {
+    order: 999;
+    width: 100%;
+    border-top: 1px solid #f8f9fa;
+    padding: 1rem;
+    display: none; }
+  .book-tabs input[type="radio"]:checked + label {
+    border-bottom: 1px solid #05b; }
+  .book-tabs input[type="radio"]:checked + label + .book-tabs-content {
+    display: block; }
