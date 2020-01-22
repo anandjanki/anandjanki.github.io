@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Additional Math on Thought Thou Art</title>
+    <link>http://www.thoughtart.in/courses/add-math/</link>
+    <description>Recent content in Additional Math on Thought Thou Art</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Jan 2020 19:29:00 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.thoughtart.in/courses/add-math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

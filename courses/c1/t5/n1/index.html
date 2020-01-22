@@ -18,6 +18,9 @@
 
 
     
+<script src="/js/progress-nav.js"></script>
+
+
   </head>
 
   <body>
@@ -41,26 +44,33 @@
 
     <div class="flex flex-column min-vh-100">
     <div class="flex justify-between flex1">
-      <div class="w-20 mw5 fixed-top-left mt5 sidefnt br"> 
+      <div class="w-20 mw5 fixed-top-left mt5 sidefnt"> 
         
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/c1/">C1</a></li>
+  <ul id="parent-nav">
    
-<ul>
-  <li><a href="http://www.thoughtart.in/courses/c1/">C1</a>
-  <ul>
-   
-    <li><a href="http://www.thoughtart.in/courses/c1/t5/">T5</a>
-    <ul>
+    <li ><a href="http://www.thoughtart.in/courses/c1/t5/">T5</a>
+    </li>
+    <ul id="page-nav">
      
-      <li><a href="http://www.thoughtart.in/courses/c1/t5/s9/">S9</a>
+      <li ><a href="http://www.thoughtart.in/courses/c1/t5/s9/">S9</a></li>
      
-      <li><a href="http://www.thoughtart.in/courses/c1/t5/s8/">S8</a>
+      <li ><a href="http://www.thoughtart.in/courses/c1/t5/s8/">S8</a></li>
      
-      <li><a href="http://www.thoughtart.in/courses/c1/t5/n1/">N1</a>
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/c1/t5/n1/">N1</a></li>
     
     </ul>
+    
   
   </ul>
 </ul>
+</nav>
+
 
 
 
@@ -371,7 +381,7 @@ Miseratus fonte Ditis conubia.</p>
 
 
       </div>
-      <div class="w-20 mw5 fixed-top-right mt5 sidefnt bl">
+      <div class="w-20 mw5 fixed-top-right mt5 sidefnt">
         
   
 
@@ -399,6 +409,9 @@ Miseratus fonte Ditis conubia.</p>
 </ul>
 </nav>
   </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
 
 
 

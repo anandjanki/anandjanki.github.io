@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Combinatorics on Thought Thou Art</title>
+    <link>http://www.thoughtart.in/courses/add-math/combinatorics/</link>
+    <description>Recent content in Combinatorics on Thought Thou Art</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Jan 2020 19:33:35 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.thoughtart.in/courses/add-math/combinatorics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Basics of Counting</title>
+      <link>http://www.thoughtart.in/courses/add-math/combinatorics/basics-of-counting/</link>
+      <pubDate>Sat, 18 Jan 2020 19:38:25 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/combinatorics/basics-of-counting/</guid>
+      <description>Going to St Ives We start with a counting riddle in the form of an English-language nursery rhyme from the 1700s. The poem goes as follows:
+ As I was going to St Ives,
+Upon the road I met seven wives;
+Every wife had seven sacks,
+Every sack had seven cats,
+Every cat had seven kits:
+Kits, cats, sacks, and wives,
+How many were going to St Ives?
+ There are many ways to answer this question.</description>
+    </item>
+    
+  </channel>
+</rss>

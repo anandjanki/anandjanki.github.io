@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+  
+  Basics of Counting |  Thought Thou Art
+  
+</title>
+
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between bg-near-white pa3 bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w1"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="w-20 mw5 fixed-top-left mt5 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">COMBINATORICS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/basics-of-counting/">BASICS OF COUNTING</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="w-80 mw7 center pa4 mt5"> 
+        
+  <h1>Basics of Counting</h1>
+  
+
+<h2 id="going-to-st-ives">Going to St Ives</h2>
+
+<p>We start with a counting riddle in the form of an English-language nursery rhyme from the 1700s.
+The poem goes as follows:</p>
+
+<blockquote>
+<p>As I was going to St Ives,<br />
+Upon the road I met seven wives;<br />
+Every wife had seven sacks,<br />
+Every sack had seven cats,<br />
+Every cat had seven kits:<br />
+Kits, cats, sacks, and wives,<br />
+How many were going to St Ives?</p>
+</blockquote>
+
+<p>There are many ways to answer this question. It was likely intended as a trick question, and not really a counting question. For, the author of the rhyme does not say where the seven wives were. They could even have been in towns or villages on the way to St Ives, or the author probably meant to say that he met them on the way, meaning that they were going in the other direction. If we follow this train of arguments, then we would conclude with an answer of just 1 - only the author was going to St Ives!</p>
+
+<h3 id="kittens-galore">Kittens galore</h3>
+
+<p>We can formulate a counting question from the poem above. Suppose we were to ask how many kittens were there in all, what would be the answer to that question?</p>
+
+<p>Lets take say the first wife. This wife had seven sacks, lets take one of the sacks. This sack had 7 cats, lets take one of the cats. This cat had 7 kittens of course, but that&rsquo;s just one of the cats. There are 7 cats in the sack, and each of them has 7 kittens. So the total number of kittens in one of the sacks is 7 x 7 = 49. But that&rsquo;s just one of the sacks. There are 7 such sacks with the wife, and each sack has 49 kittens. So the total number of kittens in the 7 sacks with by the first wife - 7 x 7 x 7 = 343 kittens. Now, we can calculate the total number of kittens with all the 7 wives put together. That would be 7 x 7 x 7 x 7 = 2401 kittens. That&rsquo;s a lot of kittens.</p>
+
+<p>It is important to notice how we counted the kittens:</p>
+
+<pre><code>The First wife's --&gt; First sack's --&gt; First cat has =&gt; 7 kittens
+First wife's --&gt; First sack --&gt; has 7 cats with =&gt; 7x7 kittens
+First wife --&gt; has 7 sacks with =&gt; 7x7x7 kittens
+Seven wives have =&gt; 7x7x7x7 kittens
+</code></pre>
+
+<p>A good way to represent this as a picture is below:</p>
+
+<p>TBD.</p>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+<p class="katex">
+  $$
+$$
+</p>
+
+
+<p>So, thats how we get \(7^4\) kittens in all.</p>
+
+<h2 id="combinatorial-principles">Combinatorial Principles</h2>
+
+<h3 id="product-rule">Product Rule</h3>
+
+<h4 id="how-many-pizzas">How many pizzas</h4>
+
+<h4 id="how-many-paths">How many paths</h4>
+
+<h4 id="how-many-cups-saucers-and-spoons">How many cups, saucers and spoons</h4>
+
+<h3 id="sum-rule">Sum Rule</h3>
+
+<h4 id="how-many-paths-1">How many paths</h4>
+
+
+      </div>
+      <div class="w-20 mw5 fixed-top-right mt5 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#going-to-st-ives">Going to St Ives</a>
+<ul>
+<li><a href="#kittens-galore">Kittens galore</a></li>
+</ul></li>
+<li><a href="#combinatorial-principles">Combinatorial Principles</a>
+<ul>
+<li><a href="#product-rule">Product Rule</a>
+<ul>
+<li><a href="#how-many-pizzas">How many pizzas</a></li>
+<li><a href="#how-many-paths">How many paths</a></li>
+<li><a href="#how-many-cups-saucers-and-spoons">How many cups, saucers and spoons</a></li>
+</ul></li>
+<li><a href="#sum-rule">Sum Rule</a>
+<ul>
+<li><a href="#how-many-paths-1">How many paths</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+

@@ -45,7 +45,8 @@ h6 {
 
 .sidefnt {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200; }
+  font-weight: 200;
+  font-size: 1rem; }
 
 strong {
   font-weight: 600; }
@@ -58,23 +59,19 @@ li {
   line-height: 1.5em; }
 
 a {
-  color: #357EDD;
-  /* blue */
+  color: #00449E;
   text-decoration: none;
   transition: color .15s ease-in; }
   a:visited {
-    color: #96CCFF;
-    /* light-blue */ }
+    color: #96CCFF; }
   a:hover {
-    color: #00449E;
-    /* dark-blue */ }
+    color: #357EDD;
+    text-decoration: underline; }
   a:active {
-    color: #96CCFF;
-    /* light-blue */ }
+    color: #96CCFF; }
 
 .anchor {
-  color: #00449E;
-  /* dark-blue */ }
+  color: #00449E; }
 
 .hidden {
   display: none; }
@@ -203,3 +200,62 @@ blockquote {
     border-bottom: 1px solid #05b; }
   .book-tabs input[type="radio"]:checked + label + .book-tabs-content {
     display: block; }
+
+#TableOfContents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+#TableOfContents ul ul {
+  padding-left: 2em; }
+
+#TableOfContents li a {
+  display: inline-block;
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1); }
+
+#TableOfContents li.visible > a {
+  color: #00449E;
+  transform: translate(5px); }
+
+#TableOfContents a:hover {
+  color: #00449E; }
+
+.toc-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+  .toc-marker path {
+    transition: all 0.3s ease; }
+
+#CourseContents ul {
+  list-style-type: none; }
+
+#CourseContents #root-nav {
+  padding-inline-start: .5rem; }
+
+#CourseContents #parent-nav {
+  padding-inline-start: 0; }
+
+#CourseContents #page-nav {
+  padding-inline-start: .75rem; }
+
+#CourseContents a:visited {
+  color: #aaa; }
+
+#CourseContents a {
+  color: #aaa; }
+
+#CourseContents > ul > li {
+  margin-bottom: 1rem; }
+
+#current-page {
+  border-right: 0.5px solid #00449E; }
+  #current-page > a {
+    color: #00449E; }
+  #current-page > a:visited {
+    color: #00449E; }
