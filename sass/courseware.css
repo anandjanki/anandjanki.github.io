@@ -97,7 +97,7 @@ a {
 /* Desktop Styles */
 /* Styling for Hugo internal/markdown generated HTML */
 code {
-  padding: 0 0.25rem;
+  padding: 0;
   color: #495057;
   font-family: Courier New, serif; }
 
@@ -197,7 +197,8 @@ blockquote {
     padding: 1rem;
     display: none; }
   .book-tabs input[type="radio"]:checked + label {
-    border-bottom: 1px solid #05b; }
+    color: #00449E;
+    border-bottom: 1px solid #00449E; }
   .book-tabs input[type="radio"]:checked + label + .book-tabs-content {
     display: block; }
 
@@ -236,6 +237,7 @@ blockquote {
   list-style-type: none; }
 
 #CourseContents #root-nav {
+  margin-block-start: 0;
   padding-inline-start: .5rem; }
 
 #CourseContents #parent-nav {
