@@ -56,16 +56,16 @@ p {
   text-align: justify; }
 
 li {
-  line-height: 1.5em; }
+  line-height: 1.5rem; }
 
 a {
-  color: #00449E;
+  color: #357EDD;
   text-decoration: none;
   transition: color .15s ease-in; }
   a:visited {
-    color: #96CCFF; }
+    color: #00449E; }
   a:hover {
-    color: #357EDD;
+    color: #96CCFF;
     text-decoration: underline; }
   a:active {
     color: #96CCFF; }
@@ -93,8 +93,38 @@ a {
   flex: initial; }
 
 /* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .sidebar-display {
+    display: none; }
+  .body-width {
+    max-width: 100%; }
+  h1 {
+    font-size: 3rem;
+    margin-top: 6rem; }
+  .header-padding {
+    padding: 0.25rem 1rem; } }
+
 /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sidebar-display {
+    display: none; }
+  .body-width {
+    max-width: 100%; }
+  h1 {
+    font-size: 3rem;
+    margin-top: 6rem; }
+  .header-padding {
+    padding: 0.25rem 1rem; } }
+
 /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .body-width {
+    width: 80%;
+    max-width: 48rem;
+    /* mw7 */ }
+  .header-padding {
+    padding: 0.5rem 1rem; } }
+
 /* Styling for Hugo internal/markdown generated HTML */
 code {
   padding: 0;
@@ -123,6 +153,9 @@ blockquote {
   .figs h4 {
     font-size: .8rem;
     background-color: inherit; }
+
+.pis-0 {
+  padding-inline-start: 0; }
 
 /* Styling for custom shortcodes */
 .markdown-inner > :first-child {
