@@ -167,18 +167,6 @@ blockquote {
 .flex-1 {
   flex: 1; }
 
-.book-columns > :first-child {
-  margin-left: 0;
-  margin-right: 1.5rem; }
-
-.book-columns > div {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem; }
-
-.book-columns > :last-child {
-  margin-left: 1.5rem;
-  margin-right: 0; }
-
 .book-hint.info {
   border-left-color: #19A974;
   background-color: rgba(25, 169, 116, 0.1);
@@ -234,6 +222,28 @@ blockquote {
     border-bottom: 1px solid #00449E; }
   .book-tabs input[type="radio"]:checked + label + .book-tabs-content {
     display: block; }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .book-columns {
+    flex-direction: column; } }
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .book-columns {
+    flex-direction: column; } }
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .book-columns > :first-child {
+    margin-left: 0;
+    margin-right: 1.5rem; }
+  .book-columns > div {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; }
+  .book-columns > :last-child {
+    margin-left: 1.5rem;
+    margin-right: 0; } }
 
 #TableOfContents ul {
   list-style: none;
