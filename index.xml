@@ -119,7 +119,8 @@ Note the key difference compared to the other kind of problem we have looked at 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.thoughtart.in/about/</guid>
-      <description>About page</description>
+      <description>We are a small group of education enthusiasts. We believe that education should be freely and widely available. We like to see advanced Math and Science and such topics explained in simple ways so that larger and larger audience can enjoy the beauty of the discoveries in these areas. That may well be the solution to many of the social, political, religious ills that we face.
+The name of this site comes from a conviction in logic.</description>
     </item>
     
     <item>
@@ -146,7 +147,8 @@ Note the key difference compared to the other kind of problem we have looked at 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.thoughtart.in/terms/</guid>
-      <description>Terms of usage</description>
+      <description>Everything on this website is free for use. Especially for academic usage. If you plan to use the material for commercial purposes, that is free too. Except, pls include a reference to this website as a source.
+So, everything under Apache License, probably..</description>
     </item>
     
   </channel>
