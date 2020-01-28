@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Combinatorics on Thought Thou Art</title>
+    <title>11. Combinatorics on Thought Thou Art</title>
     <link>http://www.thoughtart.in/courses/add-math/combinatorics/</link>
-    <description>Recent content in Combinatorics on Thought Thou Art</description>
+    <description>Recent content in 11. Combinatorics on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Jan 2020 19:33:35 +0530</lastBuildDate>
@@ -29,13 +29,60 @@ How many were going to St Ives?
     </item>
     
     <item>
-      <title>Counting with Repetition</title>
+      <title>Role of Repetition</title>
       <link>http://www.thoughtart.in/courses/add-math/combinatorics/counting-with-repetition/</link>
       <pubDate>Fri, 24 Jan 2020 18:05:19 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/counting-with-repetition/</guid>
-      <description>Cracking the combination Let&amp;rsquo;s start with the total numbers that are there between 1 and 1000 (both inclusive). Even the youngest of kids would know that there are obviously 1000 numbers in this range. Let&amp;rsquo;s just shift the start and the end a little and ask - how many numbers are there between 0 and 999 (both inclusive), the answer is again 1000 numbers.
+      <description>Counting with Repetition Cracking the combination Let&amp;rsquo;s start with the total numbers that are there between 1 and 1000 (both inclusive). Even the youngest of kids would know that there are obviously 1000 numbers in this range. Let&amp;rsquo;s just shift the start and the end a little and ask - how many numbers are there between 0 and 999 (both inclusive), the answer is again 1000 numbers.
 Now lets consider this same counting problem in a different scenario.</description>
+    </item>
+    
+    <item>
+      <title>Factorial</title>
+      <link>http://www.thoughtart.in/courses/add-math/combinatorics/factorial/</link>
+      <pubDate>Sat, 25 Jan 2020 01:26:59 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/combinatorics/factorial/</guid>
+      <description>St Ives revisted Here is a new version of the St Ives poem:
+ As I was going to St Ives,
+Upon the road I met 2 wives;
+Every wife had 3 sacks,
+Every sack had 4 cats,
+Every cat had 5 kits,
+I am not playing any tricks,
+Just count and tell me the number of kits.
+ Counting the number of kittens is similar to before except that the numbers involved here are a little different.</description>
+    </item>
+    
+    <item>
+      <title>Permutations</title>
+      <link>http://www.thoughtart.in/courses/add-math/combinatorics/permutations/</link>
+      <pubDate>Sat, 18 Jan 2020 19:38:34 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/combinatorics/permutations/</guid>
+      <description>We have had a glimpse of counting problems, and looked at two fundamental principles of counting - namely the product rule and the sum rule. We now take next steps in exploring more kinds of counting problems. This session on Permutations and the next one on Combinations are the basic kinds of counting problems commonly studied.
+Arrangements of n-items School Championship Suppose you have 3 houses in your school for the Sports Championship.</description>
+    </item>
+    
+    <item>
+      <title>Combinations</title>
+      <link>http://www.thoughtart.in/courses/add-math/combinatorics/combinations/</link>
+      <pubDate>Sat, 18 Jan 2020 19:38:40 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/combinatorics/combinations/</guid>
+      <description>In this session, we are interested in a slightly different class of counting problems, where the order of the items does not matter.
+Choosing without order Student Volunteers Suppose, we have 5 students with us, and we want 2 volunteers from these 5 students in order to do something. How many ways in which we can have 2 volunteers from these 5 students?
+Note the key difference compared to the other kind of problem we have looked at - suppose 5 students were running a race, and we were interested in how many was can the top-2 positions be filled?</description>
+    </item>
+    
+    <item>
+      <title>EC Problems</title>
+      <link>http://www.thoughtart.in/courses/add-math/combinatorics/ec-problems/</link>
+      <pubDate>Sat, 25 Jan 2020 10:57:27 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/combinatorics/ec-problems/</guid>
+      <description>EC problems may not always be easy problems. They are actually extra-curricular problems.. :) They usually add some interesting facets to the topic under discussion, some fascinating discoveries, etc. But they are usually not from the board syllabus for the topic. (As always, once you read a problem, take some time to attempt it yourself, if you need help, take a peek at the &amp;ldquo;Hint&amp;rdquo; section, then again attempt to solve it yourself, feel free to check the &amp;ldquo;Answer&amp;rdquo; section if you want to check the answer you found, or even just get a feel for the magnitude of the answer.</description>
     </item>
     
   </channel>
