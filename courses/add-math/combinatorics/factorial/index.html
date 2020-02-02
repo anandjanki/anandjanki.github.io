@@ -103,45 +103,33 @@
       <div class="body-width center pa4 mt5"> 
         
   <h1>Factorial</h1>
-  
-
-<h2 id="st-ives-revisted">St Ives revisted</h2>
-
+  <h2 id="st-ives-revisted">St Ives revisted</h2>
 <p>Here is a new version of the St Ives poem:</p>
-
 <blockquote>
-<p>As I was going to St Ives,<br />
-Upon the road I met 2 wives;<br />
-Every wife had 3 sacks,<br />
-Every sack had 4 cats,<br />
-Every cat had 5 kits,<br />
-I am not playing any tricks,<br />
+<p>As I was going to St Ives,<br>
+Upon the road I met 2 wives;<br>
+Every wife had 3 sacks,<br>
+Every sack had 4 cats,<br>
+Every cat had 5 kits, <br>
+I am not playing any tricks, <br>
 Just count and tell me the number of kits.</p>
 </blockquote>
-
 <p>Counting the number of kittens is similar to before except that the numbers involved here are a little different. The pictorial depiction for counting all the kittens is shown below.</p>
-
 <figure class="figs">
     <img src="StIves-factorial.png"/> <figcaption>
             <h4>A picture to aid the counting of the kittens</h4>
         </figcaption>
 </figure>
 
-
 <p>And the counting can be done as follows:</p>
-
 <pre><code>The First wife's --&gt; First sack's --&gt; First cat has =&gt; 5 kittens
 First wife's --&gt; First sack --&gt; has 4 cats with =&gt; 4x5 kittens
 First wife --&gt; has 3 sacks with =&gt; 3x4x5 kittens
 2 wives have =&gt; 2x3x4x5 kittens
 </code></pre>
-
 <p>Thus the total number of kittens is 120.</p>
-
 <h2 id="factorial-definition">Factorial definition</h2>
-
 <p>The number 5 x 4 x 3 x 2 x 1 is called the factorial of 5 and is denoted by 5!</p>
-
 <p>In general, for any natural number n, the factorial of the number is defined as follows:
 <p class="katex">
   $$
@@ -149,15 +137,10 @@ n! \equiv n \cdot (n - 1) \cdot (n - 2) \cdots 2 \cdot 1
 $$
 </p>
 </p>
-
 <p>It is important to note that in the above counting problem, the occurence of the factorial is purely incidental. The author could have seen 3 wives, each carrying say 2 sacks, each with say 20 cats and so on. In that case, the answer will not be a factorial of any number.</p>
-
 <p>But in the next topic of permutations, we will see that the factorial of a number shows up naturally in many kinds of counting problems.</p>
-
 <h3 id="a-property-of-factorial">A property of factorial</h3>
-
 <p>It should be easy to note the following property of factorials:</p>
-
 <p class="katex">
   $$
 
@@ -170,46 +153,38 @@ n! & \equiv & n \cdot (n - 1) \cdot (n - 2) \cdots 2 \cdot 1 \\ \\
 $$
 </p>
 
-
 <p>This is a very important property. What it means is that if we need to find, let&rsquo;s say 10!, then one way is to multiply all numbers from 10, 9, 8, &hellip;, up to 2 and 1. But suppose we already know the value of 9!, then we can simply multiply it by 10 to get the value of 10!.</p>
-
 <p>What it also means is that we can find the value of n! <em>recursively</em>. In order to find \(n!\), we find \( (n - 1)! \), in order to find that we find \( (n - 2)! \), and so on. At any point if we know the value of the factorial of any particular number, we backtrack the way we came. We know the value of 1! to be 1 by definition. So, we can backtrack at least from 1!.</p>
-
 <p>For example, lets see how this works for 5!.</p>
-
 <pre><code> In order to find 5!,  
  we have to find 4! and multiple by 5.  
 
      In order to find 4!,  
      we have to find 3! and multiple by 4.
-
+    
          In order to find 3!,  
          we have to find 2! and multiple by 3.
-
+        
              In order to find 2!,  
              we have to find 1! and multiple by 2.
-
+            
                  We know that 1! is 1.
-
+            
              Now we can find 2!,  
              2! is simply 2 x 1 = 2
-
+        
          Now we can find 3!,  
          3! is simply 3 x 2 = 6
-
+    
      Now we can find 4!,  
      4! is simply 4 x 6 = 24
 
  Finally, we can find 5!,  
  5! is simply 5 x 24 = 120
 </code></pre>
-
 <p>We finally arrived at the same answer for 5!, as we could have got by multiplying 5 x 4 x 3 x 2 x 1, but the nice thing about this approach is that in the process we have also found the values of 4!, 3!, and all factorials lesser than the number we start with.</p>
-
 <h3 id="factorials-are-large">Factorials are large</h3>
-
 <p>Factorials are fairly large numbers. They become large quickly, much faster than power terms (such as \(n^2\)) or even exponential terms (such as \(2^n\)). The table below compares \(n, n^2, n^3 \) with \( 2^n, 3^n, 4^n \) and \( n! \), for say \( n = 1, 2, &hellip;, 10 \) and \(20\).</p>
-
 <table>
 <thead>
 <tr>
@@ -229,7 +204,6 @@ $$
 <th align="right">20</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td align="right">\(n^2\)</td>
@@ -247,7 +221,6 @@ $$
 <td align="right"></td>
 <td align="right">400</td>
 </tr>
-
 <tr>
 <td align="right">\(n^3\)</td>
 <td align="right"></td>
@@ -264,7 +237,6 @@ $$
 <td align="right"></td>
 <td align="right">8,000</td>
 </tr>
-
 <tr>
 <td align="right">\(2^n\)</td>
 <td align="right"></td>
@@ -281,7 +253,6 @@ $$
 <td align="right"></td>
 <td align="right">1,048,576</td>
 </tr>
-
 <tr>
 <td align="right">\(3^n\)</td>
 <td align="right"></td>
@@ -298,7 +269,6 @@ $$
 <td align="right"></td>
 <td align="right">3,486,784,401</td>
 </tr>
-
 <tr>
 <td align="right">\(4^n\)</td>
 <td align="right"></td>
@@ -315,9 +285,8 @@ $$
 <td align="right"></td>
 <td align="right">1,099,511,627,776</td>
 </tr>
-
 <tr>
-<td align="right">\(n! \)</td>
+<td align="right">\(n!	\)</td>
 <td align="right"></td>
 <td align="right">1</td>
 <td align="right">2</td>
@@ -343,17 +312,15 @@ $$
 
   <aside>
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#st-ives-revisted">St Ives revisted</a></li>
-<li><a href="#factorial-definition">Factorial definition</a>
-<ul>
-<li><a href="#a-property-of-factorial">A property of factorial</a></li>
-<li><a href="#factorials-are-large">Factorials are large</a></li>
-</ul></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#st-ives-revisted">St Ives revisted</a></li>
+    <li><a href="#factorial-definition">Factorial definition</a>
+      <ul>
+        <li><a href="#a-property-of-factorial">A property of factorial</a></li>
+        <li><a href="#factorials-are-large">Factorials are large</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
   </aside>
   <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">

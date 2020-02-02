@@ -103,68 +103,37 @@
       <div class="body-width center pa4 mt5"> 
         
   <h1>Combinations</h1>
-  
-
-<p>In this session, we are interested in a slightly different class of counting problems, where the order of the items does not matter.</p>
-
+  <p>In this session, we are interested in a slightly different class of counting problems, where the order of the items does not matter.</p>
 <h2 id="choosing-without-order">Choosing without order</h2>
-
 <h3 id="student-volunteers">Student Volunteers</h3>
-
 <p>Suppose, we have 5 students with us, and we want 2 volunteers from these 5 students in order to do something. How many ways in which we can have 2 volunteers from these 5 students?</p>
-
 <p>Note the key difference compared to the other kind of problem we have looked at - suppose 5 students were running a race, and we were interested in how many was can the top-2 positions be filled? In this case, the order of the top-2 arrangement matters. But if we only want 2 volunteers, then <em>the order of the students doesnt matter</em>. We are only interested in the group of 2 volunteers.</p>
-
 <p>The number of ways for the top-2 positions to be filled by 5 students is 5 x 4 = 20 ways. One of these ways would be <code>A  B</code>, with <code>A</code> in the first place and <code>B</code> in the second. A different way would be <code>B  A</code>, with <code>B</code> in the firsst place and <code>A</code> in the second.</p>
-
 <p>But if we were taking 2 student volunteers, then <code>A  B</code> and <code>B  A</code> are the same. Hence the number of ways of having 2 volunteers from 5 students is 20 / 2 = 10 ways.</p>
-
 <h3 id="quick-recap">Quick Recap</h3>
-
 <p>Let&rsquo;s once recap the different kinds of counting problems we have looked at so far.</p>
-
 <p><strong>Q1.</strong> There are 10 students in a class, and they are queuing up for lunch. How many different ways in which the queue can be formed?</p>
-
 <p><strong>Ans.</strong> The number of ways in which the queue can be formed is \( 10! \) ways. That is 3,628,800 ways.</p>
-
-<hr />
-
+<hr>
 <p><strong>Q2.</strong> A combination lock has a 3-digit code, each digit can be set using one of the 10 digits from 0 - 10, digits can be repeated. How many different codes are possible?</p>
-
 <p><strong>Ans.</strong> The number of ways in which a 3-digit code can be set is 10 x 10 x 10 = \( 10^3 \) or 1,000 ways.</p>
-
-<hr />
-
+<hr>
 <p><strong>Q3.</strong> 10 students are running the 100m dash. How many ways are there for the top-3 standings from the race?</p>
-
 <p><strong>Ans.</strong> The number of ways in which the top-3 positions can be won by 10 students is \( {^{10}}P_{3} \) = 10 x 9 x 8 = 720 ways.</p>
-
-<hr />
-
+<hr>
 <p><strong>Q4.</strong> 10 students are available, and we need 3 volunteers out of these. How many ways can we have a 3-member volunteer group from 10 students?</p>
-
 <p><strong>Ans.</strong> The number of ways in which 3 volunteers can be chosen from 10 students is \( {^{10}}C_{3} \) = 10 x 9 x 8 / 6 = 120 ways.</p>
-
-<hr />
-
+<hr>
 <p>The reason we divided by 6 in the answer to the last question above is because within the 3 students, order does not matter. So the 3! ways in which 3 students can be arranged within themselves can all be considered as a single group of volunteers.</p>
-
 <h3 id="ncr">nCr</h3>
-
 <p>The number of ways of choosing \( r \) items from a set of \( n \) distinct items, where the order of the selection does not matter, is given by:
 $$ {^n}C_{r} = \frac{{^n}P_r}{r!} $$</p>
-
 <p>nCr is often read as n-choose-r and also denoted by this alternate symbol below and expanded using the formula for nPr:
 $$ {n\choose r} = \frac{n!}{r!\cdot (n - r)!} $$</p>
-
 <h2 id="more-examples">More Examples</h2>
-
 <h3 id="making-a-fruit-salad">Making a fruit salad</h3>
-
 <p>Suppose there are 10 kinds of fruits at a shop, how many ways are there to buy 4 kinds of fruits to make a fruit salad?</p>
-
 <p>The answer is simply 10C4, but lets also do the calculation below to arrive at the final answer:</p>
-
 <p class="katex">
   $$
 \begin{array}{rcl}
@@ -176,23 +145,14 @@ $$ {n\choose r} = \frac{n!}{r!\cdot (n - r)!} $$</p>
 $$
 </p>
 
-
 <p>Note that the order of selection of 4 kinds of fruits does not matter.</p>
-
 <h3 id="hands-with-5-cards">Hands with 5 cards</h3>
-
 <p>From a 52-card deck, we pick 5 cards. How many such hands are possible?</p>
-
 <p>The total number of hands is \( \displaystyle {52\choose 5} = \displaystyle \frac{52!}{5!\cdot 47!} \). This number turns out to be 2,598,960 hands or about two-and-a-half Million hands in all.</p>
-
 <p>Note again that the order of cards in the hand does not matter.</p>
-
 <h3 id="choosing-friends">Choosing friends</h3>
-
 <p>It is always hard if one has to choose from between friends, but suppose you have only 5 tickets for a movie. How many ways are there to choose 5 friends from your class of say 20 friends?</p>
-
 <p>The number of ways to choose 5 friends from amongst 20 friends is:</p>
-
 <p class="katex">
   $$
 \begin{array}{rcl}
@@ -204,45 +164,42 @@ $$
 $$
 </p>
 
-
 <p>Now suppose, there was only 1 ticket, how many ways are there for you to choose from your 20 friends for the movie? This can be done in
 $$ \displaystyle {20\choose 1} = \displaystyle \frac{20!}{1!\cdot 19!} $$
 or 20 ways. That should be obvious, if you had only 1 ticket to take a friend, then you can choose one of your 20 friends, there are 20 ways to do that.</p>
-
 <p>Now suppose, you had 19 tickets. How many ways are there for you to choose 19 friends from among your 20 friends for the movie? This can be done in
 $$ \displaystyle {20\choose 19} = \displaystyle \frac{20!}{19!\cdot 1!} $$
 or 20 ways only. Is that intuitive, or did you expect a much bigger number? If we think about this a little, we can see that if we have to choose 19 friends from amongst 20 to give the tickets to, that is the same as choosing 1 friend amongst 20 to <em>not</em> give the ticket to. We have already seen that choosing 1 friend from 20 friends can be done in \( {^{20}}C_1 = 20 \) ways, so choosing 19 friends from 20 friends can also be done in 20 ways.</p>
-
 <h3 id="make-your-own">Make your own</h3>
-
 <p>Combination problems also come up all the time in our daily life. Here are a few:</p>
-
 <ul>
 <li>You are about to color a picture, say a mandala, and want to choose 3 colors from a set of 12 crayons. How many ways are there to do this?</li>
 <li>You are answering a question paper with 12 questions, out of which 2 are optional, so you need to choose any 10 questions out of the 12. How many ways are there to do this?
 Can you think of a few instances where it may have come up for you.</li>
 </ul>
-
 <h2 id="some-ncr-properties">Some nCr properties</h2>
-
 <ul>
-<li><p>Symmetry -
+<li>
+<p>Symmetry -
 As we saw in the previous example, and as it should be obvious from the formula, there is a nice symmetry property to nCr:
-$$ {n\choose r} = {n\choose n-r} $$</p></li>
-
-<li><p>n-choose-1 -
+$$ {n\choose r} = {n\choose n-r} $$</p>
+</li>
+<li>
+<p>n-choose-1 -
 Again, as seen previously:
-$$ {n\choose 1} = {n\choose n-1} = n $$</p></li>
-
-<li><p>n-choose-n -
+$$ {n\choose 1} = {n\choose n-1} = n $$</p>
+</li>
+<li>
+<p>n-choose-n -
 How many ways are there to choose n items from n items? Clearly, there is only 1 way. Given that, we would also like to say that there is 1 way to choose 0 items from n items. So:
-$$ {n\choose 0} = {n\choose n} = 1 $$</p></li>
-
-<li><p>0! -
+$$ {n\choose 0} = {n\choose n} = 1 $$</p>
+</li>
+<li>
+<p>0! -
 For the sake of convenience, for eg, to ensure that the formula for nCn also evaluates to 1, we define:
-$$ 0! \equiv 1 $$</p></li>
+$$ 0! \equiv 1 $$</p>
+</li>
 </ul>
-
 
 
 
@@ -256,25 +213,24 @@ $$ 0! \equiv 1 $$</p></li>
 
   <aside>
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#choosing-without-order">Choosing without order</a>
-<ul>
-<li><a href="#student-volunteers">Student Volunteers</a></li>
-<li><a href="#quick-recap">Quick Recap</a></li>
-<li><a href="#ncr">nCr</a></li>
-</ul></li>
-<li><a href="#more-examples">More Examples</a>
-<ul>
-<li><a href="#making-a-fruit-salad">Making a fruit salad</a></li>
-<li><a href="#hands-with-5-cards">Hands with 5 cards</a></li>
-<li><a href="#choosing-friends">Choosing friends</a></li>
-<li><a href="#make-your-own">Make your own</a></li>
-</ul></li>
-<li><a href="#some-ncr-properties">Some nCr properties</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#choosing-without-order">Choosing without order</a>
+      <ul>
+        <li><a href="#student-volunteers">Student Volunteers</a></li>
+        <li><a href="#quick-recap">Quick Recap</a></li>
+        <li><a href="#ncr">nCr</a></li>
+      </ul>
+    </li>
+    <li><a href="#more-examples">More Examples</a>
+      <ul>
+        <li><a href="#making-a-fruit-salad">Making a fruit salad</a></li>
+        <li><a href="#hands-with-5-cards">Hands with 5 cards</a></li>
+        <li><a href="#choosing-friends">Choosing friends</a></li>
+        <li><a href="#make-your-own">Make your own</a></li>
+      </ul>
+    </li>
+    <li><a href="#some-ncr-properties">Some nCr properties</a></li>
+  </ul>
 </nav>
   </aside>
   <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
