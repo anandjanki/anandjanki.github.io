@@ -144,8 +144,10 @@ Note the key difference compared to the other kind of problem we have looked at 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://www.thoughtart.in/terms/</guid>
-      <description>Everything on this website is free for use. Especially for academic usage. If you plan to use the material for commercial purposes, that is free too. Except, pls include a reference to this website as a source.
-So, everything under Apache License, probably..</description>
+      <description>Everything on this website is free for use. Especially for academic usage. If you plan to use the material for commercial purposes, that is free too. Except, include a reference to this website as a source, and you need to share alike.
+So, everything under CC (Creative Commons), BY (meaning provide attribution), SA (meaning Share derivatives of the work Alike) license, more formally:
+ 
+Everything on this website by Thought Thou Art is licensed under a Creative Commons Attribution-ShareAlike 4.</description>
     </item>
     
   </channel>
