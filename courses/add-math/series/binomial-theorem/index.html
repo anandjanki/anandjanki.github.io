@@ -118,20 +118,9 @@
 
 <p>It turns out that not just humans, but also other species such as primates and elephants were also able to show a limited ability to add.</p>
 
-<div class="book-columns flex justify-between">
-  
-  <div class="flex-1">
-    
-  </div>
-  
-  <div class="flex-1">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/H2gRLCZSBEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  
-  <div class="flex-1">
-    
-  </div>
-  
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/H2gRLCZSBEA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
@@ -169,7 +158,7 @@
 <p><strong>Commutative Rule</strong>: For real numbers (and we will learn later for complex numbers as well), that the order of multiplication does not matter. i.e.
 $$ a\cdot b = b\cdot a $$</p>
 
-<p>Addition of real numbers is also commutative, but as we know very well, subtraction of real numbers is <em>not</em> commutative, since \( a - b \ne b - a \). We will learn in advanced mathematics that we can define rules for multiplying objects called matrices, but matrix multiplication is not commutative, i.e. for two matrices \(A\) and \(B\), \( A\cdot B \ne B\cdot A \).</p>
+<p>Addition of real numbers is also commutative, but as we know very well, subtraction of real numbers is <em>not</em> commutative, since \( a - b \ne b - a \). Neither is division, \( a \div b \ne b \div a \).</p>
 
 <p>In other words, based on the nature of the operands involved a particular operation may or may not be commutative.</p>
 
@@ -192,7 +181,7 @@ $$ (b + c)\cdot a = b\cdot a + c\cdot a $$</p>
 <p>And since multiplication of real numbers is commutative, we can say that:
 $$ a\cdot (b + c) = a\cdot b + a\cdot c = b\cdot a + c\cdot a = (b + c)\cdot a $$</p>
 
-<p>As before, whether distributive laws apply or not depends on the nature of the operations as well as the operands. For e.g., it is worth taking a pause and noting that:
+<p>As before, whether distributive laws apply or not depends on the nature of the operation as well as the operands involved. For e.g., it is worth taking a pause and noting that:
 $$ (b + c) \div a = b\div a + c\div a $$
 But,<br />
 $$ a\div (b + c) \ne a\div b + a\div c $$
@@ -212,21 +201,21 @@ where, \(m\) is a positive integer and \(a\) and \(b\) are real (either constant
 $$ (a + b)^1 = a + b $$
 there are obviously 2 terms.</p>
 
-<p>For \(m = 2\), we probably know the formula for \( (a + b)^2 \) from earlier classes, but lets do it from scratch and check:
+<p>For \(m = 2\), we probably know the formula for \( (a + b)^2 \) from middle school, but lets do it from scratch and check:
 <p class="katex">
   $$
 \begin{array}{rcl}
 (a + b)^2 & = & (a + b)\cdot (a + b) \\
 & = & a\cdot (a + b) + b\cdot (a + b) \\
 & & \text{(We can do this because a and b are real and} \\
-& & \text{multiplication is right distributive over addition)} \\
+& & \text{multiplication is left distributive over addition)} \\
 \therefore (a + b)^2 & = & a\cdot a + a\cdot b + b\cdot a + b\cdot b \\
 \end{array}
 $$
 </p>
 
 Thus \((a + b)^2 \) has 4 terms.<br />
-(Note that we are not applying the commutative property of multiplication and simplifying \( a\cdot b + b\cdot a = 2ab \) yet.)</p>
+(Note that we are not applying the commutative property of multiplication and simplifying \( a\cdot b + b\cdot a = 2ab \), at least not yet.)</p>
 
 <p>For \(m = 3\), lets do the expansion from scratch and check it out:
 <p class="katex">
@@ -254,7 +243,7 @@ Thus \((a + b)^3 \) has 8 terms.</p>
 
 <p>For e.g. four example terms in the expansion are \( a\cdot a\cdot a\), \(a \cdot a\cdot b\), \(b \cdot b\cdot a\) and \(b \cdot b\cdot b\). We can rewrite each of these terms now using the commutative rule of multiplication and the definition of exponentiation as follows - \(a^3\), \(a^2b\), \(ab^2\) and \(b^3\) respectively.</p>
 
-<p>Similarly, four example terms in the expansion of \( (a + b)^{10} \) are \( a^{10}\), \(a^6b^4\), \(a^2b^8\) and \(b^{10}\). Crucially, we can note that the power of \(a\) and the power of \(b\) in each term of the expansion add up to \(10\).</p>
+<p>Similarly, some example terms in the expansion of \( (a + b)^{10} \) are \( a^{10}\), \(a^6b^4\), \(a^2b^8\) and \(b^{10}\). Crucially, we can note that the power of \(a\) and the power of \(b\) in each term of the expansion add up to \(10\).</p>
 
 <p>Thus, each term in the expansion of \( (a + b)^m \) can be written as:
 $$ a^k\cdot b^{m - k} $$</p>
@@ -270,9 +259,9 @@ $$ a^mb^0\text{ , }a^{m-1}b^1\text{ , }a^{m-2}b^2\text{ , }\ldots\text{ , }a^2b^
 
 <p>As before, for \(m = 1\), it is very simple, of course:
 $$ (a + b)^1 = a + b $$
-there are obviously 2 terms.</p>
+there are obviously 2 terms, both of them are unique.</p>
 
-<p>For \(m = 2\), we can now combine the same terms together as follows:
+<p>For \(m = 2\), we can now combine the same terms together to get:
 <p class="katex">
   $$
 \begin{array}{rcl}
@@ -356,6 +345,14 @@ $$ ^mC_k $$</p>
 
 <p>We have now understood all that we need to write out the general form of the Binomial Theorem:</p>
 
+<ul>
+<li>there are \( m + 1\) terms in the expansion</li>
+<li>the k-th term in the expansion is \( a^k b^{m - k} \)</li>
+<li>the coefficient of the k-th term in the expansion is \( {}^mC_k \)</li>
+</ul>
+
+<p>Thus,</p>
+
 <p class="katex">
   $$
 (a + b)^m = {}^mC_0 a^m b^0 + {}^mC_1 a^{m-1} b^1 + {}^mC_2 a^{m-2} b^2 + \cdots + {}^mC_{m - 2} a^2 b^{m-1} + {}^mC_{m-1} a^1 b^{m-1} + {}^mC_m a^0 b^m
@@ -385,8 +382,8 @@ $$
 <p class="katex">
   $$
 \begin{array}{rcl}
-(1 + \sqrt{2})^3 & = & {}^3C_0 1^3 {\sqrt{2}}^0 + {}^3C_1 1^2 {\sqrt{2}}^1 + {}^3C_2 1^1 {\sqrt{2}}^2 + {}^3C_3 1^0 {\sqrt{2}}^3\\
-& = & 1 + 3{\sqrt{2}} + 3{\sqrt{2}}^2 + {\sqrt{2}}^3 \\
+(1 + \sqrt{2})^3 & = & {}^3C_0 1^3 (\sqrt{2})^0 + {}^3C_1 1^2 (\sqrt{2})^1 + {}^3C_2 1^1 (\sqrt{2})^2 + {}^3C_3 1^0 (\sqrt{2})^3\\
+& = & 1 + 3{\sqrt{2}} + 3(\sqrt{2})^2 + (\sqrt{2})^3 \\
 & = & 1 + 3{\sqrt{2}} + 6 + 2{\sqrt{2}} \\
 & = & 7 + 5{\sqrt{2}} \\
 \end{array}
@@ -411,7 +408,7 @@ $$
 
 <h3 id="a-visualization">A visualization</h3>
 
-<p>A beautiful geometric visualization of the Binomial Theorem up to index 4 is shown below:</p>
+<p>A beautiful geometric visualization of the Binomial Theorem up to index 3 is shown below:</p>
 
 <figure class="figs">
     <img src="images/binomial-geometric.png"/> 
@@ -422,7 +419,7 @@ $$
 
 <h3 id="recursive-expansion">Recursive expansion</h3>
 
-<p>In some of the above examples we found the expansion of \( (a + b)^4 \).
+<p>In the examples above, we found the expansion of \( (a + b)^4 \), reproduced below.
 $$ (a + b)^4 = 1\cdot a^4 + 4\cdot a^3b + 6\cdot a^2b^2 + 4\cdot ab^3 + 1\cdot b^4 $$</p>
 
 <p>Lets see if we can easily find the expansion for \( (a + b)^5 \) using the above.</p>
@@ -463,7 +460,7 @@ $$
 </p>
 
 
-<p>In words, the coefficient of \( a^4b\) in the expansion of \( (a + b)^5 \) is the sum of the coefficients of \( a^4\) and \( a^3b \) in the expansion of \( (a + b)^4 \).</p>
+<p>In words, the coefficient of \( a^4b\) in the expansion of \( (a + b)^5 \) is the sum of the coefficients of \( a^4\) and \( a^3b \) in the expansion of \( (a + b)^4 \), the coefficient of \(a^3b^2\) in the expansion of \( (a + b)^5 \) is the sum of the coefficients of \( a^3b\) and \( a^2b^2\) in the expansion of \( (a + b)^4 \), and so on.</p>
 
 <h3 id="another-ncr-property">Another nCr property</h3>
 
@@ -549,20 +546,9 @@ $$
 
 <p>The Pascal&rsquo;s triangle has innumerable interesting properties. Some of them are highlighted in this video. Some of them are so fascinating, they are bound to blow your mind off 😎😎 .</p>
 
-<div class="book-columns flex justify-between">
-  
-  <div class="flex-1">
-    
-  </div>
-  
-  <div class="flex-1">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0iMtlus-afo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  
-  <div class="flex-1">
-    
-  </div>
-  
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/0iMtlus-afo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
 
