@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  1.1 Greatest Common Divisor |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+<link rel="stylesheet" href="css/foo.css">
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/ec-math/">EC MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/ec-math/number-theory/">1. NUMBER THEORY</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/ec-math/number-theory/gcd/">1.1 GREATEST COMMON DIVISOR</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/ec-math/number-theory/primeing-up-for-perfection/">1.2 PRIME-ING UP, FOR PERFECT-ION - TBD</a></li>
+    
+    </ul>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>1.1 Greatest Common Divisor</h1>
+  
+
+<h2 id="multiplication">Multiplication</h2>
+
+<p>Let’s start with the basics first. We have learnt since childhood that multiplication is simply repeated addition. For eg, 3 x 4 is really the “shorthand notation” for saying 3 + 3 + 3 + 3.</p>
+
+<p>Where does multiplication show up practically, in real life? Suppose you have a room that is 3m wide and 4m long. How many 1m square tiles are needed to cover the room?</p>
+
+<p>If the room were 3m x 1m, then it needs 3 tiles obviously. Now, if you repeat that 4 times, then you can find out how many tiles are needed. This is shown in the picture below.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <figure class="figs">
+    <img src="images/3x1=3.png"/> <figcaption>
+            <h4>3 x 1 = 3</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1">
+    <figure class="figs">
+    <img src="images/3x4=12.png"/> <figcaption>
+            <h4>3 x 4 = 12</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+<p>Let’s do some quick mental multiplication problems. Each time, visualize the room with the dimensions of the two numbers being multiplied and feel the total number of tiles in the room.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <pre><code>4 x 6 = 
+6 x 7 = 
+7 x 9 = 
+8 x 4 = 
+9 x 6 = 
+7 x 8 = 
+</code></pre>
+  </div>
+  
+  <div class="flex-1">
+    <pre><code>3 x 10 = 
+8 x 10 = 
+10 x 6 = 
+6 x 0 = 
+0 x 3 = 
+0 x 0 = 
+</code></pre>
+  </div>
+  
+  <div class="flex-1">
+    <pre><code>3 x 3 = 
+6 x 6 = 
+8 x 8 = 
+8 x 1 = 
+1 x 1 = 
+12 x 15 = 
+</code></pre>
+  </div>
+  
+</div>
+
+
+<p>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=QTP-1 class="w-100 collapse">
+<tr>
+<th class="ba w-10 bg-lightest-blue pv3 v-top">QTP-1</th>
+<td class="ba ph2 ">Did you find it easy to do multiplications with the number 10? Why?</td>
+</tr>
+</table>
+
+<br/>
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=QTP-2 class="w-100 collapse">
+<tr>
+<th class="ba w-10 bg-lightest-blue pv3 v-top">QTP-2</th>
+<td class="ba ph2 "><p>How about this multiplication below? Is there a way to calculate the number of tiles needed without resorting to a calculator or even rough work area - simply mentally?</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    
+  </div>
+  
+
+<p><div class="flex-1">
+    <pre><code>         2 0 4 1 5
+         x 8 2 3 1
+------------------
+                   ?
+------------------
+</code></pre>
+  </div></p>
+
+<p><div class="flex-1"></p>
+
+<p></div></p>
+
+<p></div></p>
+</td>
+</tr>
+</table>
+</p>
+
+<p>We will revisit these questions when we do Polynomials in Algebra.</p>
+
+<h3 id="the-largest-tile-size">The Largest Tile Size</h3>
+
+<p>Now, imagine a room that is 6m wide and 9m long. The answer to how many 1m square tiles are needed to fill this room is simple - we need <code>_____</code> tiles. But lets ask a different question. We want to tile the room with larger size square tiles. What is the largest sized tile that we can use?</p>
+
+<p><figure class="figs">
+    <img src="images/1x1-tiling.png"/> 
+</figure>
+
+<figure class="figs">
+    <img src="images/2x2-tiling.png"/> 
+</figure>
+
+<figure class="figs">
+    <img src="images/4x4-tiling.png"/> 
+</figure>
+</p>
+
+<p>But what about 3m square tiles?</p>
+
+<p>As you can see from the picture below, 3m square tiles beautifully cover the complete room, just like 1m square tiles had covered it.</p>
+
+<figure class="figs">
+    <img src="images/3x3-tiling.png" width="85%"/> 
+</figure>
+
+
+<p>Now, remember the question we are asking - what is largest sized square tile that can be used to cover the room completely? Is the answer 3m square tiles? Turns out that is correct. We can check 5m and 6m square tiles to verify. Note that 7m square tiles or any size above that won’t work, simply because one side of the room is only 6m.</p>
+
+<p>This number, 3, is called the Greatest Common Divisor (GCD) of 6 and 9.</p>
+
+<p>Let’s take a few more examples:</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th>Room Size</th>
+<th>Largest size square tile?</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td>6m x 6m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>9m x 9m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>1m x 8m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>7m x 1m</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th>Room Size</th>
+<th>Largest size square tile?</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td>5m x 10m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>15m x 5m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>8m x 9m</td>
+<td></td>
+</tr>
+
+<tr>
+<td>13m x 14m</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+</div>
+
+
+<p>In the rest of this session, we will explore the GCD of two numbers in more detail.</p>
+
+<h2 id="divisors">Divisors</h2>
+
+<p>When we multiply two numbers, we get a result that is a fixed number. We always get the same result, right, no matter how we do the multiplication. We can do it on a calculator, on a computer, or in our mind, it does not matter. We can do it using some long method, short method, or any other method, it does not matter.</p>
+
+<p>But what about the reverse?</p>
+
+<p>Given a number, if we try to find some two numbers whose multiplication will yield that original number - is it always fixed? Will we always get the same two numbers? Lets try.</p>
+
+<p>Suppose the given number is 12. Find two numbers which when multiplied will yield 12? What is the answer? 3 and 4? If we ask someone else the same question, will we get the same answer? Someone else may say 2 and 6. Yet another person may say 1 and 12. So, there can be many answers to the question - find two numbers when multiplied yield 12.</p>
+
+<p>We can play this game with tiles as well. Lets take 12 scrabble pieces and form rectangles.</p>
+
+<figure class="figs">
+    <img src="images/12-scrabble-tiles.png"/> 
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=QTP-3 class="w-100 collapse">
+<tr>
+<th class="ba w-10 bg-lightest-blue pv3 v-top">QTP-3</th>
+<td class="ba ph2 ">Will there always be many rectangles? If you are given a number, will there always be many different ways in which you can multiply two numbers and get that number?</td>
+</tr>
+</table>
+
+
+<p>There is only one answer to that question :) and we will find out soon.</p>
+
+<p>Now, lets take slightly larger numbers and see.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <pre><code>_______ x _______
+
+_______ x _______
+                   =  24
+_______ x _______
+
+_______ x _______
+</code></pre>
+  </div>
+  
+  <div class="flex-1">
+    <pre><code>_______ x _______
+
+_______ x _______
+                   =  30
+_______ x _______
+
+_______ x _______
+</code></pre>
+  </div>
+  
+</div>
+
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <pre><code>_______ x _______
+                   =  49
+_______ x _______
+</code></pre>
+  </div>
+  
+  <div class="flex-1">
+    <pre><code>_______ x _______
+
+_______ x _______
+
+_______ x _______  =  36
+
+_______ x _______
+
+_______ x _______
+</code></pre>
+  </div>
+  
+</div>
+
+
+<p>These are called the factors of a number. They are also called divisors.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 "><p>A number \(b\) is said to be a divisor of a number \(a\) if there exists a number \(q\) such that:</p>
+
+<p>$$ a = q\cdot b $$
+\(b\) is said to divide \(a\), and that is written as:
+$$ b | a $$
+That is the same as saying:</p>
+
+<ul>
+<li>\(a\) is divisible by \(b\), or</li>
+<li>\(a\) is a multiple of \(b\), or</li>
+<li>\(b\) is a factor of \(a\), or</li>
+<li>\(b\) is a divisor of \(a\).</li>
+</ul>
+</td>
+</tr>
+</table>
+
+
+<p>From the above examples we tried, we can say 12 divides 24, or more succinctly, 12 | 24.</p>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=HDMT-1 class="w-100 collapse">
+<tr>
+<th class="ba w-10  pv3 v-top">HDMT-1</th>
+<td class="ba ph2 bg-lightest-blue">Mathematicians love symbols and use them to express their ideas succinctly.</td>
+</tr>
+</table>
+
+
+<h3 id="a-brief-historical-note">A brief historical note</h3>
+
+<p>What do you feel when you see a Math textbook full of symbols of different kinds?</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <figure class="figs">
+    <img src="images/math-blackboard.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1">
+    <p>Or a blackboard from a typical Math class?</p>
+
+<p>What are all these symbols, how do we read what’s written?</p>
+
+<p>Are these symbols from some divine language?</p>
+
+  </div>
+  
+</div>
+
+
+<p>Well, when it started, Math was written as prose and poetry, there were no symbols.</p>
+
+<p>Old Greek mathematics was a collection of prose.</p>
+
+<figure class="figs">
+    <img src="images/greek-for-multiplication.png"/> 
+</figure>
+
+
+<p>Vedic mathematics was a collection of sutras.</p>
+
+<figure class="figs">
+    <img src="images/vedic-sutras.png"/> 
+</figure>
+
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    Mathematical lunacy: for a short time the symbol for positive and negative was a moon. The equation above is -4 + 6 = 2
+  </div>
+  
+  <div class="flex-1">
+    <figure class="figs mt0">
+    <img src="images/positive-negative-sign.png"/> 
+</figure>
+  </div>
+  
+</div>
+
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    And the first time that a symbol was used for “equals to” was as late as 1500s. The + and - signs were introduced in 1300 and 1400, while the x sign came about in 1600s.
+  </div>
+  
+  <div class="flex-1">
+    <figure class="figs mt0">
+    <img src="images/equals-sign.png"/> 
+</figure>
+  </div>
+  
+</div>
+
+
+<p>All these symbols were invented by humans like us, to simply make the task of communicating their ideas easier.</p>
+
+<p>When we see a math symbol, all that we need to do is to look up the definition of the symbol, and then we know what it means. Never fear, and we can even come up with new ones of our own!!</p>
+
+<h3 id="finding-divisors-of-a-number">Finding Divisors of a number</h3>
+
+<p>How do we find ALL the divisors of a number? Systematically? It’s simple. We keep asking this question:</p>
+
+<ul>
+<li>Is 1 a divisor?</li>
+<li>Is 2 a divisor?</li>
+<li>&hellip; &hellip;</li>
+</ul>
+
+<p>Until we are sure we can stop asking!</p>
+
+<p>Is it possible to stop asking the question after some time? Or will we have to keep asking endlessly?</p>
+
+<p>Suppose we are trying to find the divisors of 120. Do we need to ask the question - is 121 a divisor? Do we need to ask - is 122 a divisor? Clearly no. Why? Because no divisor of a number can be greater than the number itself. If b were greater than a, then it is impossible to find a number q such that <code>a = q . b</code>. Remember, multiplication is repeated addition, and it is impossible to repeatedly add the number b and get a, if b &gt; a.</p>
+
+<p>If d is a divisor of 120, then this is written as:
+$$ 1 \leq d \leq 120 $$
+In words, d is greater than or equal to 1 and less than or equal to 120.</p>
+
+<p>So, we can stop asking at 120 because the answer to all questions that follow is NO.</p>
+
+<p>Now, how do we answer one particular question, say, is 20 a divisor of 120? Straight from the definition. If we can find a number q, such that <code>120 = q . 20</code>, then it is. Can we?</p>
+
+<p>Shall we do that. Let’s mark all the divisors of 120 in the table below.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="normal-table">
+<thead class="">
+<tr>
+<th align="right">1</th>
+<th align="right">2</th>
+<th align="right">3</th>
+<th align="right">4</th>
+<th align="right">5</th>
+<th align="right">6</th>
+<th align="right">7</th>
+<th align="right">8</th>
+<th align="right">9</th>
+<th align="right">10</th>
+<th align="right">11</th>
+<th align="right">12</th>
+<th align="right">13</th>
+<th align="right">14</th>
+<th align="right">15</th>
+<th align="right">16</th>
+<th align="right">17</th>
+<th align="right">18</th>
+<th align="right">19</th>
+<th align="right">20</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="right">21</td>
+<td align="right">22</td>
+<td align="right">23</td>
+<td align="right">24</td>
+<td align="right">25</td>
+<td align="right">26</td>
+<td align="right">27</td>
+<td align="right">28</td>
+<td align="right">29</td>
+<td align="right">30</td>
+<td align="right">31</td>
+<td align="right">32</td>
+<td align="right">33</td>
+<td align="right">34</td>
+<td align="right">35</td>
+<td align="right">36</td>
+<td align="right">37</td>
+<td align="right">38</td>
+<td align="right">39</td>
+<td align="right">40</td>
+</tr>
+
+<tr>
+<td align="right">41</td>
+<td align="right">42</td>
+<td align="right">43</td>
+<td align="right">44</td>
+<td align="right">45</td>
+<td align="right">46</td>
+<td align="right">47</td>
+<td align="right">48</td>
+<td align="right">49</td>
+<td align="right">50</td>
+<td align="right">51</td>
+<td align="right">52</td>
+<td align="right">53</td>
+<td align="right">54</td>
+<td align="right">55</td>
+<td align="right">56</td>
+<td align="right">57</td>
+<td align="right">58</td>
+<td align="right">59</td>
+<td align="right">60</td>
+</tr>
+
+<tr>
+<td align="right">61</td>
+<td align="right">62</td>
+<td align="right">63</td>
+<td align="right">64</td>
+<td align="right">65</td>
+<td align="right">66</td>
+<td align="right">67</td>
+<td align="right">68</td>
+<td align="right">69</td>
+<td align="right">70</td>
+<td align="right">71</td>
+<td align="right">72</td>
+<td align="right">73</td>
+<td align="right">74</td>
+<td align="right">75</td>
+<td align="right">76</td>
+<td align="right">77</td>
+<td align="right">78</td>
+<td align="right">79</td>
+<td align="right">80</td>
+</tr>
+
+<tr>
+<td align="right">81</td>
+<td align="right">82</td>
+<td align="right">83</td>
+<td align="right">84</td>
+<td align="right">85</td>
+<td align="right">86</td>
+<td align="right">87</td>
+<td align="right">88</td>
+<td align="right">89</td>
+<td align="right">90</td>
+<td align="right">91</td>
+<td align="right">92</td>
+<td align="right">93</td>
+<td align="right">94</td>
+<td align="right">95</td>
+<td align="right">96</td>
+<td align="right">97</td>
+<td align="right">98</td>
+<td align="right">99</td>
+<td align="right">100</td>
+</tr>
+
+<tr>
+<td align="right">101</td>
+<td align="right">102</td>
+<td align="right">103</td>
+<td align="right">104</td>
+<td align="right">105</td>
+<td align="right">106</td>
+<td align="right">107</td>
+<td align="right">108</td>
+<td align="right">109</td>
+<td align="right">110</td>
+<td align="right">111</td>
+<td align="right">112</td>
+<td align="right">113</td>
+<td align="right">114</td>
+<td align="right">115</td>
+<td align="right">116</td>
+<td align="right">117</td>
+<td align="right">118</td>
+<td align="right">119</td>
+<td align="right">120</td>
+</tr>
+</tbody>
+</table>
+
+
+<h3 id="finding-divisors-faster">Finding divisors faster</h3>
+
+<p>Did it take a lot of work? What if we had to do the same for a bigger number, say 500? Can we do it faster?</p>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=HDMT-2 class="w-100 collapse">
+<tr>
+<th class="ba w-10  pv3 v-top">HDMT-2</th>
+<td class="ba ph2 bg-lightest-blue">Mathematicians like to discover faster and better ways to solve problems.</td>
+</tr>
+</table>
+
+
+<p>It turns out that we can do this much faster than we first did. We don’t need to check all 120 numbers. We can finish by simply checking some 10 or 11 numbers !!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="normal-table">
+<thead class="">
+<tr>
+<th align="left">Is 1 a divisor of 120?</th>
+<th align="left">YES</th>
+<th align="right">1 x 120 = 120</th>
+<th align="right">1, 120</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">Is 2 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">2 x 60 = 120</td>
+<td align="right">2, 60</td>
+</tr>
+
+<tr>
+<td align="left">Is 3 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">3 x 40 = 120</td>
+<td align="right">3, 40</td>
+</tr>
+
+<tr>
+<td align="left">Is 4 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">4 x 30 = 120</td>
+<td align="right">4, 30</td>
+</tr>
+
+<tr>
+<td align="left">Is 5 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">5 x 24 = 120</td>
+<td align="right">5, 24</td>
+</tr>
+
+<tr>
+<td align="left">Is 6 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">6 x 20 = 120</td>
+<td align="right">6, 20</td>
+</tr>
+
+<tr>
+<td align="left">Is 7 a divisor of 120?</td>
+<td align="left"><span style="color:red;">NO</span></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+
+<tr>
+<td align="left">Is 8 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">8 x 15 = 120</td>
+<td align="right">8, 15</td>
+</tr>
+
+<tr>
+<td align="left">Is 9 a divisor of 120?</td>
+<td align="left"><span style="color:red;">NO</span></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+
+<tr>
+<td align="left">Is 10 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">10 x 12 = 120</td>
+<td align="right">10, 12</td>
+</tr>
+
+<tr>
+<td align="left">Is 11 a divisor of 120?</td>
+<td align="left"><span style="color:red;">NO</span></td>
+<td align="right"></td>
+<td align="right"></td>
+</tr>
+
+<tr>
+<td align="left">Is 12 a divisor of 120?</td>
+<td align="left">YES</td>
+<td align="right">12 x 10 = 120</td>
+<td align="right">Already DONE !!!</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>As we can see from the above table, once we cross 11, we find that we already know that 12 is a divisor because <code>10 x 12 = 12 x 10 = 120</code>.</p>
+
+<p>That’s great. But, should we check if 13 is a divisor? What about 14? Or can we confidently say that 15 is the next divisor after 12?</p>
+
+<p>If 14 were a divisor of 120, then we have to find a number q such that 120 = q . 14. If there were such a q, what is our guess? Would it be less than 14 or more than 14?</p>
+
+<p>Let’s do this with an example. We have 36 Scrabble tiles and have arranged it in a square as shown in the left below. 6 x 6 = 36. Suppose we move the tiles around and try to create a rectangle where one side has greater than 6 tiles, say it is 9 tiles long. Then what will be the size of the other side of the rectangle? Will it be less than 6 or greater than 6? Clearly, less than 6, because if both sides were greater than 6, then we will need more than 36 tiles.</p>
+
+<figure class="figs">
+    <img src="images/6x6-9x4-tiles.png"/> 
+</figure>
+
+
+<p>The question we are asking is this:</p>
+
+<p>If <code>a.a = b</code> and <code>c.d = b</code>, suppose <code>c &lt;= a</code>, then can we say that <code>d &gt;= a</code>.</p>
+
+<p>We will encounter a lot of such problems, where we have a few facts given, and we have to uncover new facts based on that. This is how the field of Mathematics (and in general, Science) has evolved.</p>
+
+<p>We will not try to prove this one now, and leave it as a QTP.</p>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=QTP-4 class="w-100 collapse">
+<tr>
+<th class="ba w-10 bg-lightest-blue pv3 v-top">QTP-4</th>
+<td class="ba ph2 ">If <code>a.a = b</code> and <code>c.d = b</code>, and suppose <code>c ≤ a</code>, then prove that <code>d ≥ a</code>.</td>
+</tr>
+</table>
+
+
+<p>Now going back to our original problem, while 120 is not a perfect square like b above, we can still apply similar techniques. 100 is a perfect square and <code>10.10 = 100</code>, and suppose we are trying to find the divisors of 100, then we can stop at 10. Why? Because if we find any divisor, say c, such that <code>c &gt; 10</code> and <code>c.d = 100</code>, then we can be sure that <code>d &lt; 10</code>. But since we have already covered all numbers less than 10, we would have already found c.</p>
+
+<p>The next square after 100 is <code>121 = 11.11</code>. Since we are trying to find the divisors for 120, we can stop searching at 10. Isn’t that a big relief, instead of checking all 120 numbers!?</p>
+
+<p>Find the divisors of these numbers below:</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">N</th>
+<th align="left">List of divisors</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">64</td>
+<td align="left">1, 64, 2, 32, 4, 16, 8</td>
+</tr>
+
+<tr>
+<td align="left">72</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">500</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">420</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">37</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">97</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1">
+    
+  </div>
+  
+</div>
+
+
+<p>How many numbers need to be checked for finding the divisors of 97 above? Do we need to check all numbers up to 97? Or can we stop checking much earlier, say at 9, since 100 is the nearest square? If we check only until 9, and we do not find any divisors, can we stop checking and claim that there are no divisors other than 1 and 97 itself? Or do we feel worried we may have missed something? What if there is some divisor between 10 and 96?</p>
+
+<p>If there were some divisor in that range, say a, then what do we know about the other number, say b, that when multiplied by a may yield 97.</p>
+
+<p>If \(a\cdot b = 97\) and if \(a &gt; 9\), then \(b \leq 9 \)</p>
+
+<h3 id="prime-numbers">Prime Numbers</h3>
+
+<p>What is special about 37 and 97 above? The only divisors that these numbers have are 1 and the number itself. These numbers, as we may be familiar, are called prime numbers.</p>
+
+<p>A number P is said to be a prime number if P has no divisors expect 1 and P itself. All other numbers are called composite numbers. The only exception is 1. 1 is considered neither prime, nor composite.</p>
+
+<p>Can we now attempt QTP 3?</p>
+
+<p>Prime numbers are very special and we will spend a lot of time with them in a subsequent session.</p>
+
+<h3 id="properties-of-divisors">Properties of Divisors</h3>
+
+<p>Since we have spent a fair bit of time understanding what divisors are, we should explore a little more about them. We already saw one of them earlier (that the divisor of a number has to be less than or equal to the number).</p>
+
+<ul>
+<li>If \(b | a\), then \(1 ≤ b ≤ a\)</li>
+<li>If \(a | b\) and \(b | c\), then \(a | c\)</li>
+<li>If \(a | b\), then \(a | kb\) for any number \(k\)</li>
+<li>\(a | b\) if and only if \(na | nb\) for any \(n &gt; 0\)</li>
+</ul>
+
+<p>Do take a minute to go over each of these properties and speak them out in English. That will help in translating seemlessly between math symbols and the meaning they convey.</p>
+
+<p>Each of the above properties need to be proved. We do not need to commit these to memory, but we need to understand each of these properties well. Do they all follow from the basic definition of a divisor, if so how. This is how the field evolves, someone discovers properties such as the ones above, proves them, and they become facts. Then someone else comes along uses all the facts discovered so far and then discovers a newer fact. It is almost like a living organism that is constantly growing! The original seed was just a simple definition.</p>
+
+<h2 id="greatest-common-divisor">Greatest Common Divisor</h2>
+
+<p>Now we are all set to dive into the topic of this session - GCD.</p>
+
+<p>We now know how to find the divisors of a number. Some mathematician along the way decided (s)he wanted to have more fun and asked the question - what if we have two numbers and look at the divisors of both the numbers, are there divisors in common?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;2: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 2:</th>
+<td class="bb ph2 "><p>If a number \(c\) divides two numbers \(a\) and \(b\), i.e.</p>
+
+<p>\(c | a\), and \(c | b\)</p>
+
+<p>then \(c\) is called a common divisor of \(a\) and \(b\).</p>
+</td>
+</tr>
+</table>
+
+
+<p>Let’s start with a few examples.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">N</th>
+<th align="left">Divisors</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">100</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">120</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Common <br/> Divisors</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1">
+    
+  </div>
+  
+</div>
+
+
+<p>We can also depict this as a Venn Diagram:</p>
+
+<figure class="figs">
+    <img src="images/venn-divisors-100-120.png"/> 
+</figure>
+
+
+<p>What about 37 and 97. What are the common divisor(s) of 37 and 97? __________</p>
+
+<p>Now, the definition of Greatest Common Divisor should be straightforward. The greatest of the common divisors is called the GCD. More formally:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;3: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 3:</th>
+<td class="bb ph2 "><p>A number \(g\) is said to be the greatest common divisor of \(a\) and \(b\) if it satisfies the following:</p>
+
+<ul>
+<li>\(g | a\) and \(g | b\),</li>
+<li>If \(c | a\) and\(c | b\), then\(c ≤ g\).</li>
+</ul>
+
+<p>The GCD of two numbers\(a\) and \(b\) is represented as \((a, b)\)</p>
+</td>
+</tr>
+</table>
+
+
+<p>Lets see how to compute the GCD. We have already seen how to compute all divisors of a number quickly. Given two numbers, we can simply compute the divisors of both the numbers, then find the common divisors, and finally find the greatest of them.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">N</th>
+<th align="left">Divisors</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">100</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">120</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">Common <br/> Divisors</td>
+<td align="left"></td>
+</tr>
+
+<tr>
+<td align="left">GCD</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1">
+    
+  </div>
+  
+</div>
+
+
+<h3 id="finding-the-gcd-fast">Finding the GCD fast</h3>
+
+<p>But, is there a faster way to find the GCD? Remember HDMT 2 - Mathematicians like to discover faster and better ways to solve problems. If we have to find the GCD of 3645 and 2115, it seems quite tedious finding all the divisors and then proceeding to find the common divisors followed by finding the GCD.</p>
+
+<p>To find a simpler way, let’s go back to the largest tile problem. Let’s take the 6m x 9m room that we had talked about.</p>
+
+<p>The first thing to note is that any square tile that completely fills the room is a common divisor of both 6 and 9. Why? Because it divides the 6m side into some equal parts and it also divides the 9m side into some different number of equal parts.</p>
+
+<p>Recall that 2 is NOT a common divisor as shown in the picture below. It divides the 6m side into 3 parts, but it fails to divide the 9m side.</p>
+
+<figure class="figs">
+    <img src="images/2x2-tiling.png"/> 
+</figure>
+
+
+<p>We had found that 3m square tiles are the largest tiles that cover this room as shown below.</p>
+
+<figure class="figs">
+    <img src="images/3x3-tiling.png" width="85%"/> 
+</figure>
+
+
+<p>The key thing to note in order to discover a faster way is that the 3m square tiles completely tile the 6m x 9m room, therefore they would also tile a 6m x 6m room, and hence crucially they would also tile a 6m x 3m room! In other words, we can ignore the 6m x 6m room and focus on the <em>smaller</em> 6m x 3m room to find out the largest size tile!</p>
+
+<figure class="figs">
+    <img src="images/ignore-6x6.png"/> 
+</figure>
+
+
+<p>If the room size was 4m x 9m, then we can ignore two 4m x 4m parts and focus only on the 4m x 1m part of the room to find the largest tile size.</p>
+
+<figure class="figs">
+    <img src="images/ignore-4x8.png"/> 
+</figure>
+
+
+<p>The next crucial thing to note is that we can do this process repeatedly (or “recursively”).</p>
+
+<p>To find the largest tile that covers say a 9m x 15m room:</p>
+
+<ol>
+<li>First ignore the 9m x 9m part of the room. Then, the leftover part is 9m x 6m.</li>
+<li>In this part, ignore the 6m x 6m part. Then, the leftover part is 3m x 6m.</li>
+<li>Finally ignore the 3m x 3m part. Then, the leftover part is 3m x 3m.</li>
+<li>And that is largest size tile.</li>
+</ol>
+
+<figure class="figs">
+    <img src="images/ignore-9x9-6x6-3x3.png"/> 
+</figure>
+
+
+<p>We can work backwards to check that the 3m square tile can indeed tile the 3m x 6m room, and in turn tile the 9m x 6m room, and finally also tile the 9m x 15m room.</p>
+
+<p>To find the GCD of 100 and 120, we just need to do:
+$$ (120, 100) = (100, 20) = 20 $$</p>
+
+<p>Doesn’t that look magical? Sometimes mathematics looks like magic, simply enthralling. But the magician always knows how the trick works. So does a mathematician!!</p>
+
+<p>Now, lets understand how this magic works. We will need to get behind the curtains and take one step at a time to unravel this mystery. We’ll start with properties of GCD.</p>
+
+<h2 id="properties-of-gcd">PROPERTIES of GCD</h2>
+
+<p>First, a few properties of divisors in general:</p>
+
+<ol>
+<li>\(1 | a\) \(\forall a\)</li>
+<li>\(a | a\) \(\forall a \neq 0\)</li>
+<li>\(a | 0\) \(\forall a \neq 0\)</li>
+</ol>
+
+<p>(\( \forall \) is the symbol for &ldquo;for all&rdquo;)</p>
+
+<p>Can we accept that these are correct? How do we do that? By asking for proof!</p>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+<table id=HDMT-3 class="w-100 collapse">
+<tr>
+<th class="ba w-10  pv3 v-top">HDMT-3</th>
+<td class="ba ph2 bg-lightest-blue">Mathematicians do not accept anything blindly. They always ask for proof.</td>
+</tr>
+</table>
+
+
+<p>So, what are these proofs? Proofs are logical step-by-step arguments made using previously proven claims. They usually start from a definition to logically prove a few claims. Once a claim is proven, it becomes a fact. With these facts, more claims can be proven using the original definition and all the facts that we know so far.</p>
+
+<p>Its a bit like constructing a building. You have to start with the foundation, then construct the ground floor and then the first floor and so on. The terrace on the topmost floor comes last and stands on every single brick that has been laid before it. If any floor is weak, all the floors above will come crashing.</p>
+
+<p>The proofs for some claims are very simple, take only a line or two. But some proofs can be extremely long. And hard. One such example is Fermat’s last theorem. Fermat wrote the theorem in the margin of his book, but it took 358 years before it was proved!! Its proof took about 129 pages. Most proofs though take only a few lines, say half a page or so.</p>
+
+<p>Lets take the first property - \(1 | a\) \(\forall a\)</p>
+
+<p>In words, what it claims is that 1 is a divisor of all numbers. But we know that, dont we. Well, HDMT 3 - it has to be proved. What do we know to prove this? So far, only the definition of a divisor.</p>
+
+<p>So, to prove that 1 is a divisor of any number a, we have to simply find q given any number a. Is that easy? Yes.</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Claim</td>
+<td class="">\(1 | a\) \(\forall a\)</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>\(\forall a\), \(a = a\cdot 1\)</p>
+
+<p>\(\therefore 1 | a\)</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>(\(\therefore \) is the symbol for therefore)</p>
+
+<p>In words, we know that for all a, a multiplied by 1 is a itself. Therefore, given any a, the search for a number q such that q multiplied by 1 is equal to a is very easy. The q is a itself. Since we have found the number q, we can can therefore say that 1 divides a.</p>
+
+<p>The other two properties can also be proved in the same fashion.</p>
+
+<p>Lets look at a fourth property that needs a slightly longer proof.</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Claim</td>
+<td class="">If \(a | b\) and \(b | c \), then \(a | c\)</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>\(\because a | b\), \(\exists q_1\) such that \(b = q_1\cdot a\)<br />
+\(\because b | c\), \(\exists q_2\) such that \(c = q_2\cdot b\)</p>
+
+<p>Now, \( c = q_2\cdot b \)
+\( = q_2\cdot q_1\cdot a \)
+\( = q\cdot a \)<br />
+where \( q = q_1\cdot q_2\)</p>
+
+<p>\( \therefore a | c \)</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>(\(\because \) is the symbol for since or because)<br />
+(\(\exists \) is the symbol for there exists)</p>
+
+<p>Claims are often called Theorems in Mathematics, and we will see them a lot going forward.</p>
+
+<p>Here is another property of divisors, a really interesting one. The proof itself is fairly simple, but this property is quite insightful, and we will look at it carefully.</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Theorem</td>
+<td class="">If \(a | b\) and \(a | c \), then \(a | (b\cdot x + c\cdot y) \) for any numbers \(x\) and \(y\)</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>\(\because a | b\), \(\exists q_1\) such that \(b = q_1\cdot a\)<br />
+\(\because b | c\), \(\exists q_2\) such that \(c = q_2\cdot b\)</p>
+
+<p>Now,</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+b\cdot x + c\cdot y & = & q_1\cdot a\cdot x + q_2\cdot a\cdot y \\
+& = & (q_1\cdot x + q_2\cdot y)\cdot a \\
+& = & q\cdot a
+\end{array}
+$$
+</p>
+
+<p>where \( q = q_1\cdot x + q_2\cdot y\)</p>
+
+<p>\( \therefore a | (b\cdot x + c\cdot y) \)</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>Lets take some sticks and see what the above means. Lets say we have one stick of length b and another stick of length c. Both these sticks are divisible by sticks of length a. That means we can take some number of sticks of length a and stick them together (no pun intended :) to form the stick of length b. We can take a (possibly) different number of these smaller sticks of length a to form the stick of length c.</p>
+
+<figure class="figs">
+    <img src="images/sticks-b-and-c.png"/> 
+</figure>
+
+
+<p>If we join the two sticks to make a long stick of length b + c, that long stick will also be divisible by a. In other words, we can take a number of small sticks of length a and join them together and it will be possible to make a stick of length b + c. If say 5 sticks of length a are needed to make b, and say 8 sticks of length a are needed to make c, then with 13 sticks of length a, we can make the longer stick of length b + c. Child’s play, right?</p>
+
+<figure class="figs">
+    <img src="images/sticks-b&#43;c.png"/> 
+</figure>
+
+
+<p>In fact, you can x sticks of length b and y sticks of length c and this (very long) stick of length \(b\cdot x + c\cdot y\) is also divisible by a.</p>
+
+<p>Of special mention is the fact that you can take x sticks of length b and 0 sticks of length c, and this long stick of length b.x is divisible by a. That means if a divides b, then a also divides all multiples of b. Is that a simple property to prove? Well, we have already proved it. Remember we say that a divides b.x + c.y for any numbers x and y. That includes the case where y is 0. Or for that matter x is zero, i.e., a divides all multiples of c.</p>
+
+<p>Now for the interesting part.</p>
+
+<p>It turns out that if you take the stick of length c, and break away length b from it, to be left with a stick of length c - b, then that stick is also divisible by a.</p>
+
+<figure class="figs">
+    <img src="images/sticks-c-b.png"/> 
+</figure>
+
+
+<p>Why is this interesting? Because, it helps us reduce the complexity of the problem we are solving.</p>
+
+<p>What we proved in the theorem above is that if we know a is a divisor of b and a is a divisor of c, then a is a divisor of \(b\cdot x + c\cdot y\), in particular, a is a divisor of \(c - b\) (which is \(b\cdot -1 + c\cdot 1\)).</p>
+
+<p>Imagine two sticks of length 200 and say 1017. Finding the factors of 200 we have seen does take some time. Finding factors of 1017 might take longer (What are the factors?). But from the previous discussion we know that if we put 5 of the 200-length sticks together we will get a 1000-length stick and then subtracting from 1017 will give us a 17-length stick. Now we can say that if we find a common divisor of 200 and 17, then we would have also found a common divisor for 200 and 1017. That is how it helps us reduce the complexity of the problem. (What are the common divisors of 200 and 17?)</p>
+
+<h3 id="linear-combinations-of-a-b">Linear combinations of a &amp; b</h3>
+
+<p>Let’s consider the set of all linear combinations of a and b. We will go over sets in more detail when we do Combinatorics and when we do Functions in Algebra. For now, a set is simply a collection of things, in this case a collection of numbers that satisfy a particular criteria. We are given a fixed value of a, say 100 and a fixed value of b, say 120. Now, let’s try to find all numbers which can be expressed as a linear combination of 100 and 120. This means let’s take any value for x and any value for y and calculate \(100\cdot x + 120\cdot y\). Add this new number to the set of linear combinations.</p>
+
+<p>It is good to do this systematically, as systematically as we can.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="header-bold-table">
+<thead class="">
+<tr>
+<th align="left">x</th>
+<th align="left">y</th>
+<th align="left">100.x + 120.y</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">0</td>
+<td align="left">100, 200, 300, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">1</td>
+<td align="left">220, 320, 420, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">2</td>
+<td align="left">340, 440, 540, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">-1</td>
+<td align="left">-20, 80, 180, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">-2</td>
+<td align="left">-140, -40, 60, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">0</td>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">120, 240, 360, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">1</td>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">220, 340, 460, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">-1</td>
+<td align="left">1, 2, 3, &hellip;</td>
+<td align="left">20, 120, 220, &hellip;</td>
+</tr>
+
+<tr>
+<td align="left">&hellip;</td>
+<td align="left">&hellip;</td>
+<td align="left">&hellip;</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Note that there are infinitely many values we can assign to x and y and in the process, and each time we can a new value for \(a\cdot x + b\cdot y\). In other words, the set of linear combinations of a and b has infinitely many numbers.</p>
+
+<h3 id="divisors-multiples-and-linear-combinations">Divisors, Multiples and Linear combinations</h3>
+
+<p>Lets look at these sets as a Venn diagram more carefully, say for the numbers 45 and 60.</p>
+
+<p>The divisors of 45 are listed below, note that this is a finite set with exactly 6 numbers in it.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-red-1">
+<tr>
+<th align="left">Divisors of 45</th>
+<th align="left">1</th>
+<th align="left">3</th>
+<th align="left">5</th>
+<th align="left">9</th>
+<th align="left">15</th>
+<th align="left">45</th>
+</tr>
+</thead>
+
+<tbody class="">
+</tbody>
+</table>
+
+
+<p>The set of multiples of 45 are shown below, i.e. numbers of the form 45.n, where n ≥ 1. Note that this is an infinite set.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-blue-1">
+<tr>
+<th align="left">Multiples of 45</th>
+<th align="left">45</th>
+<th align="left">90</th>
+<th align="left">135</th>
+<th align="left">180</th>
+<th align="left">225</th>
+<th align="left">270</th>
+<th align="left">315</th>
+<th align="left">360</th>
+<th align="left">&hellip;</th>
+<th align="left">&hellip;</th>
+</tr>
+</thead>
+
+<tbody class="">
+</tbody>
+</table>
+
+
+<p>Notice that the only common element between these sets is the original number itself, 45.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-blue-1">
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">45</th>
+<th align="left">90</th>
+<th align="left">135</th>
+<th align="left">180</th>
+<th align="left">225</th>
+<th align="left">270</th>
+<th align="left">315</th>
+<th align="left">360</th>
+<th align="left">&hellip;</th>
+<th align="left">&hellip;</th>
+<th align="left">Multiples of 45</th>
+</tr>
+</thead>
+
+<tbody class="bg-light-red-1">
+<tr>
+<td align="left">Divisors of 45</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">5</td>
+<td align="left">9</td>
+<td align="left">15</td>
+<td align="left">45</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</p>
+
+<p>We can repeat the same process as above for the number 60, to get the following:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-red-2">
+<tr>
+<th align="left">Divisors of 60</th>
+<th align="left">1</th>
+<th align="left">2</th>
+<th align="left">3</th>
+<th align="left">4</th>
+<th align="left">5</th>
+<th align="left">6</th>
+<th align="left">10</th>
+<th align="left">12</th>
+<th align="left">15</th>
+<th align="left">20</th>
+<th align="left">30</th>
+<th align="left">60</th>
+</tr>
+</thead>
+
+<tbody class="">
+</tbody>
+</table>
+</p>
+
+<p>The finite set of divisors above, the infinite set of multiples below,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-blue-2">
+<tr>
+<th align="left">Multiples of 60</th>
+<th align="left">60</th>
+<th align="left">120</th>
+<th align="left">180</th>
+<th align="left">240</th>
+<th align="left">300</th>
+<th align="left">360</th>
+<th align="left">&hellip;</th>
+<th align="left">&hellip;</th>
+</tr>
+</thead>
+
+<tbody class="">
+</tbody>
+</table>
+</p>
+
+<p>and the intersection of these two sets being the original number, 60.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-blue-2">
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">60</th>
+<th align="left">120</th>
+<th align="left">180</th>
+<th align="left">240</th>
+<th align="left">300</th>
+<th align="left">360</th>
+<th align="left">&hellip;</th>
+<th align="left">&hellip;</th>
+<th align="left">Multiples of 60</th>
+</tr>
+</thead>
+
+<tbody class="bg-light-red-2">
+<tr>
+<td align="left">Divisors of 60</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">10</td>
+<td align="left">12</td>
+<td align="left">15</td>
+<td align="left">20</td>
+<td align="left">30</td>
+<td align="left">60</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</p>
+
+<p>Next, lets look at common divisors of 45 and 60, just like we did for 100 and 120 earlier.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-red-1">
+<tr>
+<th align="left">Divisors of 45</th>
+<th align="left">1</th>
+<th align="left"></th>
+<th align="left">3</th>
+<th align="left"></th>
+<th align="left">5</th>
+<th align="left"></th>
+<th align="left">9</th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">15</th>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left">45</th>
+<th align="left"></th>
+</tr>
+</thead>
+
+<tbody class="bg-light-red-2">
+<tr>
+<td align="left"><span class="bg-light-yellow-1">Common Divisors of 45 and 60</span></td>
+<td align="left"><span class="bg-light-yellow-1">1</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">3</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">5</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1 ba pa2">15</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+<td align="left"><span class="bg-light-yellow-1">.</span></td>
+</tr>
+
+<tr>
+<td align="left">Divisors of 60</td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left"></td>
+<td align="left">10</td>
+<td align="left">12</td>
+<td align="left">15</td>
+<td align="left">20</td>
+<td align="left">30</td>
+<td align="left"></td>
+<td align="left">60</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>The greatest of the common divisors, or the GCD as we know well, is highlighted above.</p>
+
+<p>The Venn diagrams for the common multiples of 45 and 60 can be similarly done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table class="compact-table">
+<thead class="bg-light-blue-1">
+<tr>
+<th align="left">Multiples of 45</th>
+<th align="left">45</th>
+<th align="left"></th>
+<th align="left">90</th>
+<th align="left"></th>
+<th align="left">135</th>
+<th align="left">180</th>
+<th align="left">225</th>
+<th align="left"></th>
+<th align="left">270</th>
+<th align="left"></th>
+<th align="left">315</th>
+<th align="left">360</th>
+<th align="left">&hellip;</th>
+<th align="left">&hellip;</th>
+</tr>
+</thead>
+
+<tbody class="bg-light-blue-2">
+<tr>
+<td align="left"><span class="bg-light-green-2">Common multiples of 45 and 60</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2 ba pa2">180</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">360</span></td>
+<td align="left"><span class="bg-light-green-2">.</span></td>
+<td align="left"><span class="bg-light-green-2">&hellip;</span></td>
+</tr>
+
+<tr>
+<td align="left">Multiples of 60</td>
+<td align="left"></td>
+<td align="left">60</td>
+<td align="left"></td>
+<td align="left">120</td>
+<td align="left"></td>
+<td align="left">180</td>
+<td align="left"></td>
+<td align="left">240</td>
+<td align="left"></td>
+<td align="left">300</td>
+<td align="left"></td>
+<td align="left">360</td>
+<td align="left">&hellip;</td>
+<td align="left">&hellip;</td>
+</tr>
+</tbody>
+</table>
+</p>
+
+<p>And the least of the common multiples, or the LCM that may be already familiar but will encounter more in the next sessions, is highlighted above.</p>
+
+<p>Finally, lets look at the set of linear combinations of 45 and 60, i.e. all numbers of the form \(45\cdot x + 60\cdot y\). We can restrict ourselves to positive numbers alone, x or y can either be negative but we will only consider the combination number, \(45\cdot x + 60\cdot y\), when it is positive (the picture for negative numbers is just a mirror image, and we can ignore that for now).</p>
+
+<p>Lets notice the interesting properties of this set and its elements:</p>
+
+<ul>
+<li>Firstly, the set is an infinite set, i.e. it has an infinite number of elements.</li>
+<li>The set includes <em>all</em> multiples of 45, got by putting y = 0 in the linear combination.</li>
+<li>The set likewise includes <em>all</em> multiples of 60, by putting x = 0.</li>
+<li>It also includes additional numbers such as say 150:
+
+<ul>
+<li>which is neither a multiple of 45, nor a multiple of 60,</li>
+<li>but is a linear combination, \( 150 = 270 - 120 = 45.6 + 60.(-2) \)</li>
+</ul></li>
+<li>Interestingly, it also includes a select few divisors of 45 and of 60:
+
+<ul>
+<li>For eg, it includes 30, which is a linear combination of 45 and 60,</li>
+<li>it can be written as, \(30 = 90 - 60 = 45.2 + 60.(-1)\),</li>
+<li>or even as, \(30 = -90 + 120 = 45.(-2) + 60.2\).</li>
+</ul></li>
+<li>Crucially though, and most interestingly, the set of linear combinations of 45 and 60 also includes one of the common divisors of 45 and 60, <em>exactly one common divisor</em>, and no points for guessing even though it is a most startling revelation, it includes the greatest of the common divisors, the GCD.
+
+<ul>
+<li>\(15 = -45 + 60, or\)</li>
+<li>\(15 = 45.3 + 60.(-2)\)</li>
+</ul></li>
+</ul>
+
+<p>These different sets are depicted below (a little squashed up, but hopefully still clear from the colors), note that the linear combinations set is repeated at the top and bottom just for clarity of comparing the sets.</p>
+
+<figure class="figs">
+    <img src="images/45-60-divisors-multiples-comaprison.png"/> <figcaption>
+            <h4>A picture to aid the counting of the kittens</h4>
+        </figcaption>
+</figure>
+
+
+<p>We already know that the GCD of a and b is a divisor of a and a divisor of b, by definition. What we are seeing is that the GCD is the only common divisor which can also be expressed as a linear combination of a and b. The GCD is also the smallest positive element in the set of linear combinations of a and b. In fact, all linear combinations of a and b are multiples of the GCD and vice versa, any multiple of the GCD can be written as a linear combination of a and b. We also find that all the common divisors of a and b divide the GCD.</p>
+
+<p>All of these are very interesting results, and do take some time to mull over these, say with examples.</p>
+
+<p>This Venn diagram is depicted below, and we have found something almost magical - the GCD is at the very center of this gorgeous 😎 Venn Diagram!!</p>
+
+<figure class="figs">
+    <img src="images/Divisors-Multiples-and-Linear-Combinations.png"/> 
+</figure>
+
+
+<p>Take a moment to take all of that in. We can draw similar Venn diagrams for other pairs of numbers. Try for eg, 80 and 180.</p>
+
+<h3 id="division-algorithm">Division Algorithm</h3>
+
+<p>We are now well on our way to unraveling how the simple approach to finding the largest tile that we encountered earlier works. Before we do that, we need to add one more theorem or algorithm to our understanding. We must know this from our childhood, and we will not prove this one right now. But it is important to note what the claim is.</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Theorem</td>
+<td class="">Given two integers \(a\) and \(b\), \(\exists \) unique integers \(q\) and \(r\), such that<br />
+\( a = q\cdot r + b\) and \(0 \leq r &lt; b\)</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.<br />
+.</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>We will leave the space here to come back to the proof later. The main thing to prove is that if r is smaller than b, then q and r are both unique. This is fundamental. But we have known this from childhood, we may not have known that q and r are unique, we probably always knew that r was smaller than b, but we do know that we call q the quotient and r the remainder. Further, if r is 0, then b divides a, and vice versa, if r is not zero, then b does not divide a.</p>
+
+<h3 id="unique-property-of-gcd">Unique property of GCD</h3>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Theorem</td>
+<td class="">The least positive integer of the set of linear combinations of a and b is the GCD of a and b.</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>Suppose m is the least positive integer in the set of linear combinations of a and b. Recall that all linear combinations are of the form \(a\cdot x + b\cdot y\). Since m is also a linear combination of a and b
+$$ m = a\cdot x_0 + b\cdot y_0, \text{ for some } x_0 \text{ and } y_0$$</p>
+
+<p>We are now going to show that \(m | a\) and \(m | b\). Suppose \(m \cancel{|} a\).<br />
+Then, by Division algorithm, \( \exists q\) and \(r\) s/t</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+a & = & m\cdot q + r \text{ and } 0 < r < m \\
+r & = & a - m\cdot q \\
+  & = & a - (a\cdot x_0 + b\cdot y_0)\cdot q \\
+  & = & a - a\cdot x_0\cdot q - b\cdot y_0\cdot q \\
+  & = & a\cdot (1 - x_0\cdot q) + b\cdot (-y_0\cdot q) \\
+  & = & a\cdot x_1 + b\cdot y_1
+\end{array}
+$$
+</p>
+
+<p>But that means that \(r\) is also a linear combination of \(a\) and \(b\). However \(r &lt; m\), but we started saying \(m\) is the smallest linear combination. So, our assumption that \(m  \cancel{|} a\) must be wrong. Hence \(m | a\). Similarly, we can prove that \(m | b\). So, \(m\) is a common divisor of \(a\) and \(b\).</p>
+
+<p>We already know that all divisors of \(a\) and \(b\) also divide \(a\cdot x + b\cdot y\) and therefore in particular also divide \(m\), i.e.
+<p class="katex">
+  $$
+\text{If } c | a \text{ and } c | b, \text{ then } c | m
+$$
+</p></p>
+
+<p>So, \( c \leq m\), \(\forall c\)</p>
+
+<p>Thus we have that m is a common divisor of a and b and is also the greatest common divisor.</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>The method of this proof is called proof by contradiction. We start with an assumption, arrive at a contradiction and hence infer that the assumption has to be wrong.</p>
+
+<h3 id="back-to-the-tiles">Back to the tiles</h3>
+
+<p>Let’s go back to the tiling exercise and see how all of this relates to what we were originally doing - finding the largest size tile that fits the room.</p>
+
+<p>If we observe carefully, we will notice that the process of finding the largest tile for the room is the same as the process of searching for the smallest positive integer in the set of linear combinations!!</p>
+
+<figure class="figs">
+    <img src="images/tiles-and-linear-combinations.png"/> 
+</figure>
+
+
+<p>In the above picture:</p>
+
+<ol>
+<li>We start with 3645 and 2115.</li>
+<li>In discarding the square of size 2115 x 2115, we are making the first linear combination that is 1.3645 - 1.2115 = 1530</li>
+<li>In discarding the next square of 1530 x 1530 from the 2115 x 1530 part of the room, we are again making a linear combination 1.2115 - 1.1530 = 1.2115 - 1.(1.3645 - 1.2115) = -1.3645 + 2.2115 = 585</li>
+<li>And so on.</li>
+</ol>
+
+<p>It should be clear from the above that we are searching the set of linear combinations for small numbers. But we have to prove that it converges to the smallest number, the GCD.</p>
+
+<h2 id="euclid-s-algorithm-for-gcd">Euclid&rsquo;s Algorithm for GCD</h2>
+
+<p>This is the famous Euclid’s algorithm for finding the GCD of two numbers a and b. We will assume \(a \geq b &gt; 0\).</p>
+
+<p>We first divide \(a\) by \(b\) yielding remainder \(r_1\).</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    
+  </div>
+  
+  <div class="flex-1">
+    <p class="katex">
+  $$
+\begin{array}{rcl}
+a & = & q_1\cdot b + r_1 \\
+\end{array}
+$$
+  </div>
+  
+  <div class="flex-1">
+    <p class="katex">
+  $$
+\begin{array}{l}
+0 < r_1 < b \\
+\end{array}
+$$
+  </div>
+  
+</div>
+
+
+<p>If \(r_1\) is \(0\), then the GCD is \(b\). But suppose \(r_1\) is not zero, then we divide \(b\) by \(r_1\) to yield \(r_2\), and then \(r_1\) by \(r_2\) and so on, until we get a zero remainder.</p>
+
+<div class="book-columns flex justify-between">
+  
+  <div class="flex-1">
+    
+  </div>
+  
+  <div class="flex-1">
+    <p class="katex">
+  $$
+\begin{array}{rcl}
+b & = & q_2\cdot r_1 + r_2 \\
+r_1 & = & q_3\cdot r_2 + r_3 \\
+\vdots \\
+r_{n - 2} & = & q_n\cdot r_{n - 1} + r_n \\
+r_{n - 1} & = & q_{n + 1}\cdot r_n + 0 \\
+\end{array}
+$$
+  </div>
+  
+  <div class="flex-1">
+    <p class="katex">
+  $$
+\begin{array}{l}
+0 < r_2 < r_1 \\
+0 < r_3 < r_2 \\
+\vdots \\
+0 < r_n < r_{n - 1} \\
+\end{array}
+$$
+  </div>
+  
+</div>
+
+
+<p>Note that we are guaranteed to get a remainder of 0 after some number of steps, because at each step the remainder is strictly decreasing, i.e. \( b &gt; r1 &gt; r2 &gt; r3 &gt; \cdots \geq 0\).</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 pv2 ph2 v-top gold bg-dark-blue">Theorem</td>
+<td class="">\(r_n\) above is the GCD of \(a\) and \(b\).</td>
+</tr>
+<tr>
+<td class="v-top pv2 ph2 light-red">Proof</td>
+<td class=""><p>First lets prove the following:<br />
+If \(a = q\cdot b + r\), then \((a, b) = (b, r)\)</p>
+
+<p>Suppose \(g = (a, b) \)<br />
+\( \therefore g | a \) and \( g | b \)<br />
+\( \therefore g | (a\cdot x + b\cdot y) \)<br />
+In particular, \( g | (a\cdot 1 + b\cdot (-q)) \), i.e. \( g | (a - q\cdot b) \)<br />
+\( \therefore g | r \)</p>
+
+<p>Now suppose \( c | b \) and \( c | r \)
+\( \therefore c | (b\cdot x + r\cdot y) \)<br />
+In particular, \( c | (b\cdot q + r\cdot 1) \), i.e. \( c | (q\cdot b + r) \)<br />
+\( \therefore c | a \)<br />
+\( \therefore c \leq g \)</p>
+
+<p>\( \therefore g = (a, b) = (b, r) \)</p>
+
+<p class="katex">
+  $$ \therefore (a, b) = (b, r_1) = (r_1, r_2) = \cdots = (r_{n-1}, r_n) = (r_n, 0) = r_n $$
+</p>
+
+<p>Hence proved.</p>
+</td>
+</tr>
+</table>
+
+
+<p>And that completes our magic trick!! 😎😎😎</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#multiplication">Multiplication</a>
+<ul>
+<li><a href="#the-largest-tile-size">The Largest Tile Size</a></li>
+</ul></li>
+<li><a href="#divisors">Divisors</a>
+<ul>
+<li><a href="#a-brief-historical-note">A brief historical note</a></li>
+<li><a href="#finding-divisors-of-a-number">Finding Divisors of a number</a></li>
+<li><a href="#finding-divisors-faster">Finding divisors faster</a></li>
+<li><a href="#prime-numbers">Prime Numbers</a></li>
+<li><a href="#properties-of-divisors">Properties of Divisors</a></li>
+</ul></li>
+<li><a href="#greatest-common-divisor">Greatest Common Divisor</a>
+<ul>
+<li><a href="#finding-the-gcd-fast">Finding the GCD fast</a></li>
+</ul></li>
+<li><a href="#properties-of-gcd">PROPERTIES of GCD</a>
+<ul>
+<li><a href="#linear-combinations-of-a-b">Linear combinations of a &amp; b</a></li>
+<li><a href="#divisors-multiples-and-linear-combinations">Divisors, Multiples and Linear combinations</a></li>
+<li><a href="#division-algorithm">Division Algorithm</a></li>
+<li><a href="#unique-property-of-gcd">Unique property of GCD</a></li>
+<li><a href="#back-to-the-tiles">Back to the tiles</a></li>
+</ul></li>
+<li><a href="#euclid-s-algorithm-for-gcd">Euclid&rsquo;s Algorithm for GCD</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+

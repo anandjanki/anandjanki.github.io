@@ -3,10 +3,10 @@ where the Tachyons classes cannot be used directly. */
 * {
   box-sizing: border-box; }
 
-body, .figs h4 {
+body, .figs h4, span.mord.text {
   font-family: 'Zilla Slab', serif; }
 
-body, .figs h4 {
+body, .figs h4, span.mord.text {
   font-weight: 300; }
 
 .hdrfnt-fw_lt, h1, h2, h3, h4, h5, h6 {
@@ -127,7 +127,8 @@ a {
 
 /* Styling for Hugo internal/markdown generated HTML */
 code {
-  padding: 0;
+  padding-left: .25rem;
+  padding-right: .25rem;
   color: #495057;
   font-family: Courier New, serif; }
 
@@ -137,6 +138,9 @@ pre {
   overflow-x: auto;
   margin-left: 1rem;
   margin-right: 1rem; }
+
+pre code {
+  padding: 0; }
 
 blockquote {
   margin: 0.5rem 0;
@@ -148,6 +152,10 @@ blockquote {
   blockquote :last-child {
     margin-bottom: 0; }
 
+.katex {
+  padding-left: .3rem;
+  padding-right: .3rem; }
+
 .figs {
   text-align: center; }
   .figs h4 {
@@ -156,6 +164,9 @@ blockquote {
 
 .pis-0 {
   padding-inline-start: 0; }
+
+span.mord.text {
+  /* For \text within the Katex environment */ }
 
 /* Styling for custom shortcodes */
 .markdown-inner > :first-child {
@@ -166,6 +177,9 @@ blockquote {
 
 .flex-1 {
   flex: 1; }
+
+.katex {
+  font-size: 1rem; }
 
 .book-hint.info {
   border-left-color: #19A974;
@@ -304,3 +318,58 @@ blockquote {
     color: #00449E; }
   #current-page > a:visited {
     color: #00449E; }
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+.normal-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .normal-table th {
+    font-weight: normal; }
+  .normal-table td, .normal-table th {
+    padding: .25rem;
+    border: 1px solid #ccc; }
+
+.compact-table {
+  border-collapse: collapse; }
+  .compact-table th {
+    font-weight: normal; }
+  .compact-table td, .compact-table th {
+    padding: .25rem;
+    border: 1px solid #ccc; }
+
+.header-bold-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .header-bold-table th {
+    font-weight: bold; }
+  .header-bold-table td, .header-bold-table th {
+    padding: .25rem;
+    border: 1px solid #ccc; }
+
+.zebra-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Zebra striping */ }
+  .zebra-table tr:nth-of-type(odd) {
+    background: #eee; }
+  .zebra-table th {
+    background: #333;
+    color: white;
+    font-weight: bold; }
+  .zebra-table td, .zebra-table th {
+    padding: .25rem;
+    border: 1px solid #ccc;
+    text-align: left; }
+
+.horizontal-table {
+  width: 100%;
+  border-collapse: collapse; }
+  .horizontal-table th {
+    border-bottom: 2px solid #00449E;
+    padding: .5rem .25rem;
+    text-align: left; }
+  .horizontal-table td {
+    padding: .25rem;
+    border-bottom: 1px solid #ced4da; }

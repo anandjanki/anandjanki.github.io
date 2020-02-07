@@ -6,10 +6,20 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2020 10:57:27 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 06 Feb 2020 21:32:29 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1.1 Greatest Common Divisor</title>
+      <link>http://www.thoughtart.in/courses/ec-math/number-theory/gcd/</link>
+      <pubDate>Mon, 03 Feb 2020 19:40:47 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/ec-math/number-theory/gcd/</guid>
+      <description>Multiplication Let’s start with the basics first. We have learnt since childhood that multiplication is simply repeated addition. For eg, 3 x 4 is really the “shorthand notation” for saying 3 + 3 + 3 + 3.
+Where does multiplication show up practically, in real life? Suppose you have a room that is 3m wide and 4m long. How many 1m square tiles are needed to cover the room?</description>
+    </item>
     
     <item>
       <title>Basics of Counting</title>
@@ -49,7 +59,9 @@ Now lets consider this same counting problem in a different scenario.</descripti
 Upon the road I met 2 wives;
 Every wife had 3 sacks,
 Every sack had 4 cats,
-Every cat had 5 kits, I am not playing any tricks, Just count and tell me the number of kits.
+Every cat had 5 kits,
+I am not playing any tricks,
+Just count and tell me the number of kits.
  Counting the number of kittens is similar to before except that the numbers involved here are a little different.</description>
     </item>
     
@@ -81,6 +93,15 @@ Note the key difference compared to the other kind of problem we have looked at 
       
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/ec-problems/</guid>
       <description>EC problems may not always be easy problems. They are actually extra-curricular problems.. :) They usually add some interesting facets to the topic under discussion, some fascinating discoveries, etc. But they are usually not from the board syllabus for the topic. (As always, once you read a problem, take some time to attempt it yourself, if you need help, take a peek at the &amp;ldquo;Hint&amp;rdquo; section, then again attempt to solve it yourself, feel free to check the &amp;ldquo;Answer&amp;rdquo; section if you want to check the answer you found, or even just get a feel for the magnitude of the answer.</description>
+    </item>
+    
+    <item>
+      <title>1.2 PRIME-ing up, for PERFECT-ion - TBD</title>
+      <link>http://www.thoughtart.in/courses/ec-math/number-theory/primeing-up-for-perfection/</link>
+      <pubDate>Thu, 06 Feb 2020 21:32:29 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/ec-math/number-theory/primeing-up-for-perfection/</guid>
+      <description>Notes TBD</description>
     </item>
     
     <item>
