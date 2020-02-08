@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Revision on Thought Thou Art</title>
+    <link>http://www.thoughtart.in/courses/p3-math/revision/</link>
+    <description>Recent content in Revision on Thought Thou Art</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Feb 2020 08:33:57 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.thoughtart.in/courses/p3-math/revision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Memory Sheet</title>
+      <link>http://www.thoughtart.in/courses/p3-math/revision/memory-sheet/</link>
+      <pubDate>Sat, 08 Feb 2020 08:34:21 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/p3-math/revision/memory-sheet/</guid>
+      <description>Algebra Modulus There are 2 kinds of problems typically asked in the Modulus topic.
+Equality problems
+Where the problem involves an equality with a modulus, either on one side or both sides of the equation, simply resolve the modulus by using the \( \pm \) sign. For e.g., to solve,
+$$ \begin{array}{rcl} |2x + 1| &amp; = &amp; |x + 5| \\ \therefore 2x + 1 &amp; = &amp; \pm (x + 5) \\ \therefore 2x + 1 = x + 5 &amp; OR &amp; 2x + 1 = -(x + 5) \\ \end{array} $$ Inequality problems</description>
+    </item>
+    
+  </channel>
+</rss>
