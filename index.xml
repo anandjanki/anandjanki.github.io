@@ -6,7 +6,7 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 08:34:21 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 19:38:45 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -104,6 +104,16 @@ Note the key difference compared to the other kind of problem we have looked at 
       
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/ec-problems/</guid>
       <description>EC problems may not always be easy problems. They are actually extra-curricular problems.. :) They usually add some interesting facets to the topic under discussion, some fascinating discoveries, etc. But they are usually not from the board syllabus for the topic. (As always, once you read a problem, take some time to attempt it yourself, if you need help, take a peek at the &amp;ldquo;Hint&amp;rdquo; section, then again attempt to solve it yourself, feel free to check the &amp;ldquo;Answer&amp;rdquo; section if you want to check the answer you found, or even just get a feel for the magnitude of the answer.</description>
+    </item>
+    
+    <item>
+      <title>2.1 Triangle Secrets</title>
+      <link>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</link>
+      <pubDate>Sat, 08 Feb 2020 19:38:45 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</guid>
+      <description>Geometry Sessions Geometry is a standard subject in regular high school Mathematics unlike Number Theory which is usually not covered in regular school curriculums. So, what we will do in these EC Math (Extra-curricular Math) sessions in Geometry will draw upon standard topics we learn in school and go beyond to find some very interesting results and discoveries.
+Geometry is also one of the oldest fields of Mathematics, the other being the study of numbers or Arithmetic and Number Theory.</description>
     </item>
     
     <item>
