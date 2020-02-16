@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  Sequences and Series |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS - TBD</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/series/binomial-theorem/">BINOMIAL THEOREM</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/series/sequences-and-series/">SEQUENCES AND SERIES</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/series/arithmetic-progression/">ARITHMETIC PROGRESSION - TBD</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/series/geometric-progression/">GEOMETRIC PROGRESSION - TBD</a></li>
+    
+    </ul>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Sequences and Series</h1>
+  
+
+<h2 id="why-study-sequences">Why study sequences?</h2>
+
+<p>Sequences have been interesting to humans for a long time because of the patterns they hide within them. Just the discovery of these patterns have given us immense joy. An added advantage of discovering and describing a pattern is the ability to predict the future. A classic example is the discovery of the pattern of the Halley&rsquo;s comet, and the prediction of its next observation. Imagine the surprise and joy that would have accompanied when over 250 years ago, the comet was spotted as predicted by Edmund Halley in 1758.</p>
+
+<h3 id="patterns-in-nature">Patterns in nature</h3>
+
+<p>Nature is full of innumerable patterns, no matter where we look.</p>
+
+<p>So many of them are similar in completely unexpected scenarios. Take for example the formation of a wave<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup> and that of a sand dune<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup> as shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b45 ">
+    <figure class="figs">
+    <img src="images/Boelge_stor.jpg"/> <figcaption>
+            <h4>The shape of a wave</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b55 ">
+    <figure class="figs">
+    <img src="images/Barchan.jpg"/> <figcaption>
+            <h4>Striking similarity to a sand dune</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>What are the physical forces that drive the formation of both of these, and what similarities do they hold?</p>
+
+<p>Take a look at the patterns of the cracks in the parched earth of the Rann of Kutch<sup class="footnote-ref" id="fnref:rann"><a href="#fn:rann">3</a></sup>, India, and compare it with the patterns in the photo on the right, taken in a shallow pool in Sicily<sup class="footnote-ref" id="fnref:sicily"><a href="#fn:sicily">4</a></sup>, Italy. The former is in inelastic mud and is comprised of a large number of 90<sup>o</sup> cracks, whereas the latter is elastic mud with a large number of 120<sup>o</sup> cracks.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/640px-Cracked_earth_in_the_Rann_of_Kutch.jpg"/> <figcaption>
+            <h4>Cracks in the dry inelastic mud</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/640px-Drying_mud_with_120_degree_cracks_Sicily.jpg"/> <figcaption>
+            <h4>Cracks in the dry elastic mud</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>Take a look at this arial picture of the winding shape of the Cauto river in Cuba<sup class="footnote-ref" id="fnref:3"><a href="#fn:3">5</a></sup>, a shape that forms initially as a small curve and keeps increasing in size and curvature resulting in the shape above.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/960px-Rio-cauto-cuba.jpeg"/> <figcaption>
+            <h4>The meandering River Cauto in Cuba</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>And next, observe the striking similarity to the shape of a snake&rsquo;s body<sup class="footnote-ref" id="fnref:4"><a href="#fn:4">6</a></sup> as it slithers across (seemingly effortlessly even without any limbs).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Jiangxia-snake-9704_cropped.jpg"/> <figcaption>
+            <h4>The shape of a snake&#39;s body as it crosses a road</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>All these striking examples of patterns in nature, governed by physical laws. The patterns in Biology and the ones that life throws up are equally and sometimes even more fascinating.</p>
+
+<h3 id="patterns-in-life">Patterns in life</h3>
+
+<p>Patterns on the bodies of animals have always fascinated humans - this includes not just the skin of mammals like the zebra<sup class="footnote-ref" id="fnref:zebra"><a href="#fn:zebra">7</a></sup>, cheetah, giraffe, etc., but also feathers of birds, wings of butterflies<sup class="footnote-ref" id="fnref:butterflies"><a href="#fn:butterflies">8</a></sup>, scales of fish, and even the tiniest of organisms such as bacteria.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b70 ">
+    <figure class="figs">
+    <img src="images/640px-Equus_grevyi_aka.jpg"/> <figcaption>
+            <h4>Zebra patterns</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/320px-Dirce_Beauty_Colobura_dirce.jpg"/> <figcaption>
+            <h4>Can also be found on a butterfly!</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>Spirals have been studied with much interest, and they show up in expected places like the sea shells<sup class="footnote-ref" id="fnref:seashell"><a href="#fn:seashell">9</a></sup> on the left, and unexpected places like the cabbage<sup class="footnote-ref" id="fnref:cabbage"><a href="#fn:cabbage">10</a></sup> on the right. It is strangely ironic that the sea shells are so much rarer in day to day life, whereas the cabbage would be part of our meals almost once a weeki, and yet the spiral goes unnoticed!</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/635px-NautilusCutawayLogarithmicSpiral.jpg"/> <figcaption>
+            <h4>Nautilus Spiral</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/476px-Red_Cabbage_cross_section_showing_spirals.jpg"/> <figcaption>
+            <h4>Can also be found on a butterfly!</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>The patterns of the sunflower seeds (and the organization in many other plant parts such as pine cones, rose petals, etc) can be explained using the well known Fibbonacci sequence<sup class="footnote-ref" id="fnref:fibbonacci"><a href="#fn:fibbonacci">11</a></sup>. The spiral in these cases may be a little hard to spot at first, but the picture on the right should help.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/sunflower2.jpeg"/> <figcaption>
+            <h4>Nautilus Spiral</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/sunflower3.jpeg"/> <figcaption>
+            <h4>Can also be found on a butterfly!</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>To ask the question - <em>why</em> - is a privilege we humans have, and to know the answer is a fortune granted to us by thousands of years of hard work put in by generations before us. Why are the sunflower seeds not concentric circles or say a grid pattern, why this particular spiral pattern? It turns out that nature may have experimented on various such patterns (over millions of years) and settled on this one as the arrangement that optimizes both the amount of light each seed gets while maximizing the number of seeds that can be packed in the available area!</p>
+
+<p>Take a look at a picture of a baobab tree branches below left, and notice the striking similarity to the roots of a tree on the right.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/540px-Baobab_Tree_at_Vasai_Fort.jpg"/> <figcaption>
+            <h4>Pattern of the branches of a baobab tree to help the leaves reach out for sunlight</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/tree_with_roots.jpg"/> <figcaption>
+            <h4>Pattern of the roots of a tree to help draw in nutrition from the soil</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>We do not need to go too far to find similar patterns, and our body hosts this same pattern in many places. Notice how the structure of the neurons<sup class="footnote-ref" id="fnref:neurons"><a href="#fn:neurons">12</a></sup> in the brain are strikingly similar to the roots and branches of the tree, and how the circulatory system with the arteries and veins (getting finer and finer divided as they reach out from the heart) are also very similar.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/Circulatory_System_en.svg"/> <figcaption>
+            <h4>Human Circulatory system</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/neuron.jpg"/> <figcaption>
+            <h4>Dendrites and Axon on a neuron with similar structure</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>This is the amazing world of fractals which is full of such beautiful patterns. We briefly saw the <a href="http://www.thoughtart.in/courses/add-math/series/binomial-theorem/#sierpinski-triangle">Sierpinski triangle</a> in the previous session, here is an animation<sup class="footnote-ref" id="fnref:fractal"><a href="#fn:fractal">13</a></sup> to make a tree by opening it up!!</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b15 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b70 ">
+    <figure class="figs">
+    <img src="images/Fractal_tree.gif"/> <figcaption>
+            <h4>A Sierpinski Triangle animated to a fractal tree</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b15 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h2 id="definitions">Definitions</h2>
+
+<h3 id="sequence-definition">Sequence definition</h3>
+
+<p>To begin exploring this wonderful world of sequences, and the patterns in the them, we being by laying down the definitions</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">A <strong>sequence</strong> is simply a list of elements with a particular order.</td>
+</tr>
+</table>
+
+
+<p>(Constrast this with the definition of a set - TODO LATER - after completing first chapter on sets and functions).</p>
+
+<p>For e.g.,</p>
+
+<ul>
+<li>the sequence of odd natural numbers is simply - \( (1, 3, 5, 7, 9, \ldots, \ldots ) \).</li>
+<li>the sequence of powers of two is simply - \( (1, 2, 4, 8, 16, 32, \ldots, \ldots ) \).</li>
+</ul>
+
+<p>Both of these sequences happen to be infinite, but sequences can in general be finite or infinite, and there are other properties of sequences that we can study, some of them would comprise of increasing numbers, others may be decreasing, yet others may oscillate but be bounded between two limits, and so on.</p>
+
+<p>But first, lets get some notation down on how to represent sequences. The terms of a sequence are typically written as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_1 & = & \text{first element of the sequence} \\
+t_2 & = & \text{first element of the sequence} \\
+t_3 & = & \text{third element} \\
+& \vdots & \\
+t_{k - 1} & = & (k - 1)^{\text{th}} \text{ element of the sequence} \\
+t_k & = & k^{\text{th}} \text{ element of the sequence} \\
+t_{k + 1} & = & (k + 1)^{\text{th}} \text{ element} \\
+& \vdots & \\
+\end{array}
+$$
+</p>
+
+
+<p>By \( k^{\text{th}} \) element, we mean some <em>general</em> element of the sequence. For e.g., we can write the \( k^{\text{th}} \) element of the sequence of even numbers as:
+$$ t_k = 2\cdot k\text{, } k\in \N  $$
+We substitute \( k = 1, 2, 3, &hellip; \) to get the terms of the sequence.</p>
+
+<h3 id="series-definition">Series definition</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">A <strong>series</strong> is, simply put, the sum of the terms of a sequence.</td>
+</tr>
+</table>
+
+
+<p>Thus, if
+<p class="katex">
+  $$
+(t_1, t_2, t_3, \ldots, t_{k - 1}, t_k, t_{k + 1}, \ldots )
+$$
+</p>
+
+is a sequence, then the corresponding series is defined as:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S & = & t_1 + t_2 + t_3 + \ldots + t_{k - 1} + t_k + t_{k + 1} + \ldots \\ \\
+\end{array}
+$$
+</p>
+
+and written in shorthand sigma notation as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S & = & \displaystyle \sum_{k=1}^{k=\infty} t_k
+\end{array}
+$$
+</p>
+</p>
+
+<p>The sum of \( N \) terms of the sequence (also called the \(N-th\) partial sum) is defined obviously as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_N & = & t_1 + t_2 + t_3 + \ldots + t_N \\
+\end{array}
+$$
+</p>
+
+and written in shorthand sigma notation as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_N & = & \displaystyle \sum_{k=1}^{k=N} t_k
+\end{array}
+$$
+</p>
+</p>
+
+<p>We will spend the next two sessions exploring two basic kinds of sequences, called Arithmetic Progressions and Geometric Progressions. But before we get into that, lets explore one very interesting sequence.</p>
+
+<h3 id="recamán-sequence">Recamán Sequence</h3>
+
+<p>The Recamán sequence is very simple, and is defined as follows:
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+t_k & = & 0 & & \text{ if } k = 0 \\
+& = & t_{k-1} - k & & \text{ if } t_{k - 1} - k > 0 \text{ and is not already in the sequence} \\
+& = & t_{k-1} + k & & \text{ otherwise} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>This YouTube video explains what is nice and interesting about this sequence:
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/FGC5TdIiT9U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Photo details <a href="https://commons.wikimedia.org/wiki/File:Boelge_stor.jpg">here</a> / CC BY-SA 3.0
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">Photo details <a href="https://commons.wikimedia.org/wiki/File:Barchan.jpg">here</a> / CC BY-SA 3.0
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+<li id="fn:rann">Photo details <a href="https://commons.wikimedia.org/wiki/File:Cracked_earth_in_the_Rann_of_Kutch.jpg">here</a> / CC BY-SA 3.5
+ <a class="footnote-return" href="#fnref:rann"><sup>[return]</sup></a></li>
+<li id="fn:sicily">Photo details <a href="https://commons.wikimedia.org/wiki/File:Drying_mud_with_120_degree_cracks,_Sicily.jpg">here</a> / CC BY-SA 3.5
+ <a class="footnote-return" href="#fnref:sicily"><sup>[return]</sup></a></li>
+<li id="fn:3">Photo details <a href="https://commons.wikimedia.org/wiki/File:Rio-cauto-cuba.JPG">here</a> / CC BY-SA 3.0
+ <a class="footnote-return" href="#fnref:3"><sup>[return]</sup></a></li>
+<li id="fn:4">Photo details <a href="https://commons.wikimedia.org/wiki/File:Jiangxia-snake-9704_(cropped).jpg">here</a> / CC BY-SA 3.0
+ <a class="footnote-return" href="#fnref:4"><sup>[return]</sup></a></li>
+<li id="fn:zebra">Photo details <a href="https://commons.wikimedia.org/wiki/File:Equus_grevyi_(aka).jpg">here</a> / CC BY-SA 2.5
+ <a class="footnote-return" href="#fnref:zebra"><sup>[return]</sup></a></li>
+<li id="fn:butterflies">Photo details <a href="https://commons.wikimedia.org/wiki/File:Dirce_Beauty_Colobura_dirce.jpg">here</a> / CC BY-SA 2.5
+ <a class="footnote-return" href="#fnref:butterflies"><sup>[return]</sup></a></li>
+<li id="fn:seashell">This <a href="https://www.wikipedia.org/">Wikipedia</a> and <a href="https://commons.wikimedia.org/">Wikimedia Commons image</a> is from the user <a href="https://en.wikipedia.org/wiki/User:Chris_73">Chris 73</a> and is freely available at //commons.wikimedia.org/wiki/File:NautilusCutawayLogarithmicSpiral.jpg under the <a href="https://creativecommons.org/licenses/by-sa/3.0/">creative commons cc-by-sa 3.0</a> license.
+ <a class="footnote-return" href="#fnref:seashell"><sup>[return]</sup></a></li>
+<li id="fn:cabbage">Photo details <a href="https://commons.wikimedia.org/wiki/File:Red_Cabbage_cross_section_showing_spirals.jpg">here</a> / CC BY-SA 3.0
+ <a class="footnote-return" href="#fnref:cabbage"><sup>[return]</sup></a></li>
+<li id="fn:fibbonacci">Photo details <a href="http://realneo.us/content/bees-love-sunflowers-nature-loves-fibonacci-numbers">here</a> / No licesing details
+ <a class="footnote-return" href="#fnref:fibbonacci"><sup>[return]</sup></a></li>
+<li id="fn:neurons"><a href="https://medicalxpress.com/news/2018-07-neuron-axons-spindly-theyre-optimizing.html">Illustration of a neuron</a> / Credit: David Baillot/ UC San Diego
+ <a class="footnote-return" href="#fnref:neurons"><sup>[return]</sup></a></li>
+<li id="fn:fractal">Photo details <a href="https://commons.wikimedia.org/wiki/File:Fractal_tree.gif">here</a> / CC BY-SA 4.0
+ <a class="footnote-return" href="#fnref:fractal"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#why-study-sequences">Why study sequences?</a>
+<ul>
+<li><a href="#patterns-in-nature">Patterns in nature</a></li>
+<li><a href="#patterns-in-life">Patterns in life</a></li>
+</ul></li>
+<li><a href="#definitions">Definitions</a>
+<ul>
+<li><a href="#sequence-definition">Sequence definition</a></li>
+<li><a href="#series-definition">Series definition</a></li>
+<li><a href="#recamán-sequence">Recamán Sequence</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
