@@ -8,7 +8,7 @@
 
     <title>
   
-  Arithmetic Progression - TBD |  Thought Thou Art
+  Arithmetic Progression |  Thought Thou Art
   
 </title>
 
@@ -85,7 +85,7 @@
      
       <li ><a href="http://www.thoughtart.in/courses/add-math/series/sequences-and-series/">SEQUENCES AND SERIES</a></li>
      
-      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/series/arithmetic-progression/">ARITHMETIC PROGRESSION - TBD</a></li>
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/series/arithmetic-progression/">ARITHMETIC PROGRESSION</a></li>
      
       <li ><a href="http://www.thoughtart.in/courses/add-math/series/geometric-progression/">GEOMETRIC PROGRESSION - TBD</a></li>
     
@@ -102,13 +102,691 @@
       </div>
       <div class="body-width center pa4 mt5"> 
         
-  <h1>Arithmetic Progression - TBD</h1>
+  <h1>Arithmetic Progression</h1>
   
+
+<h2 id="ap-basics">AP basics</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">An Arithmetic Progression (or an AP) is a sequence of numbers such that the difference between consecutive terms is a constant.</td>
+</tr>
+</table>
+
+
+<h3 id="examples">Examples</h3>
+
+<p>Here are a few examples of APs:</p>
+
+<ul>
+<li>The sequence of odd natural numbers which is simply - \( (1, 3, 5, 7, 9, \ldots ) \) - is an AP, because the difference between any two consecutive terms is \(2\).</li>
+<li>The sequence of trees planted by the group of men where one new person joins the group every day is - \( (10, 20, 30, 40, 50, \ldots ) \) - is an AP, because the difference between any two consecutive terms is \(10\).</li>
+</ul>
+
+<h3 id="terms-of-the-sequence">Terms of the sequence</h3>
+
+<p>With just the definition above, we can write out the terms of the sequence. Suppose, the first term of the sequence is \(a\) and the difference between consecutive terms is \(d\), then the terms of the sequence can be written as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_1 & = & a \\
+t_2 & = & a + d \\
+t_3 & = & a + 2\cdot d \\
+& \vdots & \\
+t_{k - 1} & = & a + (k - 2)\cdot d \\
+t_k & = & a + (k - 1)\cdot d \\
+t_{k + 1} & = & a + k \cdot d \\
+& \vdots & \\
+t_n & = & a + (n - 1)\cdot d \\
+\end{array}
+$$
+</p>
+
+
+<p>The first three terms of the sequence should be easy to see. We had assumed that the first term is \(a\). Since the difference between consecutive terms is \(d\), the second term becomes \( a + d \). Since the difference between the third term and the second term is again d, the third term becomes \( a + d + d\) or \( a + 2\cdot d\).</p>
+
+<p>We can continue in the same way, the fourth term would be \( a + 2\cdot d + d \) or \( a + 3\cdot d\), the fifth term would be \( a + 4\cdot d\) and so on. A general k-th term of the sequence can thus be determined as \( a + (k - 1)\cdot d\), and the n-th term is simply \( a + (n - 1)\cdot d \).</p>
+
+<h3 id="k-th-term-of-example-aps">k-th term of example APs</h3>
+
+<p>We can now write the above examples in the form of an AP, by determining the first term - \( a \) - and the constant difference - \( d\).</p>
+
+<ul>
+<li>For the sequence of odd natural numbers - \( (1, 3, 5, 7, 9, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 1 \).</li>
+<li>The common difference of the AP is \( d = 2 \).</li>
+<li>The k-th term of the AP can then be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 1 + (k - 1)\cdot 2 \\
+& = & 2\cdot k - 1 \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+<li>For the sequence of trees planted each day - \( (10, 20, 30, 40, 50, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 10 \).</li>
+<li>The common difference of the AP is (also) \( d = 10 \).</li>
+<li>The k-the term of the AP can be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 10 + (k - 1)\cdot 10 \\
+& = & 10\cdot k \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<h2 id="sum-of-the-ap">Sum of the AP</h2>
+
+<p>We now like to find a general expression for the sum of n terms of an Arithmetic Progression.</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_1 & = & a \\
+t_2 & = & a + d \\
+t_3 & = & a + 2\cdot d \\
+& \vdots & \\
+t_{k - 1} & = & a + (k - 2)\cdot d \\
+t_k & = & a + (k - 1)\cdot d \\
+t_{k + 1} & = & a + k \cdot d \\
+& \vdots & \\
+t_n & = & a + (n - 1)\cdot d \\ \\
+\hline \\
+S_n & = & n\cdot a + d + 2\cdot d + 3\cdot d + \cdots + (n - 1)\cdot d \\ \\
+& = & n\cdot a + d\cdot (1 + 2 + 3 + \cdots + (n - 1)) \\
+\end{array}
+$$
+</p>
+
+
+<p>In order to find the sum of an AP, we need to be able to find a formula (also called a closed-form expression) for the sum of the first (n - 1) natural numbers, i.e. for the sum - \( 1 + 2 + 3 + \cdots + (n - 1) \).</p>
+
+<h3 id="other-practical-scenarios">Other practical scenarios</h3>
+
+<p>The sum of the first n natural numbers (denoted by \( T_n\)) arises in other practical situations as well.</p>
+
+<ul>
+<li>If there are \(n + 1\) people in a room, and everyone shakes hands with all the rest, the total number of handshakes would be \(T_n\). This is because, the first person would shake hands with all the remaining \(n\) people, then the second person would shake hands with \( n - 1 \) people since the first person has already shaken hands with this second person, and so on.</li>
+<li>The same scenario arises in the round-robin stage of a tournament. If there are 6 teams in a pool and if each team has to play all the remaining teams in the pool, then the total number of matches would be \( 5 + 4 + 3 + 2 + 1 \).</li>
+</ul>
+
+<h3 id="young-gauss-and-his-way">Young Gauss and his way</h3>
+
+<p>It is said that when Gauss was a young kid, and already showing his genius at Math and restlessness with his regular class, his teacher asked him to find the sum of all the numbers up to 100, with the hope that it will keep him occupied for a few hours. The story of course goes on to describe how Gauss is supposed to have turned around with the solution in a very short time baffling his teacher.</p>
+
+<p>Whether the story is true or not is not known, but this method attributed to Gauss is definitely ingenious. The numbers from 1 to 100 are written in the reverse order to discover how easy the addition then becomes.</p>
+
+<p class="katex">
+  $$
+\begin{array}{crcrcrcccrcr}
+& 1 & + & 2 & + & 3 & + & \cdots & + & 99 & + & 100 \\
++ & \\
+& 100 & + & 99 & + & 98 & + & \cdots & + & 2 & + & 1 \\ \\
+\hline \\
+= & 101 & + & 101 & + & 101 & + & \cdots & + & 101 & + & 101 \\
+\end{array}
+$$
+</p>
+
+
+<p>The sum of these terms is simply \( 100\cdot 101 \), and hence the sum of all the numbers from 1 to 100 turns out to be simply $$ \displaystyle \frac{1}{2}\cdot 100\cdot 101 $$.</p>
+
+<h3 id="visual-representation">Visual representation</h3>
+
+<p>The sum of these numbers can also be visualized in the form of stacked boxes shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_1.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Now, lets take another set of boxes, exactly the same number as the initial set, just turned upside down and lets stack them upside down on these boxes.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_2.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>What we get is a plain simple rectangle, where the total number of boxes is \(5\cdot 6\).
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_3.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>From this we can figure out (no pun intended), that the original set of boxes occupies half the area in the rectangle, and hence the sum is $$ 1 + 2 + 3 + 4 + 5 = \frac{5\cdot 6}{2} $$</p>
+
+<h3 id="adding-up-averages">Adding up averages</h3>
+
+<p>Yet another way to find the sum of these numbers is by looking at the average of the first and the last number, and then finding the difference of each of the numbers from this average number. For e.g.,</p>
+
+<p class="katex">
+  $$
+\begin{array}{cccccccccccccc}
+& 1 & + & 2 & + & 3 & + & 4 & + & 5 & + & 6 & + & 7 \\
+\\
+& & & & & & & & & 1 & + & 2 & + & 3 \\
+= & 4 & + & 4 & + & 4 & + & 4 & + & 4 & + & 4 & + & 4 \\
+& -3 & + & -2 & + & -1 & & & & & & & & \\
+\\
+= & 4 & + & 4 & + & 4 & + & 4 & + & 4 & + & 4 & + & 4 \\
+\\
+= & 7\cdot 4 \\
+\\
+= & 7\cdot \displaystyle \frac{1 + 7}{2}
+\end{array}
+$$
+</p>
+
+
+<p>Notice how the differences of the numbers from the average cancels out - the \( 1 + 2 + 3 \) cancels out with \( -3 -2 - 1\), leaving us with \( 7\cdot 4\), where \( 4\) is really the average of the first term and the last term.</p>
+
+<p>You may wonder how it would work out when the sum invovles even numbers, you can try it out, it will just be a little bit messy with a lot of terms with \( .5\) in them, but the same principle will hold true.</p>
+
+<p>The other way to see this visually is depicted in the figures below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_with_averages_1.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>As before, the average is 4, and we see that the last 3 numbers are higher than the average by as much as the first 3 numbers are lower than the average.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_with_averages_2.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>So all those boxes can be moved into the empty space to make a neat rectangle of size \(7\cdot 4\).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_natural_numbers_with_averages_3.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="triangular-numbers">Triangular numbers</h3>
+
+<p>These numbers are also commonly called as Triangular numbers and are depicted below in the form of an equilateral triangle.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/First_six_triangular_numbers.svg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="combinatorics-here-too">Combinatorics here too</h3>
+
+<p>Finally, we find the sum of these numbers using Combinatorics. Let&rsquo;s say we have \( n \) students and we want to pick \( 2 \) volunteers from amongst them. How many ways are there to do that?</p>
+
+<p>The first student can be picked along with one of the remaining students in \(n - 1\) ways- \( (s_1, s_2), (s_1, s_3), (s_1, s_4), \ldots, (s_1, s_n) \), or the second student can be picked along with one of the remaining students in \( n - 2 \) ways - \( (s_2, s_3), (s_2, s_4), (s_2, s_5), \ldots, (s_2, s_n) \), and so on.</p>
+
+<p>But we also know that the number of ways to do this is simply \( {}^nC_2 \). Thus</p>
+
+<p>$$ 1 + 2 + 3 + \cdots + (n - 1) = {}^nC_2 = \displaystyle \frac{(n - 1)\cdot n}{2} $$</p>
+
+<p>We can go back and check that all the above approches to find the sum of the first few natural numbers leads to this same answer.</p>
+
+<p>Now that we have our generic formula, we can go back to what we had started doing, and find the sum of the AP.</p>
+
+<h3 id="sum-of-the-ap-finally">Sum of the AP, finally</h3>
+
+<p>Resuming from where we had left this off earlier:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_1 & = & a \\
+t_2 & = & a + d \\
+t_3 & = & a + 2\cdot d \\
+& \vdots & \\
+t_{k - 1} & = & a + (k - 2)\cdot d \\
+t_k & = & a + (k - 1)\cdot d \\
+t_{k + 1} & = & a + k \cdot d \\
+& \vdots & \\
+t_n & = & a + (n - 1)\cdot d \\ \\
+\hline \\
+S_n & = & n\cdot a + d + 2\cdot d + 3\cdot d + \cdots + (n - 1)\cdot d \\ \\
+& = & n\cdot a + d\cdot (1 + 2 + 3 + \cdots + (n - 1)) \\ \\
+\therefore S_n & = & n\cdot a + \displaystyle d\cdot \frac{(n - 1)\cdot n}{2} \\
+\end{array}
+$$
+</p>
+
+
+<h3 id="total-number-of-trees">Total number of trees</h3>
+
+<ul>
+<li>For the sequence of trees planted each day - \( (10, 20, 30, 40, 50, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 10 \),</li>
+<li>The common difference of the AP is (also) \( d = 10 \), and</li>
+<li>The k-the term of the AP can be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 10 + (k - 1)\cdot 10 \\
+& = & 10\cdot k \\
+\end{array}
+$$
+</p>
+</li>
+<li>The total number of trees planted in a year would be
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{365} & = & 365\cdot 10 + \displaystyle 10\cdot \frac{364\cdot 365}{2} \\ \\
+\therefore S_{365} & = & 70,080 \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<h3 id="sum-of-odd-numbers">Sum of odd numbers</h3>
+
+<ul>
+<li>For the sequence of odd natural numbers - \( (1, 3, 5, 7, 9, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 1 \).</li>
+<li>The common difference of the AP is \( d = 2 \).</li>
+<li>The k-th term of the AP can then be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 1 + (k - 1)\cdot 2 \\
+& = & 2\cdot k - 1 \\
+\end{array}
+$$
+</p>
+</li>
+<li>The sum of n terms of the AP is:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_n & = & n\cdot 1 + \displaystyle 2\cdot \frac{(n - 1)\cdot n}{2} \\
+& = & n + n^2 - n \\ \\
+\therefore S_n & = & n^2 \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<p>This can be visualized using the picture shown below.
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/sum_of_odd_numbers.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+Having added the first 4 odd numbers, to add the next odd number 9, we will be adding 9 unit squares to the right of the picture above to get a \( 5 \text{ x } 5 \) square, yielding the sum as 25.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>In summary, for an Arithmetic Progression with first term \( a\) and common difference \( d\), the general k-th term and the sum of first n-terms can be written as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & a + (k - 1)\cdot d \\ \\
+S_n & = & n\cdot a + d\cdot \displaystyle \frac{(n - 1)\cdot n}{2} \\ \\
+S_n & = & \displaystyle n\cdot \frac{t_1 + t_n}{2} \\
+\end{array}
+$$
+</p>
+
+
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
         
   
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#ap-basics">AP basics</a>
+<ul>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#terms-of-the-sequence">Terms of the sequence</a></li>
+<li><a href="#k-th-term-of-example-aps">k-th term of example APs</a></li>
+</ul></li>
+<li><a href="#sum-of-the-ap">Sum of the AP</a>
+<ul>
+<li><a href="#other-practical-scenarios">Other practical scenarios</a></li>
+<li><a href="#young-gauss-and-his-way">Young Gauss and his way</a></li>
+<li><a href="#visual-representation">Visual representation</a></li>
+<li><a href="#adding-up-averages">Adding up averages</a></li>
+<li><a href="#triangular-numbers">Triangular numbers</a></li>
+<li><a href="#combinatorics-here-too">Combinatorics here too</a></li>
+<li><a href="#sum-of-the-ap-finally">Sum of the AP, finally</a></li>
+<li><a href="#total-number-of-trees">Total number of trees</a></li>
+<li><a href="#sum-of-odd-numbers">Sum of odd numbers</a></li>
+</ul></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
 
 
 
