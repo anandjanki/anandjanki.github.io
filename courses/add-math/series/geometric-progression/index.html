@@ -8,7 +8,7 @@
 
     <title>
   
-  Geometric Progression - TBD |  Thought Thou Art
+  Geometric Progression |  Thought Thou Art
   
 </title>
 
@@ -87,7 +87,7 @@
      
       <li ><a href="http://www.thoughtart.in/courses/add-math/series/arithmetic-progression/">ARITHMETIC PROGRESSION</a></li>
      
-      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/series/geometric-progression/">GEOMETRIC PROGRESSION - TBD</a></li>
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/series/geometric-progression/">GEOMETRIC PROGRESSION</a></li>
     
     </ul>
     
@@ -102,14 +102,275 @@
       </div>
       <div class="body-width center pa4 mt5"> 
         
-  <h1>Geometric Progression - TBD</h1>
-  <p>Notes</p>
+  <h1>Geometric Progression</h1>
+  
+
+<h2 id="gp-basics">GP basics</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">A <strong>Geometric Progression</strong> (or a GP) is a sequence of numbers such that the ratio between consecutive terms is a constant.</td>
+</tr>
+</table>
+
+
+<p>Note that the constant can be a positive natural number (such as 10), or a fractional number (such as <sup>1</sup>&frasl;<sub>2</sub> or 0.25, etc), or even a negative number (such as -2).</p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Here are a few examples of APs:</p>
+
+<ul>
+<li>The sequence of powers of two which is simply - \( (1, 2, 4, 8, 16, \ldots ) \) - is a GP, because the ratio between any two consecutive terms is \(2\).</li>
+<li>The sequence of trees planted by the group of men where each person gets a new person every day is - \( (10, 20, 40, 80, 160, \ldots ) \) - is a GP, because the ratio between any two consecutive terms is again \(2\).</li>
+</ul>
+
+<h3 id="terms-of-the-sequence">Terms of the sequence</h3>
+
+<p>With just the definition above, we can write out the terms of the sequence. Suppose, the first term of the sequence is \(a\) and the ratio between consecutive terms is \(r\), then the terms of the sequence can be written as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_1 & = & a \\
+t_2 & = & a \cdot r \\
+t_3 & = & a \cdot r^2 \\
+& \vdots & \\
+t_{k - 1} & = & a \cdot r^{k-2} \\
+t_k & = & a \cdot r^{k-1} \\
+t_{k + 1} & = & a \cdot r^k \\
+& \vdots & \\
+t_n & = & a \cdot r^{n - 1} \\
+\end{array}
+$$
+</p>
+
+
+<p>The first three terms of the sequence should be easy to see. We had assumed that the first term is \(a\). Since the ratio between consecutive terms is \(r\), the second term becomes \( a \cdot r \). Since the ratio between the third term and the second term is again r, the third term becomes \( a \cdot r \cdot r\) or \( a \cdot r^2 \).</p>
+
+<p>We can continue in the same way, the fourth term would be \( a \cdot r^2 \cdot r \) or \( a \cdot r^3\), the fifth term would be \( a \cdot r^4\) and so on. A general k-th term of the sequence can thus be determined as \( a \cdot r^{k - 1} \), and the n-th term is simply \( a \cdot r^{n - 1} \).</p>
+
+<h3 id="k-th-term-of-example-gps">k-th term of example GPs</h3>
+
+<p>We can now write the above examples in the form of a GP, by determining the first term - \( a \) - and the constant ratio - \( r\).</p>
+
+<ul>
+<li>For the sequence of powers of 2 - \( (1, 2, 4, 8, 16, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 1 \).</li>
+<li>The common difference of the AP is \( r = 2 \).</li>
+<li>The k-th term of the GP can then be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 1 \cdot 2^{k - 1} \\
+& = & 2^{k - 1} \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+<li>For the sequence of trees planted each day - \( (10, 20, 40, 80, 160, \ldots ) \):
+
+<ul>
+<li>The first term of the GP is \( a = 10 \).</li>
+<li>The common ratio of the GP is \( r = 2 \).</li>
+<li>The k-the term of the GP can be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 10 \cdot 2^{k - 1} \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<h2 id="sum-of-the-gp">Sum of the GP</h2>
+
+<p>We now like to find a general expression for the sum of n terms of a Geometric Progression. And the way to find that involves a small trick.</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_n & = & a + a\cdot r + a\cdot r^2 + a\cdot r^3 + \cdots + a\cdot r^{n - 1} \\ \\
+\therefore r\cdot S_n & = & a\cdot r + a\cdot r^2 + a\cdot r^3 + \cdots + a\cdot r^{n - 1} + a\cdot r^n \\ \\
+& & \text{Subtracting the two equations above} \\ \\
+\therefore S_n - r\cdot S_n & = & a - a\cdot r^n \\ \\
+\therefore S_n & = & a\cdot \displaystyle \frac{1 - r^n}{1 - r} \\ \\
+\end{array}
+$$
+</p>
+
+
+<h3 id="sum-of-powers-of-2">Sum of powers of 2</h3>
+
+<ul>
+<li>For the sequence of powers of 2 - \( (1, 2, 4, 8, 16, \ldots ) \):
+
+<ul>
+<li>The first term of the AP is \( a = 1 \).</li>
+<li>The common difference of the AP is \( r = 2 \).</li>
+<li>The k-th term of the GP can then be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 1 \cdot 2^{k - 1} \\
+& = & 2^{k - 1} \\
+\end{array}
+$$
+</p>
+</li>
+<li>The sum of n terms of the GP (and for n = 5) is:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_n & = & 1\cdot \displaystyle \frac{1 - 2^n}{1 - 2} \\ \\
+S_5 & = & 31 \\
+\text{Also check, } \\
+1 + 2 + 4 + 8 + 16 & = & 31 \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<h3 id="total-number-of-trees">Total number of trees</h3>
+
+<ul>
+<li>For the sequence of trees planted each day - \( (10, 20, 40, 80, 160, \ldots ) \):
+
+<ul>
+<li>The first term of the GP is \( a = 10 \).</li>
+<li>The common ratio of the GP is \( r = 2 \).</li>
+<li>The k-the term of the GP can be written as
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & 10 \cdot 2^{k - 1} \\
+\end{array}
+$$
+</p>
+</li>
+<li>The total number of trees planted in a month would be
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{30} & = & 10\cdot \displaystyle \frac{1 - 2^{30}}{1 - 2} \\ \\
+\therefore S_{30} & = & 10,737,418,230 \\
+\end{array}
+$$
+</p>
+</li>
+</ul></li>
+</ul>
+
+<p>That&rsquo;s a total of over 10million trees in just a month!!!</p>
+
+<h3 id="plotting-a-gp">Plotting a GP</h3>
+
+<p>We can plot the above GP as points on a graph as shown below.</p>
+
+<figure class="figs">
+    <img src="images/plot_points_of_a_GP.png"/> 
+</figure>
+
+
+<p>Notice how each term of the GP falls on the exponential function curve - \( y = 10\cdot 2^x \).</p>
+
+<h3 id="gp-with-ratio-1">GP with ratio &lt; 1</h3>
+
+<p>Consider the following GP with a = 1, r = <sup>1</sup>&frasl;<sub>2</sub>, what will the sum of this GP be?
+$$ 1, \frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \ldots $$</p>
+
+<p>The sum of the GP for n-terms can be found using the formula:
+$$ S_n = 1\cdot \frac{1 - (\frac{1}{2})^n}{1 - \frac{1}{2}} $$</p>
+
+<p>As \(n\) becomes very large, the term \( (\frac{1}{2})^n \) becomes very small, almost close to \( 0\). In mathematical notation, this is written as follows:
+$$ \text{As } n \to \infty \text{ , } (\frac{1}{2})^n \to 0 $$</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\therefore S_{\infty} & = & 1\cdot \displaystyle \frac{1 - 0}{1 - \frac{1}{2}} \\
+& = & 2
+\end{array}
+$$
+</p>
+
+
+<p>What is interesting is that the series with an infinite number of terms still converges to a finite number, this is so because the common ratio of the GP is &lt; 1.</p>
+
+<p>We can also visualize this using the picture below, the series is the same as the total area of the rectangle:</p>
+
+<figure class="figs">
+    <img src="images/Geometric_progression_convergence_diagram.svg"/> 
+</figure>
+
+
+<h2 id="summary">Summary</h2>
+
+<p>In summary, for a Geometric Progression with first term \( a\) and common ratio \( r\), the general k-th term and the sum of first n-terms can be written as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+t_k & = & a \cdot r^{k - 1} \\ \\
+S_n & = & a\cdot \displaystyle \frac{1 - r^n}{1 - r} \\ \\
+\end{array}
+$$
+</p>
+
 
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
         
   
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#gp-basics">GP basics</a>
+<ul>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#terms-of-the-sequence">Terms of the sequence</a></li>
+<li><a href="#k-th-term-of-example-gps">k-th term of example GPs</a></li>
+</ul></li>
+<li><a href="#sum-of-the-gp">Sum of the GP</a>
+<ul>
+<li><a href="#sum-of-powers-of-2">Sum of powers of 2</a></li>
+<li><a href="#total-number-of-trees">Total number of trees</a></li>
+<li><a href="#plotting-a-gp">Plotting a GP</a></li>
+<li><a href="#gp-with-ratio-1">GP with ratio &lt; 1</a></li>
+</ul></li>
+<li><a href="#summary">Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
 
 
 

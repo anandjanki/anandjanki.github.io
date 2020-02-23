@@ -42,12 +42,14 @@ Addition We started of course with the addition operation, starting with the add
     </item>
     
     <item>
-      <title>Geometric Progression - TBD</title>
+      <title>Geometric Progression</title>
       <link>http://www.thoughtart.in/courses/add-math/series/geometric-progression/</link>
       <pubDate>Wed, 22 Jan 2020 20:59:23 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/series/geometric-progression/</guid>
-      <description>Notes</description>
+      <description>GP basics  Defn 1: A Geometric Progression (or a GP) is a sequence of numbers such that the ratio between consecutive terms is a constant.   Note that the constant can be a positive natural number (such as 10), or a fractional number (such as 1&amp;frasl;2 or 0.25, etc), or even a negative number (such as -2).
+Examples Here are a few examples of APs:
+ The sequence of powers of two which is simply - \( (1, 2, 4, 8, 16, \ldots ) \) - is a GP, because the ratio between any two consecutive terms is \(2\).</description>
     </item>
     
   </channel>
