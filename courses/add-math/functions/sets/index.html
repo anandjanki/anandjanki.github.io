@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  Sets |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/functions/sets/">SETS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Sets</h1>
+  
+
+<p>In a class of 20 children, 5 of them like History, 10 of them like English and 15 of them like Math!! Do you think this is an impossible statement, or is it possible to have class of only 20 children where all the conditions above are satisfied? What if we are posed an additional question - what is the maximum number of students who may not like any of these three subjects?</p>
+
+<p>Set theory can be used to answer such questions, as we will see shortly. But set theory goes way beyond this. Set theory is considered by many mathematicians as the foundations of pretty much all of mathematics, from which nearly all of mathematics can be derived! Such is the fundamental nature of set theory. For our pruposes, we will take a somewhat simplistic approach to set theory (what is called the naïve set theory or also the intuitive set theory defined using natural language rather than formal axioms) that still gives a pretty good flavor of the theory and its basic principles.</p>
+
+<h2 id="definition">Definition</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">A <strong>Set</strong> is a well-defined collection of distinct objects. The objects that make up a set are known as the set&rsquo;s <strong>elements</strong> or <strong>members</strong>.</td>
+</tr>
+</table>
+
+
+<h3 id="examples">Examples</h3>
+
+<p>It is easy to find examples of sets, since the definition of a set is very broad and can include pretty much anything. Here are a few examples:</p>
+
+<ul>
+<li>The collection of all pieces of furniture in the room you are in can be called a set.</li>
+<li>The collection of all children in your class is another example of a set.</li>
+<li>The collection of books you read during the last summer vacation can be considered as a set.</li>
+<li>The collection of songs on your favorite playlist would be a set.</li>
+</ul>
+
+<p>In fact, sets are so ubiquitous that it would very hard (if not impossible) to come up with non-examples of sets! Yet another e.g., the collection of all feelings you may have experienced in the last 10 minutes can also be considered a set.</p>
+
+<h3 id="describing-a-set">Describing a set</h3>
+
+<p>Sets are typically denoted using capital letters such as A, or B, or S, with subscripts as needed. Consider a set \(S_I{}_N\) defined as the collection of colors on the Indian national flag. The elements of this set \(S_I{}_N\) would be the colors - saffron, white, green and blue.</p>
+
+<p>This set is depicted (using what is called the roster notation) as follows:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/india_flag.png"/> 
+</figure>
+
+<p>\(S_{IN}\) = {saffron, white, green, blue}
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Note the curly braces to enclose the elements of the set, in some ways to signify that the collection is well defined. Note also how the elements or members of the set are separated by commas. Further, the order of stating the elements of the set is not important, and a set has distinct objects, so all of the following are the same set S.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b25 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b50 ">
+    \(S<em>{IN}\) = {saffron, white, green, blue}<br />
+\(S</em>{IN}\) = {white, saffron, green, blue}<br />
+\(S_{IN}\) = {white, saffron, green, blue, blue}
+  </div>
+  
+  <div class="flex-1 flex-b25 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="depicting-a-set">Depicting a set</h3>
+
+<p>Another way to depict the set somewhat pictorially is as follows:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b35 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/set.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b35 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Again, the circle or the oval shape signifies in some ways that the set is well defined. As before, the order of depicting the elements does not matter.
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b35 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/set_2.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b35 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h2 id="set-membership">Set membership</h2>
+
+<p>The notation used to capture the belongingness of an element (or not) to the set is as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\text{blue} & \in & S_{IN} \\
+\text{red} & \notin & S_{IN} \\
+\end{array}
+$$
+</p>
+
+
+<p>The first line above in English would read - the element blue is in the set \( S<em>{IN} \), sometimes also read as - blue belongs to \( S</em>{IN} \). The second above reads - the element red is not in the set \( S<em>{IN} \), or also as - red does not blelong to \( S</em>{IN}\).</p>
+
+<h3 id="set-equality">Set equality</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;2: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 2:</th>
+<td class="bb ph2 ">Two sets are said to be <strong>equal sets</strong> if and only if they have precisely the same elements. This is denoted simply as \( A = B \).</td>
+</tr>
+</table>
+
+
+<p>Consider the flags shown below of Canada and Switzerland respectively. (For simplicity, we will assume that the shade of red in both the Canadian and the Swiss flags is exactly the same.)</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs ba">
+    <img src="images/canada_flag.png"/> 
+</figure>
+
+<p>\(S_{CN}\) = {white, red}
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/swiss_flag.png"/> 
+</figure>
+
+<p>\(S_{SW}\) = {red, white}
+  </div>
+  
+</div>
+
+
+
+<p>The two sets above are clearly equal since both the sets have exactly the same elements. Notice that the order of the elements does not matter.</p>
+
+<p class="katex">
+  $$
+S_{CN} = S_{SW}
+$$
+</p>
+
+
+<h3 id="subsets">Subsets</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;3: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 3:</th>
+<td class="bb ph2 "><p>A set A is called a <strong>subset</strong> of a set B if every element of set A is also an element of set B. This is denoted as \( A \subseteq B\). This is same as saying set B is a <strong>superset</strong> of set A, and that is denoted as \( B \supe A \).</p>
+
+<p>If A is a subset of B, but A is not equal to B i.e. there exists at least one element of B which is not an element of A, then A is a <strong>proper subset</strong> (or a strict subset) of B, denoted by \(\displaystyle A\subset B\) or equivalently B is called a <strong>proper superset</strong> (or a strict superset) of A.</p>
+</td>
+</tr>
+</table>
+
+
+<p>Consider the flags of Pakistan, Bangladesh and Maldives below (again, we will assume same shades for simplicity).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b35 ">
+    <figure class="figs ba">
+    <img src="images/pakistan_flag.png"/> 
+</figure>
+
+<p>\(S_{PK}\) = {white, green}
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/bangladesh_flag.png"/> 
+</figure>
+
+<p>\(S_{BD}\) = {red, green}
+  </div>
+  
+  <div class="flex-1 flex-b35 ">
+    <figure class="figs">
+    <img src="images/maldives_flag.png"/> 
+</figure>
+
+<p>\(S_{MV}\) = {red, white, green}
+  </div>
+  
+</div>
+
+
+
+<p>As it can be seen from the above, the set of colors in the flag of Pakistan is a subset of the set of colors in the flag of Maldives, and likewise the set of colors of the flag of Bangladesh is also a subset of the set of colors in the flag of Maldives. Written in set notation:</p>
+
+<p class="katex">
+  $$
+S_{PK} \subset S_{MV} \\
+S_{BD} \subset S_{MV}
+$$
+</p>
+
+
+<p>Pictorially, this is depicted as shown below.
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/subset.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>It shows that all the elements of the set \( S_{PK} \) also belong to the set \( S_M{}_V \).</p>
+
+<h3 id="empty-set">Empty set</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;4: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 4:</th>
+<td class="bb ph2 ">A set with no members is called the <strong>empty set</strong> (or the null set), which is denoted by the symbol \( \varnothing \).</td>
+</tr>
+</table>
+
+
+<p>Since the empty set does not have any members, it is a <em>unique</em> set. What this means is that there aren&rsquo;t different sets such as an empty set of colors, different from an empty set of books, there is one and only one empty set, which does not contain any elements, no colors, no books, nothing in it.</p>
+
+<p>Interestingly, the empty set is a subset of any and every set. For e.g., for the sets of colors of flags above,</p>
+
+<p class="katex">
+  $$
+\varnothing \subset S_{PK} \subset S_{MV}
+$$
+</p>
+
+
+<p>This can be depicted pictorially as below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/empty%20set%20v2.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="power-set">Power set</h3>
+
+<p>An interesting idea is that since by definition a set is a collection of objects, a set can be a collection of other sets as well.</p>
+
+<p>For e.g., consider the set \( S_{MV} \) consisting of 3 colors - {red, white, green}. What are <em>all possible</em> subsets of this set?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;5: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 5:</th>
+<td class="bb ph2 ">The set of all subsets of a set S is called the <strong>power set</strong> of S. And is typically denoted by \( P(S) \).</td>
+</tr>
+</table>
+
+
+<p>The power set of the set \( S_{MV} \) is as shown below:</p>
+
+<p class="katex">
+  $$
+P(S_{MV}) = \{\varnothing, \{\text{red}\}, \{\text{white}\}, \{\text{green}\}, \{\text{red, white}\}, \{\text{red, green}\}, \{\text{white, green}\}, S_{MV}\}
+$$
+</p>
+
+
+<p>Note firstly that all elements of the power set above are themselves sets. In fact, by definition of the power set, they are all subsets of the original set. Also note that two special elements of the power set are the empty set and the original set itself.</p>
+
+<h3 id="cardinality">Cardinality</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;6: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 6:</th>
+<td class="bb ph2 ">The number of elements of a set \( S\), is called the cardinality of the set and is denoted by \( |S| \)</td>
+</tr>
+</table>
+
+
+<p>We can easily write the cardinality of soem of the sets we encountered above.
+<p class="katex">
+  $$
+\begin{array}{rcl}
+|S_{PK}| & = & 2 \\
+|S_{MV}| & = & 3 \\
+|\varnothing| & = & 0 \\
+\end{array}
+$$
+</p>
+</p>
+
+
+
+
+
+<div class="book-tabs">
+
+  <input type="radio" class="hidden" name="tabs-SET-1" id="tabs-SET-1-0" checked="checked" />
+  <label for="tabs-SET-1-0">
+    Problem
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    Given a set \( S \) with cardinality say \( n \), i.e., the set \( S\) has \(n\) elements in it, what is the number of elements in the power set \( P(S) \) of \( S\)?
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-SET-1" id="tabs-SET-1-1"  />
+  <label for="tabs-SET-1-1">
+    Hint
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    <p>Is there a way to codify a subset of a set?</p>
+
+<p>Suppose a set has 3 elements, say \( S = \lbrace a, b, c \rbrace \)</p>
+
+<p>Now consider a subset with just one element, say \(\lbrace b \rbrace \), can we represent that using \( (0 1 0) \)?</p>
+
+<p>Then how would we represent a subset, say \( \lbrace a, b\rbrace \)?</p>
+
+<p>Now can we count the total number of subsets.</p>
+
+  </div>
+
+  <input type="radio" class="hidden" name="tabs-SET-1" id="tabs-SET-1-2"  />
+  <label for="tabs-SET-1-2">
+    Solution
+  </label>
+  <div class="book-tabs-content markdown-inner">
+    \(2^n\)
+  </div>
+
+</div>
+
+
+<h2 id="set-operations">Set operations</h2>
+
+<p>Now that we have the basic building blocks ready, we can start playing with sets, adding them, subtracting them, etc. (imagine a kid with a new set of Lego blocks, the excitement may be similar :).</p>
+
+<h3 id="union-of-sets">Union of sets</h3>
+
+<p>We can define an operation over sets that looks somewhat like the addition operation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;7: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 7:</th>
+<td class="bb ph2 ">The <strong>union</strong> of set A and set B, denoted by \(A \cup B\), is the set of all objects that are members of either set A <em>or</em> set B.</td>
+</tr>
+</table>
+
+
+<p>Consider the sets of colors in the flags of Pakistan and Bangladesh, what is the union of these two sets?
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{PK} & = & \{\text{green, white}\} \\
+S_{BD} & = & \{\text{red, green}\} \\
+S_{PK} \cup S_{BD} & = & \{\text{red, green, white}\} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Remember that the order of elements in a set does not matter. Remember also that a set contains only distinct elements. We used both these properties of a set in coming up with the union set above.</p>
+
+<p>Some inferences about the union operation can be derived simply from the definition:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cup A & = & A \\
+A \cup \varnothing & = & A \\
+\end{array}
+$$
+</p>
+
+In words, the first rule above says that the union of a set with itself is the same set, because by definition the union is the set of all objects that are either in A or B, in this case B is the same as A, and the set of all objects is thus the original set itself.</p>
+
+<p>The second rule above should also be obvious. Since the empty set does not contain any elements, it does not <em>add</em> any newer elements when we consider its union with any set A.</p>
+
+<p>We can derive more propoerties of the union operation, for e.g., the fact that the union operation is commutative and associative is captured below:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cup B & = & B \cup A \\
+A \cup (B \cup C) & = & (A \cup B) \cup C \\
+\end{array}
+$$
+</p>
+
+
+<p>Note that the equality relation above is set equality that we defined a little while earlier. Further note that both of the properties above hinge on just the basic definitions of sets - that they contain an <em>unordered</em> collection of <em>distinct</em> objects.</p>
+
+<p>The union of two sets can also be depicted pictorially as follows:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/set_union.svg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The example from above would look as follows:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/Set_S_PK.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    <figure class="figs">
+    <img src="images/Set_S_BD.png"/> 
+</figure>
+  </div>
+  
+</div>
+
+</p>
+
+<p>And the union of both these sets would look as follows:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/Set_SPK_U_SBD.png"/> 
+</figure>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{PK} \cup S_{BD} & = & \{\text{red, green, white}\} \\
+\end{array}
+$$
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>Notice how the multiple sets are depicted with overlapping circles, and especially how elements common to both the sets are depicted <em>only once</em> and in the common area.</p>
+
+<h3 id="intersection-of-sets">Intersection of sets</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;8: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 8:</th>
+<td class="bb ph2 ">The <strong>intersection</strong> of set A and set B, denoted by \(A \cap B\), is the set of all elements that are members of both set A <em>and</em> set B.</td>
+</tr>
+</table>
+
+
+<p>Consider the sets of colors in the flags of Pakistan and Bangladesh, what is the intersection of these two sets?
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{PK} & = & \{\text{green, white}\} \\
+S_{BD} & = & \{\text{red, green}\} \\
+S_{PK} \cap S_{BD} & = & \{\text{green}\} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Some inferences about the intersection operation can be derived simply from the definition:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cap A & = & A \\
+A \cap \varnothing & = & \varnothing \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>In words, the first rule above says that the intersection of a set with itself is the same set, because by definition the intersection is the set of all objects that are both in A and B, in this case B is the same as A, and the set of all objects is thus the original set itself.</p>
+
+<p>The second rule above should also be obvious. Since the empty set does not contain any elements, hence there are no elements which are in both the empy set and the set A, and hence the intersection is the empty set again.</p>
+
+<p>As in the case of the union operation, we can derive more propoerties of the intersection operation, for e.g., the fact that the intersection operation is commutative and associative is captured below:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cap B & = & B \cap A \\
+A \cap (B \cap C) & = & (A \cap B) \cap C \\
+\end{array}
+$$
+</p>
+
+
+<p>The intersection of two sets can also be depicted pictorially as follows:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/set_intersection.svg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The example from above would look as follows:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/Set_SPK_I_SBD.png"/> 
+</figure>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+S_{PK} \cap S_{BD} & = & \{\text{green}\} \\
+\end{array}
+$$
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="set-builder-notation">Set builder notation</h3>
+
+<p>An extension of the roster notation is often very handy as we start performing operations with sets, and is called the set builder notation. This is best explained with an example.</p>
+
+<p>Given set A and set B, the union of the two sets would be written in set builder notation as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cup B & = & \{x \, | \, x\in A \text{ or } x\in B\} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>The way to read the first part of the notation \( \lbrace x \, | \, \) is as follows &ldquo;the set of all \(x\) such that&rdquo;, and the second part of the notation following the \( | \) is the condition that the \( x\) satisfies. Taken togehter, the above notation in English would mean that \( A \cup B \) is the set of all elements, \(x\), such that \(x\) is in set A or \( x\) is in set B.</p>
+
+<p>The definition for intersection can be likewise written in set builder notation as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \cap B & = & \{x \, | \, x\in A \text{ and } x\in B\} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>There are other set operations that can be studied, most notably, complement of a set, difference of two sets, etc. We will skip those here for they are not critical from understanding mappings and functions which we come to next. But before we go one, we will look one more set operation that will come in handy as we get into the next topics.</p>
+
+<h3 id="product-of-sets">Product of sets</h3>
+
+<p>Now that we have learnt the set-builder notation, we can succintly define the product of two sets, also called the Cartesian product.</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A \times B & = & \{(a, b) \, | \, a\in A \text{ and } b\in B\} \\
+\end{array}
+$$
+</p>
+
+
+<p>In words, The Cartesian product of two sets \(A\) and \( B\) is the set of all ordered pairs \( (a, b) \) such that the first element of the pair is from set \( A \) and the second element of the pair is from set \( B\). Ordered pairs \( (a, b)\) are also sometimes called as tuples.</p>
+
+<p>A good example to understand Cartesian products of two sets is the following:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+R & = & \lbrace A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K \rbrace \\
+S & = & \lbrace \spades, {\color{red} \hearts}, {\color{red} \diamonds}, \clubs \rbrace \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Then the Cartesian product of the set of ranks, \(R\), and the set of suits, \(S\), is the entire deck of cards as shown below:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+R \times S & = & \lbrace (A, \spades), (2, \spades), (3, \spades), \ldots, (Q, \spades), (K, \spades), \\
+& & \enspace (A, {\color{red} \hearts}), (2, {\color{red} \hearts}), (3, {\color{red} \hearts}), \ldots, (Q, {\color{red} \hearts}), (K, {\color{red} \hearts}), \\
+& & \enspace (A, {\color{red} \diamonds}), (2, {\color{red} \diamonds}), (3, {\color{red} \diamonds}), \ldots, (Q, {\color{red} \diamonds}), (K, {\color{red} \diamonds}), \\
+& & \enspace (A, \clubs), (2, \clubs), (3, \clubs), \ldots, (Q, \clubs), (K, \clubs) \rbrace \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>All of this can be depicted pictorially as follows:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/cross%20product.png"/> 
+</figure>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+R \times S & = & \lbrace (r, s) \, | \, r\in R \text{ and } s\in S \rbrace \\
+\end{array}
+$$
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>It should be easy to guess the cardinality of the product of two sets:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+|A \times B| & = & |A| \cdot |B|
+\end{array}
+$$
+</p>
+</p>
+
+<p>The cardinality of the set \( B \times A\) is also the same, but it is important to note that:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\because (a, b) & \cancel{=} & (b, a) \\
+\therefore A \times B & \cancel{=} & B \times A \\
+\end{array}
+$$
+</p>
+</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#definition">Definition</a>
+<ul>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#describing-a-set">Describing a set</a></li>
+<li><a href="#depicting-a-set">Depicting a set</a></li>
+</ul></li>
+<li><a href="#set-membership">Set membership</a>
+<ul>
+<li><a href="#set-equality">Set equality</a></li>
+<li><a href="#subsets">Subsets</a></li>
+<li><a href="#empty-set">Empty set</a></li>
+<li><a href="#power-set">Power set</a></li>
+<li><a href="#cardinality">Cardinality</a></li>
+</ul></li>
+<li><a href="#set-operations">Set operations</a>
+<ul>
+<li><a href="#union-of-sets">Union of sets</a></li>
+<li><a href="#intersection-of-sets">Intersection of sets</a></li>
+<li><a href="#set-builder-notation">Set builder notation</a></li>
+<li><a href="#product-of-sets">Product of sets</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
