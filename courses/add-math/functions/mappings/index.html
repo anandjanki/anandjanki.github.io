@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  Mappings |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/sets/">SETS</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/functions/mappings/">MAPPINGS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Mappings</h1>
+  
+
+<h2 id="definition">Definition</h2>
+
+<p>Now that we have looked at sets in fair amount of detail, we can start doing some interesting math when we take two sets and start relating the elements in one set to the elements in the other.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 ">A <strong>Mapping</strong> is simply a rule that connects elements of one set to the elements of another set.</td>
+</tr>
+</table>
+
+
+<p>Note that implicit in the defintion is notion of a first set whose elements are connected to the elements on the other set, the second set.</p>
+
+<p>An example will help understand this idea. Imagine a team game such as soccer or basketball or Ultimate frisbee. Usually, when you line up as part of your team, your captain will have a chat on the strategy to pursue. When you are in defence, a common strategy to pursue in many of these team games is called man-to-man marking. Each of the members in your team decide which player of the opposing team to mark.</p>
+
+<p>As you can imagine, your team can be considered as one set and the opposing team as the second set. And the rule that you guys come up with to mark each member of the opposite team naturally fits itself as an example of a mapping.</p>
+
+<p>We can depict this pictorially as shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/mapping%20man-on-man%20v1.png"/> <figcaption>
+            <h4>A mapping of members of the home team H to the members of the opposing away team A in a man-to-man marking strategy</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="1-to-1-mapping">1-to-1 mapping</h3>
+
+<p>This above mapping is called a 1-to-1 mapping. In this mapping whenever an element of the first set is connected to an element of the second set, it is connected to <em>one unique</em> element of the second set.</p>
+
+<p>Don&rsquo;t be misled by the straight lines in the mapping above. The picture below is yet another example of a valid 1-to-1 mapping.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/mapping%20man-on-man%20v2.png"/> <figcaption>
+            <h4>Another example of a 1-to-1 mapping</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>It is not necessary that all elements of the first set are connected to elements of the second set. For e.g., in a game such as soccer, the goalkeeper typically does not mark any other person and remains at the goal post. This is depicted in the mapping below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/mapping%20man-on-man%20v3.png"/> <figcaption>
+            <h4>Another example of a 1-to-1 mapping, with some unmapped elements</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The key point to note is that any element of the first set that is mapped to the second set should map to a unique element of the second set. This definition does allow for elements that are not mapped at all as in the example above.</p>
+
+<p>Just to be clear and re-iterate the definition of a 1-to-1 mapping, the following conditions should be satisfied:</p>
+
+<ul>
+<li>each element of the first set that is mapped to an element of the second set should map to only one element of the second set. No element should map to more than one element.</li>
+<li>no two elements of the first set should map to the same element of the second set. Each element should map to a separate unique element.</li>
+<li>both of these conditions imply that if an element of the first set is mapped to an element of the second set, it should map to <em>one unique</em> element of the second set.</li>
+</ul>
+
+<h3 id="1-to-many-mapping">1-to-many mapping</h3>
+
+<p>Imagine a situation where a player of your team is injured or worse a player gets a timeout for foul play, and lets say your team has lesser players on the field compared the opposition. In this situation, one of your team members will have to mark more than one of the opponents. As you can imagine, this would no longer be a 1-to-1 mapping. This is called a 1-to-many mapping, and is depicted pictorially below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/mapping%20man-on-man%201-to-m.png"/> <figcaption>
+            <h4>An example of a 1-to-m mapping</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Notice that for a mapping to be called 1-to-many (sometimes abridged as 1-to-m mapping), it is sufficient even if one of the elements of the first set is mapped to more than one element of the second set, while all the other elements each map to unique elements. As before, there can be elements in the first set that are not mapped.</p>
+
+<h3 id="many-to-1-mapping">many-to-1 mapping</h3>
+
+<p>The third type of mapping is one where multiple elements of the first set all map to the same element of the second set.</p>
+
+<p>In professional soccer for many years now, man marking is a thing of the past. Zonal marking is the most commonly followed strategy when in defensive mode.</p>
+
+<p>To depict this strategy as a mapping, the first set is again our team, and the second set is now zones of the field. Suppose we consider the field split into three zones. Each of the players in our team would be alloted to one of the zones as shown below.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/mapping%20zonal.png"/> <figcaption>
+            <h4>An example of a m-to-1 mapping</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>In this method of marking, when the action gets into your zone of the field with an opponent getting into that zone with the football (or frisbee, etc), then you start tackling that opponent. As before, there can be elements in the first set that are not mapped.</p>
+
+<h3 id="many-to-many-mapping">many-to-many mapping</h3>
+
+<p>To understand many-to-many mapping, we will consider a different example. Suppose the first set is the set of all teachers in your school, and the second set is the set of all students. The mapping we are interested in is a parent to child mapping, i.e., we connect a teacher from the first set with his/her children if they are studying at the same school.</p>
+
+<p>The picture of this mapping would looks omewhat like below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/teacher-student%20parent-child%20mapping.png"/> <figcaption>
+            <h4>An example of a m-to-m mapping</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The following points may be noted about the mapping depicted above:</p>
+
+<ul>
+<li>Teacher T1 has one child S1 studying in the school. The same is true with teacher T2 and student S2. Both these connections are of the 1-to-1 nature.</li>
+<li>The parent of student S3 is not a teacher in the school, hence there is no connection to this student in this mapping.</li>
+<li>The teachers T3 and T4 both have one child, the same child S4, who is a student in the school. Presumably they are the mother and father of this student. The connection from T3 and T4 to the single student S4 is of the many-to-1 nature.</li>
+<li>Teacher T5 does not have any student studying in the school. Likewise students S5 and S6 do not have any of their parents as teachers in the school.</li>
+<li>Finally, teach T6 has 3 children studying in the school as shown by the 1-to-many connections from T6 to the students S7, S8 and S9.</li>
+<li>Teacher T7 does not have any children in the school, and neither of the parents of student S10 teach in the school.</li>
+</ul>
+
+<p>As you can probably make out from these connections, this particular mapping does not fit the definition of any of the mapping types that we discussed earlier. It is not 1-to-1, not 1-to-m and not m-to-1 either. It looks like some combination of all three of these.</p>
+
+<p>More specifically, if a mapping contains some connections which are of the 1-to-m kind and some connections which are of the m-to-1 kind, then the mapping is called a many-to-many mapping. Notice that 1-to-1 connections or elements of either set that are not mapped do not change the nature of the mapping. It is simply the presence of both 1-to-m connections and m-to-1 connections that make the mapping a m-to-m mapping.</p>
+
+<p>With that we conclude our exploration of mappings.</p>
+
+<h2 id="marking-strategies">Marking strategies</h2>
+
+<p>Before we move on to one of the most important topic in Mathematics, that of functions, a little bit of detour may not harm us much.</p>
+
+<p>Check out this cute video on marking strategies in soccer.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/BLMhylkO2eo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>A wonderful saying from the video is this - &ldquo;The perfect game of football would end 0 - 0&rdquo;. No wonder football is often called the beautiful game, or <em>o jogo bonito</em> in Portuguese.</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#definition">Definition</a>
+<ul>
+<li><a href="#1-to-1-mapping">1-to-1 mapping</a></li>
+<li><a href="#1-to-many-mapping">1-to-many mapping</a></li>
+<li><a href="#many-to-1-mapping">many-to-1 mapping</a></li>
+<li><a href="#many-to-many-mapping">many-to-many mapping</a></li>
+</ul></li>
+<li><a href="#marking-strategies">Marking strategies</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
