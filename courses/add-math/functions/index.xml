@@ -27,7 +27,16 @@
       
       <guid>http://www.thoughtart.in/courses/add-math/functions/mappings/</guid>
       <description>Definition Now that we have looked at sets in fair amount of detail, we can start doing some interesting math when we take two sets and start relating the elements in one set to the elements in the other.
- Defn 1: A Mapping is simply a rule that connects elements of one set to the elements of another set.   Note that implicit in the defintion is notion of a first set whose elements are connected to the elements on the other set, the second set.</description>
+ Defn 1: A Mapping is simply a rule that connects elements of one set to the elements of another set.   Note that implicit in the defintion is notion of a first set whose elements are connected or mapped to the elements on the other set, the second set.</description>
+    </item>
+    
+    <item>
+      <title>Functions</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/functions/</link>
+      <pubDate>Tue, 21 Jan 2020 06:57:15 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/functions/</guid>
+      <description>We have now covered all the background needed to delve into one of the most fundamental topics of Mathematics - we are now ready to understand what functions are. Almost every other session we do in the course of Additional Mathematics will build on this topic, so it is essential that you go through all the background we covered so far (that on Sets and Mappings and carefully understand the concept of functions described in great detail here.</description>
     </item>
     
   </channel>
