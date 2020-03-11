@@ -6,7 +6,7 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 07:08:58 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2020 20:50:42 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -121,6 +121,15 @@ Just count and tell me the number of kits.
       
       <guid>http://www.thoughtart.in/courses/add-math/functions/functions/</guid>
       <description>We have now covered all the background needed to delve into one of the most fundamental topics of Mathematics - we are now ready to understand what functions are. Almost every other session we do in the course of Additional Mathematics will build on this topic, so it is essential that you go through all the background we covered so far (that on Sets and Mappings and carefully understand the concept of functions described in great detail here.</description>
+    </item>
+    
+    <item>
+      <title>EC Problems</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/ec-problems/</link>
+      <pubDate>Wed, 11 Mar 2020 20:50:42 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/ec-problems/</guid>
+      <description>EC problems may not always be easy problems. They are actually extra-curricular problems.. :) They usually add some interesting facets to the topic under discussion, some fascinating discoveries, etc. But they are usually not from the board syllabus for the topic. (As always, once you read a problem, take some time to attempt it yourself, if you need help, take a peek at the &amp;ldquo;Hint&amp;rdquo; section, then again attempt to solve it yourself, feel free to check the &amp;ldquo;Answer&amp;rdquo; section if you want to check the answer you found, or even just get a feel for the magnitude of the answer.</description>
     </item>
     
     <item>
