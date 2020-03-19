@@ -6,7 +6,7 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Mar 2020 20:50:42 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 14 Mar 2020 23:21:46 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -151,6 +151,15 @@ Examples Here are a few examples of APs:
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/permutations/</guid>
       <description>We have had a glimpse of counting problems, and looked at two fundamental principles of counting - namely the product rule and the sum rule. We now take next steps in exploring more kinds of counting problems. This session on Permutations and the next one on Combinations are the basic kinds of counting problems commonly studied.
 Arrangements of n-items School Championship Suppose you have 3 houses in your school for the Sports Championship.</description>
+    </item>
+    
+    <item>
+      <title>Composite Functions</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/composite-functions/</link>
+      <pubDate>Sat, 14 Mar 2020 23:21:46 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/composite-functions/</guid>
+      <description>It is worth taking a little pause here to note that we started with a very basic definition of sets, just as a collection of objects and from there on started building more and more ideas purely with our imagination. Composite function is yet another such idea. First, we put one set in front of another and made the definitions of mappings and functions. Now, we put one function in front of another and ask the question what would happen.</description>
     </item>
     
     <item>
