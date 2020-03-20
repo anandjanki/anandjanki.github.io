@@ -78,5 +78,15 @@ Linear Function Lets&amp;rsquo;s first start with a very simple linear function,
 The graph of this function is shown below:   The graph of a linear function passing through the origin      The part of the function in the interval of the domain \( [-1, 2] \) is depicted as a solid line and the rest of the graph is shown with dotted lines just for ease of visualization and to avoid congestion.</description>
     </item>
     
+    <item>
+      <title>Modulus Function</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/modulus-function/</link>
+      <pubDate>Sat, 21 Mar 2020 04:05:01 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/modulus-function/</guid>
+      <description>Defn 1: The modulus function \(f(x) = |x| \) is defined as follows:
+$$ \displaystyle |x| = \left\{{\begin{array}{rl} x, &amp; {\text{if }}x0\\ 0, &amp; {\text{if }}x=0\\ -x, &amp; {\text{if }}x  This can be depicted graphically as shown below:   The graph of the modulus function      Another way to look at the above modulus function is to look at the graph of the function \( y = x\) and wherever the graph is going below the x-axis, flip it vertically.</description>
+    </item>
+    
   </channel>
 </rss>
