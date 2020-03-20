@@ -67,5 +67,16 @@
  An example function f      And its inverse function     For a function to have an inverse it should be bijective, which means it should be both injective and surjective:</description>
     </item>
     
+    <item>
+      <title>Exploring Graphs</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/exploring-graphs/</link>
+      <pubDate>Fri, 20 Mar 2020 20:04:09 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/exploring-graphs/</guid>
+      <description>In this session, we will explore graphs of functions in more detail. It usually helps to visualize the graph of a function, how it looks in the Cartesian co-ordinate system along with the algebraic definition of the function.
+Linear Function Lets&amp;rsquo;s first start with a very simple linear function, given as follows: $$ f : \R \to \R \text{ such that } f(x) = 2x $$
+The graph of this function is shown below:   The graph of a linear function passing through the origin      The part of the function in the interval of the domain \( [-1, 2] \) is depicted as a solid line and the rest of the graph is shown with dotted lines just for ease of visualization and to avoid congestion.</description>
+    </item>
+    
   </channel>
 </rss>

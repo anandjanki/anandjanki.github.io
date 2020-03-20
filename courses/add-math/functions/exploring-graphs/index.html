@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  Exploring Graphs |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/sets/">SETS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/mappings/">MAPPINGS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/functions/">FUNCTIONS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/ec-problems/">EC PROBLEMS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/composite-functions/">COMPOSITE FUNCTIONS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/inverse-function/">INVERSE FUNCTION</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/functions/exploring-graphs/">EXPLORING GRAPHS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Exploring Graphs</h1>
+  
+
+<p>In this session, we will explore graphs of functions in more detail. It usually helps to visualize the graph of a function, how it looks in the Cartesian co-ordinate system along with the algebraic definition of the function.</p>
+
+<h2 id="linear-function">Linear Function</h2>
+
+<p>Lets&rsquo;s first start with a very simple linear function, given as follows:
+$$ f : \R \to \R \text{ such that } f(x) = 2x $$</p>
+
+<p>The graph of this function is shown below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%202x.png"/> <figcaption>
+            <h4>The graph of a linear function passing through the origin</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>The part of the function in the interval of the domain \( [-1, 2] \) is depicted as a solid line and the rest of the graph is shown with dotted lines just for ease of visualization and to avoid congestion.</p>
+
+<h3 id="translation-along-y-axis">Translation along y-axis</h3>
+
+<p>A translation of the graph of this function along the y-axis would yield the following functions, depicted further below:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+f_{0,+5}(x) - 5 & = & 2\cdot x \\
+f_{0,-5}(x) + 5 & = & 2\cdot x \\
+\end{array}
+$$
+</p>
+</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y_translate%20=%202x.png"/> <figcaption>
+            <h4>The graph of a linear function translated along the y-axis</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="translation-along-x-axis">Translation along x-axis</h3>
+
+<p>A translation of the graph of this function along the x-axis would yield the following functions, depicted further below:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+f_{+5,0}(x) & = & 2\cdot (x - 5) \\
+f_{-5,0}(x) & = & 2\cdot (x + 5) \\
+\end{array}
+$$
+</p>
+</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%202%20*%20x_translate.png"/> <figcaption>
+            <h4>The graph of a linear function translated along the x-axis</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="translation-along-both-axes">Translation along both axes</h3>
+
+<p>A translation of the graph of this function along the both axes would yield the following functions, depicted further below:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+f_{+5,+5}(x) - 5 & = & 2\cdot (x - 5) \\
+f_{-5,+5}(x) - 5 & = & 2\cdot (x + 5) \\
+f_{+5,-5}(x) + 5 & = & 2\cdot (x - 5) \\
+f_{-5,-5}(x) + 5 & = & 2\cdot (x + 5) \\
+\end{array}
+$$
+</p>
+</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y_translate%20=%202%20*%20x_translate.png"/> <figcaption>
+            <h4>The graph of a linear function translated along both axes</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="all-translations">All Translations</h3>
+
+<p>All of the above translations of the graph of \( y = 2x \) are depicted together below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/all%20translations%20of%20y%20=%202x.png"/> <figcaption>
+            <h4>The graph of a linear function and some of its translations</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="scaling-the-function">Scaling the function</h3>
+
+<p>We can also scale the linear function and visualize the graph of the scaled functions further below:
+$$ f_{0,0,k}(x) = k\cdot 2x $$</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20kx.png"/> <figcaption>
+            <h4>The graph of a linear function and some of its scaled versions</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="scaling-and-translation">Scaling and translation</h3>
+
+<p>Finally, we can of course look at scaling and translation together to yield a series of functions:
+$$ f_{a,b,k}(x) - b = k\cdot 2\cdot (x - a) $$</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/scale_and_translate.png"/> <figcaption>
+            <h4>The graph of a linear function with both scaling and translation</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h2 id="quadratic-function">Quadratic function</h2>
+
+<p>Every time we encounter a new function, we can visualize the graph of the function and also its translations and scaling. That helps build a pictorial memory of what the function looks like.</p>
+
+<p>For e.g., let&rsquo;s explore a quadratic function in the same way as the linear function above.</p>
+
+<p>$$ f : \R \to \R^{+} \text{ such that } f(x) = x^2 $$</p>
+
+<p>The graph of this function is shown below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared.png"/> <figcaption>
+            <h4>The graph of a quadratic function passing through the origin</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>The part of the function in the interval of the domain \( [-1, 2] \) is depicted as a solid curve and the rest of the graph is shown with dotted lines just for ease of visualization and to avoid congestion.</p>
+
+<h3 id="translating-the-quadratic">Translating the quadratic</h3>
+
+<p>A translation of the graph of \( y = x^2 \), with an x-translation of 5 and y-ranslation also of 5 is depicted below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared%20v2.png"/> <figcaption>
+            <h4>The graph of a quadratic function with one of its translations</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="translation-and-scaling">Translation and Scaling</h3>
+
+<p>A translation of the graph of \( y = x^2 \), with an x-translation of 5 and y-ranslation also of 5, along with a scaling at \( k = 4 \) and \( k = 0.4 \) are depicted below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared%20v4.png"/> <figcaption>
+            <h4>The graph of a quadratic function with translation and scaling</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>Notice how drawing the graph also helps easily visualize the range of these functions. For e.g.,
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left"></th>
+<th align="left">Range</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">\( y = x^2 \)</td>
+<td align="left">\( \R^{+} \)</td>
+</tr>
+
+<tr>
+<td align="left">\( y - 5 = (x - 5)^2 \)</td>
+<td align="left">\( y \geq 5 \)</td>
+</tr>
+
+<tr>
+<td align="left">\( y - 5 = 0.4\cdot (x - 5)^2 \)</td>
+<td align="left">\( y \geq 5 \)</td>
+</tr>
+
+<tr>
+<td align="left">\( y - 5 = 4\cdot (x - 5)^2 \)</td>
+<td align="left">\( y \geq 5 \)</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="roots-of-the-quadratic">Roots of the quadratic</h3>
+
+<p>Consider a translation of the quadratic shown below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared%20roots.png"/> <figcaption>
+            <h4>The graph of a quadratic function showing its roots</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>This graph cuts the x-axis at two points, \( x = -2 \) and \( x = 2\). These are called the roots of the function. More formally,
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 "><p>\(x_0\) is called a <strong>root</strong> of a function if and only if</p>
+
+<p>$$ f(x_0) = 0 $$</p>
+</td>
+</tr>
+</table>
+</p>
+
+<p>Note that we would have also learnt solving the quadratic equation above algebraically to find its roots:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+x^2 - 4 & = & 0 \\
+\therefore (x - 2)\cdot(x + 2) & = & 0 \\
+\therefore x = 2 & OR & x = -2
+\end{array}
+$$
+</p>
+</p>
+
+<p>Note also in the same vein that a quadratic equation (with real coefficients) can have either 0 (real) roots, 1 (real) root, or 2 (real) roots.
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left"></th>
+<th align="left">Roots</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">\( y = x^2 - 4 \)</td>
+<td align="left">Has 2 roots, \( x = -2\) and \( x = 2\)</td>
+</tr>
+
+<tr>
+<td align="left">\( y = x^2 \)</td>
+<td align="left">Has exactly 1 root, \( x = 0\)</td>
+</tr>
+
+<tr>
+<td align="left">\( y = x^2 + 4 \)</td>
+<td align="left">Has no real roots</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>This is depicted graphically below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared%20roots%20v3.png"/> <figcaption>
+            <h4>The graph of different quadratic function showing their real roots</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>Finally, the roots of the corresponding inverted quadratic functions are depicted below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/y%20=%20x_squared%20roots%20v4.png"/> <figcaption>
+            <h4>The graph of different quadratic function showing their real roots</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#linear-function">Linear Function</a>
+<ul>
+<li><a href="#translation-along-y-axis">Translation along y-axis</a></li>
+<li><a href="#translation-along-x-axis">Translation along x-axis</a></li>
+<li><a href="#translation-along-both-axes">Translation along both axes</a></li>
+<li><a href="#all-translations">All Translations</a></li>
+<li><a href="#scaling-the-function">Scaling the function</a></li>
+<li><a href="#scaling-and-translation">Scaling and translation</a></li>
+</ul></li>
+<li><a href="#quadratic-function">Quadratic function</a>
+<ul>
+<li><a href="#translating-the-quadratic">Translating the quadratic</a></li>
+<li><a href="#translation-and-scaling">Translation and Scaling</a></li>
+<li><a href="#roots-of-the-quadratic">Roots of the quadratic</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
