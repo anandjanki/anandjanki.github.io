@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+    <title>
+  
+  Inverse Function |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/sets/">SETS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/mappings/">MAPPINGS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/functions/">FUNCTIONS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/ec-problems/">EC PROBLEMS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/functions/composite-functions/">COMPOSITE FUNCTIONS</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/functions/inverse-function/">INVERSE FUNCTION</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Inverse Function</h1>
+  
+
+<p>In very simple terms, the inverse of a function is one that reverses what the function does. For e.g., if the function maps 2.3 to say 41, then the inverse should map 41 to 2.3.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/f.png"/> <figcaption>
+            <h4>An example function f</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/f_inv.png"/> <figcaption>
+            <h4>And its inverse function</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>For a function to have an inverse it should be bijective, which means it should be both injective and surjective:</p>
+
+<ul>
+<li>If the function is not surjective, i.e., if the function is not onto, then it means there are some elements of the co-domain that are not mapped. When we consider the inverse of this function, the co-domain becomes the domain, and it will mean that there are some elements in the domain which are not mapped. That is not allowed for the definition of a function.</li>
+<li>If a function is not injective, i.e., if the function is not 1-to-1, then it would mean that there are few elements of the domain map to the same element in the co-domain. When we consider the inverse of this function, the co-domain becomes the domain and it will mean that there are some elements in the domain that have a 1-to-many mapping. That is not allowed for the definition of a function.</li>
+</ul>
+
+<p>Hence only bijective functions can have inverses.</p>
+
+<h2 id="inverse-definition">Inverse Definition</h2>
+
+<p>One way to define the inverse function is as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 "><p>Let \(f\) be a function whose domain is the set X, and whose range is the set Y. Then \(f\) is invertible if there exists a function \(g\) with domain Y and image X, with the property:</p>
+
+<p>$$ \displaystyle f(x)=y\,\,\Leftrightarrow \,\,g(y)=x $$</p>
+</td>
+</tr>
+</table>
+
+
+<h3 id="finding-inverse-algebraically">Finding inverse - algebraically</h3>
+
+<p>Suppose we are given a function of real numbers as follows:
+$$ f(x) = 2\cdot x + 3 $$</p>
+
+<p>How do we find the inverse of this function? To see that, let&rsquo;s take a few values of \(x\) and see what happens:</p>
+
+<p>For e.g., when \(x = 1 \), the value of the function is \( 5\), i.e.:
+$$ 5 = 2\cdot 1 + 3 $$
+When \(x = 2.5 \), the value of the function is \( 8\), i.e.:
+$$ 8 = 2\cdot 2.5 + 3 $$</p>
+
+<p>What we are seeking is a function \( g(x)\) which will do the reverse, i.e., give the output 1, when the input i 8, or give the output 2.5 when the input given is 8. In other words, we are seeking a function that will do the following:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+x & = & 2\cdot g(x) + 3 \\ \\
+\therefore g(x) & = & \displaystyle \frac{x-3}{2} \\
+\end{array}
+$$
+</p>
+</p>
+
+<h3 id="finding-inverse-graphically">Finding inverse - graphically</h3>
+
+<p>We can also plot the graph of the above function and see how we can find the inverse graphically.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/inverse_graph.png"/> <figcaption>
+            <h4>The graph of a function and its inverse</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>We notice that the point \( (1, 5) \) lies on \(f(x)\) and the point \( (5, 1) \) lies on the inverse function \( f^{-1}(x) \). And likewise for every point on the original function and its inverse.</p>
+
+<p>In other words, almost magically, the graph of the inverse function is a reflection of the graph of the original function on the \( y = x\) line.</p>
+
+<h3 id="inverse-of-square-function">Inverse of square function</h3>
+
+<p>The function above \( y = 2\cdot x + 3 \) was a simple bijective function. What if we have a function which is not bijective, consider the following function:</p>
+
+<p>$$ f : \R \to \R \text{ such that } f(x) = x^2 $$</p>
+
+<p>Note that the co-domain of the function is \( \R \), but the range of the function would only be positive real numbers \( \R^{+} \). This function is not injective, it is a many-to-1 function. The function is also not surjective, the range \( \R^{+} \) is not all of the co-domain \( \R \).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/x_squared.png"/> <figcaption>
+            <h4>The graph of the square function</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Clearly given this definition, the function does not have an inverse.</p>
+
+<p>One way around is to construct a new function, with a slightly different domain and co-domain, but with the same definition as the original squared function, such that the new function can have an inverse. This can be done as follows:</p>
+
+<p>$$ g : \R^{+} \to \R^{+} \text{ such that } g(x) = x^2 $$</p>
+
+<p>Note that both the domain and the co-domain have been restricted to \( \R^{+} \) making the function a 1-to-1 and onto function, in other words a bijective function.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b40 ">
+    <figure class="figs">
+    <img src="images/x_squared_modified.png"/> <figcaption>
+            <h4>The graph of the square function with a modified domain and co-domain</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b30 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>And now, we can find the inverse of this function as shown below:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/x_squared_modified_inverse.png"/> <figcaption>
+            <h4>The graph of the modified square function along with its inverse</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<p>Thus,</p>
+
+<p>$$ g^{-1}(x) = \sqrt{x} $$</p>
+
+<h2 id="another-definition">Another definition</h2>
+
+<p>A more succinct way  to define the inverse based on the idea of composite functions we learnt earlier is as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;2: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 2:</th>
+<td class="bb ph2 "><p>A function \(g\) is called the inverse of a function \(f \) if and only if:</p>
+
+<p>$$ (g\circ f)(x) = (f\circ g)(x) = x $$</p>
+</td>
+</tr>
+</table>
+
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#inverse-definition">Inverse Definition</a>
+<ul>
+<li><a href="#finding-inverse-algebraically">Finding inverse - algebraically</a></li>
+<li><a href="#finding-inverse-graphically">Finding inverse - graphically</a></li>
+<li><a href="#inverse-of-square-function">Inverse of square function</a></li>
+</ul></li>
+<li><a href="#another-definition">Another definition</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+

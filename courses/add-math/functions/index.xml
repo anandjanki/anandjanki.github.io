@@ -57,5 +57,15 @@
       <description>It is worth taking a little pause here to note that we started with a very basic definition of sets, just as a collection of objects and from there on started building more and more ideas purely with our imagination. Composite function is yet another such idea. First, we put one set in front of another and made the definitions of mappings and functions. Now, we put one function in front of another and ask the question what would happen.</description>
     </item>
     
+    <item>
+      <title>Inverse Function</title>
+      <link>http://www.thoughtart.in/courses/add-math/functions/inverse-function/</link>
+      <pubDate>Fri, 20 Mar 2020 00:12:05 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/functions/inverse-function/</guid>
+      <description>In very simple terms, the inverse of a function is one that reverses what the function does. For e.g., if the function maps 2.3 to say 41, then the inverse should map 41 to 2.3.
+ An example function f      And its inverse function     For a function to have an inverse it should be bijective, which means it should be both injective and surjective:</description>
+    </item>
+    
   </channel>
 </rss>
