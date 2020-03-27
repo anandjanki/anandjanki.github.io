@@ -136,7 +136,7 @@ if (!doNotTrack) {
 </ul>
 
 <p>Put succinctly,<br />
-<strong>Q.</strong> Prove that the segments joining the midpoints of pairs of opposite sides of a quadrilateral and the segment joining the midpoints of the diagonals are concurrent and bisect one another.</p>
+<strong>Q1.</strong> Prove that the segments joining the midpoints of pairs of opposite sides of a quadrilateral and the segment joining the midpoints of the diagonals are concurrent and bisect one another.</p>
 
 <div class="book-expand">
   <label>
@@ -214,44 +214,55 @@ if (!doNotTrack) {
 
 <h2 id="generalize-varignon-wittenbauer">Generalize Varignon &amp; Wittenbauer</h2>
 
-<p><strong>Q.</strong> What if we divide each side of a quadrilateral into k parts, and then connect the points closest to the vertices with lines. What figure do we get? What is the area of the Wittenbauer parallelogram? In general, what is the area of these generalized parallelograms relative to the original quadrilateral?</p>
+<p><strong>Q2.</strong> What is the area of the Wittenbauer parallelogram?</p>
 
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>Hint #1</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      <p>The picture to draw is here:
-<div class="book-columns flex justify-between"></p>
+<p>What if we divide each side of a quadrilateral into k parts, and then connect the points that are \( i\) parts away \( i \leq \lfloor \displaystyle \frac{k}{2} \rfloor \) from the vertices with lines. What figure do we get? That should be easy to guess, since this is a session on parallelograms. In general, what is the area of these generalized parallelograms relative to the original quadrilateral?</p>
 
-<p><div class="flex-1 flex-b20 "></p>
+<div class="book-columns flex justify-between">
+  
 
-<p></div></p>
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
 
-<p><div class="flex-1 flex-b60 ">
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
     <figure class="figs">
-    <img src="images/generalize-varignon-wittenbauer.png"/>
+    <img src="images/generalize-varignon-wittenbauer.png"/> 
 </figure>
-  </div></p>
-
-<p><div class="flex-1 flex-b20 "></p>
-
-<p></div></p>
-
-<p></div></p>
-
-    </div>
-  </label>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
 </div>
 
 
+
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Hint #2 TBD</span>
+      <span>Hint TBD</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
@@ -290,6 +301,174 @@ if (!doNotTrack) {
 </div>
 
 
+<h2 id="quad-by-angle-bisectors">Quad by Angle Bisectors</h2>
+
+<p><strong>Q3.</strong> Suppose we take a parallelogram and draw the angle bisector of each of its angles.</p>
+
+<ul>
+<li>What can we say about the angle bisectors of opposite angles?</li>
+<li>What figure gets formed by the intersection points of the angle bisectors?</li>
+<li>If the original parallelogram had sides \( a \) and \( b\) and angke \( \alpha \), then what is the area of this figure in terms of these quantities?</li>
+</ul>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Hint #1</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>Just draw one pair of angle bisectors to see what may be happening:
+<div class="book-columns flex justify-between"></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p><div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Hint-1.png"/>
+</figure>
+  </div></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p></div></p>
+
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Hint #2</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>Well, draw the second pair of angle bisectors next:
+<div class="book-columns flex justify-between"></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p><div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Hint-2.png"/>
+</figure>
+  </div></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p></div></p>
+
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Hint #3</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>The shape should be fairly clear from this picture:
+<div class="book-columns flex justify-between"></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p><div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Hint-3.png"/>
+</figure>
+  </div></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p></div></p>
+
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Hint #4</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>What can you say about the two triangles shown here?
+<div class="book-columns flex justify-between"></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p><div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Hint-4.png"/>
+</figure>
+  </div></p>
+
+<p><div class="flex-1 flex-b10 "></p>
+
+<p></div></p>
+
+<p></div></p>
+
+<p>And hence what can you say about the sides of the figure in the middle?</p>
+
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Solution TBD</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      TBD
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Answer</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      \( \displaystyle \frac{1}{2} \cdot (a - b)^2 \cdot \sin \alpha \)
+    </div>
+  </label>
+</div>
+
+
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
@@ -303,6 +482,7 @@ if (!doNotTrack) {
 <ul>
 <li><a href="#center-ing-on-the-center">Center-ing on the center</a></li>
 <li><a href="#generalize-varignon-wittenbauer">Generalize Varignon &amp; Wittenbauer</a></li>
+<li><a href="#quad-by-angle-bisectors">Quad by Angle Bisectors</a></li>
 </ul></li>
 </ul>
 </nav>
