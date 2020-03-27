@@ -6,10 +6,20 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Mar 2020 05:12:13 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 01:06:41 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2.1 Triangle Secrets</title>
+      <link>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</link>
+      <pubDate>Sat, 08 Feb 2020 19:38:45 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</guid>
+      <description>Geometry Sessions Geometry is a standard subject in regular high school Mathematics unlike Number Theory which is usually not covered in regular school curriculums. So, what we will do in these EC Math (Extra-curricular Math) sessions in Geometry will draw upon standard topics we learn in school and go beyond to find some very interesting results and discoveries.
+Geometry is also one of the oldest fields of Mathematics, the other being the study of numbers or Arithmetic and Number Theory.</description>
+    </item>
     
     <item>
       <title>1.1 Greatest Common Divisor</title>
@@ -233,13 +243,12 @@ $$ \displaystyle |x| = \left\{{\begin{array}{rl} x, &amp; {\text{if }}x0\\ 0, &a
     </item>
     
     <item>
-      <title>2.1 Triangle Secrets</title>
-      <link>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</link>
-      <pubDate>Sat, 08 Feb 2020 19:38:45 +0530</pubDate>
+      <title>2.3 Parallelograms</title>
+      <link>http://www.thoughtart.in/courses/ec-math/ec-problems/parallelograms/</link>
+      <pubDate>Fri, 27 Mar 2020 01:06:41 +0530</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</guid>
-      <description>Geometry Sessions Geometry is a standard subject in regular high school Mathematics unlike Number Theory which is usually not covered in regular school curriculums. So, what we will do in these EC Math (Extra-curricular Math) sessions in Geometry will draw upon standard topics we learn in school and go beyond to find some very interesting results and discoveries.
-Geometry is also one of the oldest fields of Mathematics, the other being the study of numbers or Arithmetic and Number Theory.</description>
+      <guid>http://www.thoughtart.in/courses/ec-math/ec-problems/parallelograms/</guid>
+      <description>EC problems may not always be easy problems. They are actually extra-curricular problems.. :) They usually add some interesting facets to the topic under discussion, some fascinating discoveries, etc. But they are usually not from the board syllabus for the topic. (As always, once you read a problem, take some time to attempt it yourself, if you need help, take a peek at the &amp;ldquo;Hint&amp;rdquo; section, then again attempt to solve it yourself, feel free to check the &amp;ldquo;Answer&amp;rdquo; section if you want to check the answer you found, or even just get a feel for the magnitude of the answer.</description>
     </item>
     
     <item>
@@ -252,15 +261,6 @@ Geometry is also one of the oldest fields of Mathematics, the other being the st
 Equality problems
 Where the problem involves an equality with a modulus, either on one side or both sides of the equation, simply resolve the modulus by using the \( \pm \) sign. For e.g., to solve,
 $$ \begin{array}{rcl} |2x + 1| &amp; = &amp; |x + 5| \\ \therefore 2x + 1 &amp; = &amp; \pm (x + 5) \\ \therefore 2x + 1 = x + 5 &amp; OR &amp; 2x + 1 = -(x + 5) \\ \end{array} $$ Inequality problems</description>
-    </item>
-    
-    <item>
-      <title>1.2 PRIME-ing up, for PERFECT-ion - TBD</title>
-      <link>http://www.thoughtart.in/courses/ec-math/number-theory/primeing-up-for-perfection/</link>
-      <pubDate>Thu, 06 Feb 2020 21:32:29 +0530</pubDate>
-      
-      <guid>http://www.thoughtart.in/courses/ec-math/number-theory/primeing-up-for-perfection/</guid>
-      <description>Notes TBD</description>
     </item>
     
     <item>
