@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.thoughtart.in/courses/add-math/functions-and-solutions/quadratics/</loc>
+    <lastmod>2020-03-28T14:48:37+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.thoughtart.in/courses/ec-math/geometry/triangle-secrets/</loc>
     <lastmod>2020-02-08T19:38:45+05:30</lastmod>
   </url>
@@ -35,6 +40,11 @@
   <url>
     <loc>http://www.thoughtart.in/courses/add-math/combinatorics/basics-of-counting/</loc>
     <lastmod>2020-01-18T19:38:25+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.thoughtart.in/courses/add-math/functions-and-solutions/</loc>
+    <lastmod>2020-03-28T14:48:16+05:30</lastmod>
   </url>
   
   <url>
@@ -128,6 +138,11 @@
   </url>
   
   <url>
+    <loc>http://www.thoughtart.in/courses/add-math/functions-and-solutions/practice-problems/</loc>
+    <lastmod>2020-04-07T20:48:57+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.thoughtart.in/courses/add-math/functions/ec-problems-2/</loc>
     <lastmod>2020-03-21T04:51:22+05:30</lastmod>
   </url>
@@ -148,12 +163,12 @@
   </url>
   
   <url>
-    <loc>http://www.thoughtart.in/courses/ec-math/ec-problems/parallelograms/</loc>
-    <lastmod>2020-03-27T01:06:41+05:30</lastmod>
+    <loc>http://www.thoughtart.in/</loc>
+    <lastmod>2020-04-07T20:48:57+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://www.thoughtart.in/</loc>
+    <loc>http://www.thoughtart.in/courses/ec-math/ec-problems/parallelograms/</loc>
     <lastmod>2020-03-27T01:06:41+05:30</lastmod>
   </url>
   
