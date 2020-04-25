@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-161383666-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    <title>
+  
+  Constructing Polynomials |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions-and-solutions/">2. FUNCTIONS AND SOLUTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/">5. POLYNOMIALS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/basics/">BASICS</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/polynomials/constructing-polynomials/">CONSTRUCTING POLYNOMIALS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Constructing Polynomials</h1>
+  
+
+<p><strong>Note</strong> - This topic is not in the syllabus of IGCSE Additional Mathematics curriculum. But is an interesting topic nevertheless that learners can explore if interested.</p>
+
+<p>While finding the roots of a polynomial is an involved activity, doing the opposite turns out to be fairly simple. If we are given the roots of a polynomial, can we construct the polynomial back from it?</p>
+
+<p>To keep it simple, we will restrict ourselves to real rools, and in fact to polynomials for whome all the roots of the polynomial are real.</p>
+
+<h2 id="polynomial-from-its-roots">Polynomial from its roots</h2>
+
+<p>Lets take an example. Suppose the roots of a degree-3 polynomial are known to be \( -3, -1 \text{ and } 2\). Can we find the polynomial?</p>
+
+<p>The answer, as you may expect, is fairly simple except for a small catch. You may have guessed a degree-3 polynomial with roots as above as:
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+p(x) & = & (x + 3)(x+1)(x-2) \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>In fact, we can even plot the graph of this polynomial function to see how it looks. As expected, it would cut the x-axis at exactly \( -3, -1 \text{ and } 2\).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/poly-from-roots.png"/> <figcaption>
+            <h4>The graph of a cubic polynomial function with the roots marked</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>But is this the only degree-3 polynomial with these 3 roots? Well yes, but only up to a scale factor. The picture below depicts a few other degree-3 polynomials that all have the same roots. Notice that they are all simply scaled versions of \( p(x) \) above.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/poly-from-roots-scale.png"/> <figcaption>
+            <h4>The graph of multiple cubic polynomial functions all with the same roots</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="roots-and-scale">Roots and scale</h3>
+
+<p>Well, it should be fairly obvious (though we need to actually prove it) that if we are given the 3 roots of a degree-3 polynomial <em>and</em> the leading coefficient (the scale factor above), i.e. the coefficient of the term \(x^3\), then we can uniquely identify the cubic polynomial. For e.g., the degree-3 polynomial with roots \( -3, -1 \text{ and } 2\) and with leading coefficient as \(2\) is simply:
+$$ p(x)  = 2(x + 3)(x+1)(x-2) $$</p>
+
+<h3 id="roots-and-a-point">Roots and a point</h3>
+
+<p>With a little stretch, we can note that the scale factor is only one way to pin down the polynomial. We could have well asked the following question - find a degree-3 polynomial whose roots are \( -3, -1 \text{ and } 2\) and which passes through the point \( (1, 4) \).</p>
+
+<p>We can do this algebraically as follows:</p>
+
+<p>The general form of degree-3 polynomials which have roots as \( -3, -1 \text{ and } 2\) can be written as:
+$$ p(x) = k\cdot (x + 3)(x+1)(x-2) $$
+where \( k\in \R \). Since the polynomial we are looking for also passes through the point \( (1, 4) \), i.e. \( p(1) = 4 \), we get
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+p(1) & = & 4 \\
+\therefore k\cdot (1 + 3)(1+1)(1-2) & = & 4 \\
+\therefore k & = & 0.5 \\
+\therefore p(x) & = & 0.5(x + 3)(x+1)(x-2) \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>We can also visualize this graphically:
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/poly-with-roots-point.png"/> <figcaption>
+            <h4>The graph of a cubic polynomial functions given its roots and one other point</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h2 id="polynomial-from-points">Polynomial from points</h2>
+
+<p>It turns out we can generalize even further. The 3 roots are also really points on the polynomial above. Suppose we are given 4 random points. Can we find a polynomial that passes through these points? It turns out that the answer is yes.</p>
+
+<p>Lets do this one step at a time.</p>
+
+<p>First lets take degree-1 polynomials, in other words linear functions. Suppose we know just two points on this function, can we determine the function and the value that it takes on any other point? We know this answer is yes, because graphically, we can draw one and only one line through two distinct points on a plane.</p>
+
+<p>What about degree-2 polynomials? What if we have 2 points on a plane, can we draw a quadratic function passing through these points? Will there be only 1 quadratic, will there be many functions?</p>
+
+<p>To answer that question, lets first answer a simpler one.</p>
+
+<h3 id="linear-functions-one-point">Linear functions one point</h3>
+
+<p>Suppose we are given only one point, let say \( (1, 5) \). Can we find a line passing through this point? Can we find a degree-1 polynomial or a linear function such that the value of this function at \( x= 1\) is \( y = 5\).</p>
+
+<p>We can do this algebraically as follows. Consider a general linear function:
+$$ p(x) = ax + b $$
+Since the graph of this function passes through the point \( (1,5) \), we know that:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+5 & = & a\cdot 1 + b \\
+\therefore b & = & 5 - a \\
+\therefore p(x) & = & ax + 5 - a \\
+\end{array}
+$$
+</p>
+
+
+<p>A linear function that passes through the point \( (1, 5) \) has the above form. And vice-versa, any linear function of this form passes through the point \( (1, 5) \).</p>
+
+<p>Indeed, if we say \( a = 1\), we get a linear function \( y = x + 4 \) that passes through \( (1,5) \). If we take \( a = -6\), we get another linear function \( y = -6x + 11 \) which also passes through this point.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/lines-through-point.png"/> <figcaption>
+            <h4>Linear functions given one known point - two functions which pass through the point, and one function that does not pass through it.</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>And if we take some other linear function which is not in the above form, for e.g., \( y = x + 2 \), then we can see that this function does not pass through this point \( (1, 5) \).</p>
+
+<h3 id="quadratic-with-two-points">Quadratic with two points</h3>
+
+<p>We can do the exact same algebraic technique if we are given two points and we have to find a quadratic function passing through these two points.</p>
+
+<p>Again lets do this with an example. Suppose we are given two points \( (1, 5) \) and \( (4, 9) \). Can we find a quadratic function passing through these two points?</p>
+
+<p>We start with a general quadratic function:
+$$ p(x) = ax^2 + bx + c $$</p>
+
+<p>Since the graph of this function passes through the point \( (1, 5) \) and \( (4, 9) \), we know that:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+5 & = & a\cdot 1^2 + b\cdot 1 + c, \text{    and} \\
+9 & = & a\cdot 4^2 + b\cdot 4 + c \\
+\end{array}
+$$
+</p>
+
+We can consider these as simultaneous equations and solve for \(b\) and \(c\) in terms of \(a\).
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\therefore b & = & \displaystyle \frac{4 - 15a}{3} , \text{ and }\\ \\
+c & = & \displaystyle \frac{12a + 11}{3} \\ \\
+\therefore p(x) & = & ax^2 + (\displaystyle \frac{4 - 15a}{3})x + (\displaystyle \frac{12a + 11}{3})
+\end{array}
+$$
+</p>
+</p>
+
+<p>As before, take different values of \(a\) and you will see that you get different quadratic equations. But all of them will pass through the points \( (1, 5) \) and \( (4, 9) \). We can visualize this as an animated graphic <a href="https://www.geogebra.org/graphing/ghzhczfx">here</a>.</p>
+
+<h3 id="quadratic-with-three-points">Quadratic with three points</h3>
+
+<p>Suppose we want to find the quadratic function that passes through three distinct points, any random three points, lets say \( (1, 5) \), \( (4, 9) \) and \( (10, 3) \).</p>
+
+<p>As before, we start with a generic quadratic equation, and plug in these values:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\text{Let } p(x) & = & a\cdot x^2 + b\cdot x + c \\ \\
+5 & = & a\cdot 1^2 + b\cdot 1 + c \\
+9 & = & a\cdot 4^2 + b\cdot 4 + c \\
+3 & = & a\cdot 10^2 + b\cdot 10 + c \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>We have to carefully solve these three simultaneous equations to find the values of \( a\), \(b\) and \(c\). And it will turn out that the quadratic function is as follows:</p>
+
+<p>$$ p(x) = -0.26x^2 + 2.63x + 2.63 $$</p>
+
+<p>This is depicted graphically <a href="https://www.geogebra.org/graphing/nqwnsydd">here</a>. You can also change the points here, and each time you change the points, you will automatically get a new quadratic function that passes through these points.</p>
+
+<p>(The way to easily find the solution in general uses ideas from a topic of mathematics called matrices. But we will skip that here.)</p>
+
+<p><strong>Q1.</strong> Under certain conditions, if the three points have certain peculiar placement, then it will NOT be possible to find a quadratic function that passes through the three points. Note that we said that the 3 points must be distinct, so we can ignore the case where we repeat the same point. Can you guess from the definition of functions, what that condition is? You can also check out by interacting with the GeoGebra graph here and playing with the points to find out the condition.</p>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Solution</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      If any two points have the same value of \( x\) and different values for the \(y\) coordinate, then by definition it is not possible to find a function, because functions cannot be 1-to-many.
+    </div>
+  </label>
+</div>
+
+
+<h3 id="general-rule">General Rule</h3>
+
+<p>Based on what we have seen above, we can generalize to higher degree polynomials as well. In general, if we have \( (n + 1) \) points on a plane (as before, no two points should have the same x-value), then we can find a <em>unique</em> polynomial of degree \(n\) that passes through these points.</p>
+
+<p>This is also known as polynomial interpolation and has great utility in modeling systems. A fun problem based on this idea is as follows:</p>
+
+<p><strong>Q2.</strong> Suppose I give all of you a secret code, essentially a number. And I keep a secret code with myself. The secret code that I have is the password to my secret account with my secret treasure (lets say a secret stash of finest chocolates.. :). You guys are sworn to not share your secret with each other.</p>
+
+<p>I have also given you a small device into which if you enter your code, it will give you the password to my secret account. However, the device has been coded such that at least 4 out of the 5 of you need to enter your codes to get the correct password. If only 2 of you enter your codes, or only 3 of you enter your codes, then the device will NOT provide the correct password. But if at least 4 of you enter your codes, then the device WILL provide you the correct code to my account. This is to ensure that majority of you come together to share the secret stash of chocolates :)</p>
+
+<p>How do you think I have setup the code to my account??</p>
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Hint</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>I have come up with a function and coded it into the device. Lets say the secret password is the value of the function at \(x = 0\). Each of you has the value of the function at different x values, lets say student #1 has the value of the function at \( x = 1 \) and so on. When you enter your code into the device, you enter your number, say #1, as well as the code I gave you.</p>
+
+<p>What function is such that if 2 of you enter your codes, the device cannot find my code. If 3 of you enter your codes, the device cannot find my code. But if 4 of you enter your codes, then the device can find my code, which is simply \(f(0) \).</p>
+
+    </div>
+  </label>
+</div>
+
+
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Answer</span>
+      <span>...</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      <p>Since 4 of you are needed to find the underlying function, and hence my code, I will take a degree-3 polynomial.</p>
+
+<p>Suppose I choose the function \(f(x) = 123x^3 - 256x^2 + 34x + 7329 \).</p>
+
+<p>I give student #1 the code \( f(1) = 7230 \), I give student #2 the code \( f(2) = 7357 \) amd so on, I give student #5 the code \( f(5) = 16474 \).</p>
+
+<p>When any 4 of you enter your codes, the device can uniquely find the degree-3 polynomial and hence also find \( f(0) \).</p>
+
+<p>Apparently, this was used in the World War to protect critical weapons and stuff, and only if a pre-defined number of generals got together, would it be possible to get the code. If one or two generals were compromised and their codes stolen from them, that would still not provide access to the secret stash!!</p>
+
+    </div>
+  </label>
+</div>
+
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#polynomial-from-its-roots">Polynomial from its roots</a>
+<ul>
+<li><a href="#roots-and-scale">Roots and scale</a></li>
+<li><a href="#roots-and-a-point">Roots and a point</a></li>
+</ul></li>
+<li><a href="#polynomial-from-points">Polynomial from points</a>
+<ul>
+<li><a href="#linear-functions-one-point">Linear functions one point</a></li>
+<li><a href="#quadratic-with-two-points">Quadratic with two points</a></li>
+<li><a href="#quadratic-with-three-points">Quadratic with three points</a></li>
+<li><a href="#general-rule">General Rule</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
