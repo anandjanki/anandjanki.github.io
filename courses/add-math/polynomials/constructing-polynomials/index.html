@@ -509,6 +509,53 @@ $$
 </div>
 
 
+<h3 id="bezier-curves">Bezier Curves</h3>
+
+<p>This idea also finds application in drawing software. To find a polynomial of degree-3, we saw that we need to specify 4 points on the curve. Another way to look at this is that we are simply constraining the freedom of the function by adding additional points. If we specify only 1 point there are a number of cubic functions that can pass through the point. If we specific 2 points, or 3 points the number of cubics that can pass through it gets further limited. Finally, if we specify 4 points, we get a unique cubic function.</p>
+
+<p>It turns out that we can provide these constraints in other ways as well. That is the idea behind what are called Bezier curves.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <a href="https://commons.wikimedia.org/wiki/File:B%C3%A9zier_3_big.gif#/media/File:Bézier_3_big.gif"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/B%C3%A9zier_3_big.gif" alt="Bézier 3 big.gif"></a><br>By Phil Tregoning - Created using ImageMagick, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=1727380">Link</a>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The 4 points \( P_0, \ldots P_3\) are fixed, and as the green points move on the lines joining these points, and the blue points move on the green lines, and the black point moves on the blue line, it traces a unique cubic equation governed by these points and the constraints they impose. This comes in handly while creating the design of say a new model of a car in a graphics software to draw the smooth curves that you want the car&rsquo;s design to have. That is the application that the French engineer Pierre Bézier had when he came up with these.</p>
+
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
@@ -531,6 +578,7 @@ $$
 <li><a href="#quadratic-with-two-points">Quadratic with two points</a></li>
 <li><a href="#quadratic-with-three-points">Quadratic with three points</a></li>
 <li><a href="#general-rule">General Rule</a></li>
+<li><a href="#bezier-curves">Bezier Curves</a></li>
 </ul></li>
 </ul></li>
 </ul>
