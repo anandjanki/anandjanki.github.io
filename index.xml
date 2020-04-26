@@ -6,7 +6,7 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2020 10:33:45 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 06:22:01 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -87,7 +87,7 @@ How many were going to St Ives?
     </item>
     
     <item>
-      <title>Constructing Polynomials</title>
+      <title>Polynomial Construction</title>
       <link>http://www.thoughtart.in/courses/add-math/polynomials/constructing-polynomials/</link>
       <pubDate>Sat, 25 Apr 2020 10:33:45 +0530</pubDate>
       
@@ -124,6 +124,16 @@ Now lets consider this same counting problem in a different scenario.</descripti
       <guid>http://www.thoughtart.in/courses/add-math/functions/mappings/</guid>
       <description>Definition Now that we have looked at sets in fair amount of detail, we can start doing some interesting math when we take two sets and start relating the elements in one set to the elements in the other.
  Defn 1: A Mapping is simply a rule that connects elements of one set to the elements of another set.   Note that implicit in the defintion is notion of a first set whose elements are connected or mapped to the elements on the other set, the second set.</description>
+    </item>
+    
+    <item>
+      <title>Polynomial Arithmetic</title>
+      <link>http://www.thoughtart.in/courses/add-math/polynomials/polynomial-arithmetic/</link>
+      <pubDate>Sun, 26 Apr 2020 06:22:01 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/polynomials/polynomial-arithmetic/</guid>
+      <description>In this session, we will explore basic arithmetic operations that can be performed with polynomials, typically taking two of them together, but it can also be many.
+Addition and Subtraction Addition and subtraction are the most basic operations that can be defined on two polynomials. Today, it may seem straighforward for us to define these operations. But when initially defined, it is likely it would have taken some amount of rigor to define it meaningfully.</description>
     </item>
     
     <item>
