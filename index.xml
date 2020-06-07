@@ -6,10 +6,19 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Apr 2020 06:22:01 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 11:08:03 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sizing Up Numbers</title>
+      <link>http://www.thoughtart.in/courses/add-math/indices-and-surds/sizing-up-numbers/</link>
+      <pubDate>Sun, 07 Jun 2020 11:08:03 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/indices-and-surds/sizing-up-numbers/</guid>
+      <description>Big Numbers In a previous session we encountered this puzzle of an author on the way to St Ives, when he sees 7 wives on the way, each carrying 7 sacks, each with 7 cats, each with 7 kittens. And we found that the total number of kittens were 7 x 7 x 7 x 7 = 2401 kittens. Those many kittens would be hard to manage, but the number itself easily manageable.</description>
+    </item>
     
     <item>
       <title>Basics</title>
@@ -84,6 +93,21 @@ Every cat had seven kits:
 Kits, cats, sacks, and wives,
 How many were going to St Ives?
  There are many ways to answer this question.</description>
+    </item>
+    
+    <item>
+      <title>Laws of Indices</title>
+      <link>http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/</link>
+      <pubDate>Sat, 06 Jun 2020 15:11:27 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/</guid>
+      <description>First we revisit the definition of exponentiation \( a^m \)
+Next, we understand the most basic law $$a^m \times a^n = a^{m + n} $$
+Next we see how this helps us in calculating \( 2^{100} \)
+Next we understand the intutuin behind \( a^{-m} \)
+Multiplication in one way is division in the other way.
+Then we move on rational powers and understand \( a^{\frac{1}{m}} \)
+And then we are ready to work on surds&amp;hellip; :)</description>
     </item>
     
     <item>

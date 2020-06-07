@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-161383666-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    <title>
+  
+  Sizing Up Numbers |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions-and-solutions/">2. FUNCTIONS AND SOLUTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/">4. INDICES AND SURDS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/sizing-up-numbers/">SIZING UP NUMBERS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/">LAWS OF INDICES</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/">5. POLYNOMIALS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Sizing Up Numbers</h1>
+  
+
+<h2 id="big-numbers">Big Numbers</h2>
+
+<p>In a previous session we encountered this puzzle of an author on the way to St Ives, when he sees 7 wives on the way, each carrying 7 sacks, each with 7 cats, each with 7 kittens. And we found that the total number of kittens were 7 x 7 x 7 x 7 = 2401 kittens. Those many kittens would be hard to manage, but the number itself easily manageable.</p>
+
+<p>But imagine we had to write a science fiction novel, where our hero is on a journey across the Milky Way galaxy and needs to reach the Andromeda Galaxy. Our story may look somewhat like this:</p>
+
+<blockquote>
+<p>Reoh&rsquo;s spacecraft had just travelled 151,810,000 kms from Earth. But not to worry, he wasn&rsquo;t going to crash into the Sun, for he was headed in a different direction, his first stop was Alpha Centauri which was 40,000,000,000,000 kms away from Earth. The very thought of the distance gave him the shivers. But this was just the beginning of his journey, and Alpha Centauri was only the first star he was going to pass.</p>
+
+<p>Cutting across the Milky Way galaxy, he would have to pass through several several of the estimated 250,000,000,000 stars in our galaxy. From Earth, the 250,000,000,000 stars of the Galaxy looked like a cloud of smoke cutting across the night sky. From where he was now, this cloud of 250,000,000,000 stars was like a smattering of sparkles. He needed a vantage point from where he would be able to see all the 250,000,000,000 stars in all its glittering glory. Maybe that would happen once he leaves the Mily Way, and somewhere on the way to Andromeda.</p>
+</blockquote>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/galaxies-NGC4302-NGC4298-Hubble.gif"/> <figcaption>
+            <h4>A picture released by Hubble Telescope on its 27th birthday.</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>This animation zooms through the Virgo Cluster of nearly 2,000 galaxies into tight Hubble Space Telescope images of spiral galaxies NGC 4302 (left) and NGC 4298 (right) in visible and infrared light. Located approximately 55 million light-years away, the starry pair offers a glimpse of what our Milky Way galaxy would look like to an outside observer<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup>.</p>
+
+<p>As you can imagine, carrying big numbers around like that is not easy and we have come up with ways to handle these. One way we have come up with is to give names to some of the large numbers. Thus, we would say Alpha Centauri is about 40 trillion kms away, and is only 1 of the 250 billion stars in our galaxy.</p>
+
+<p>But then we do not need to go so far to encounter big numbers. You may be surprised to know what we ourselves are made of. Imagine this little story:</p>
+
+<blockquote>
+<p>Reoh&rsquo;s last few days before his departure from Earth were full of fun and frolic. His entire family had gathered together for a grand week long party at his farmhouse. As he and his brother were walking through the backyard recounting several childhood stories joyously, he missed noticing the slippery ground from the watering of the plants. And in one misstep he found himself flat on the floor.</p>
+
+<p>His entire body made up of 37,200,000,000,000 cells came crashing against the hard floor. Most of these cells were each carrying about 12,000,000,000 nucleotide molecules tightly woven at the core of the cell&rsquo;s nucleus making up his genetic material. A nasty jolt for the 446,400,000,000,000,000,000,000 nucleotide molecules. Would they get disintegrated by the jolt, he wondered, or were the bonds strong enough to keep them intact?</p>
+</blockquote>
+
+<p>We can manage prose like above by introducing names to large numbers such as million, billion, crore, etc. But as you can imagine, the key point is that as the numbers become bigger, we need better tools to handle them. Even the simple operation of multiplying such large numbers above soon gets unwieldy if we have keep writing out such large numbers in every step.</p>
+
+<p>How do such large numbers come about?</p>
+
+<p>One instance where we encountered such large numbers was in counting problems, we found that the factorial of a number becomes <a href="http://www.thoughtart.in/courses/add-math/combinatorics/factorial/#factorials-are-large">very large very quickly</a>. In the same context, we also encountered another way by which we get large numbers.</p>
+
+<p>By repetition.</p>
+
+<p>By repeated application of an operation such as addition or multiplication.</p>
+
+<h3 id="repeated-addition">Repeated addition</h3>
+
+<p>We know well from childhood how multiplication is simply repeated addition.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/3x1=3.png"/> <figcaption>
+            <h4>3 x 1 = 3</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <figure class="figs">
+    <img src="images/3x4=12.png"/> <figcaption>
+            <h4>3 x 4 = 3 &#43; 3 &#43; 3 &#43; 3 = 12</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+</div>
+
+
+
+<p>Imagine having to carry around &ldquo;3 + 3 + 3 + 3&rdquo; everywhere through your calculations. That would be very cumbersome. What we needed was a notation and a definition, and that is how multiplication came about. We introduced for ourselves a notation called &ldquo;x&rdquo; and defined it as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 "><p><strong>Multiplication</strong> is simply repeated application of addition. Given a number \(a\) and a positive integer \(m\), we define &ldquo;\(a \times m\)&rdquo; (pronounced &ldquo;a times m&rdquo;) simply as:</p>
+
+<p>$$ a\times m = \underbrace{a + a + a + \cdots + a}_{m\text{ times}} $$</p>
+</td>
+</tr>
+</table>
+
+
+<p>For now, we can stick to positive integer values of \(m\), but we of course know that multiplication can be defined between any two arbitrary numbers as well.</p>
+
+<h3 id="repeated-multiplication">Repeated multiplication</h3>
+
+<p>In the same way, we can imagine what would happen if we decide to repeat the multiplication operation. Very quickly we can get some very large numbers. In the St Ives riddle, we encountered the calculation &ldquo;7 x 7 x 7 x 7&rdquo; in order to count the number of kittens. Imagine &ldquo;4 x 4 x 4 x 4 x 4 x 4 x 4&rdquo;, i.e. 4 repeated multipled 7 times, or say 4 repeatedly multiplied 20 times:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+7 \times 7 \times 7 \times 7 & = & 2,401 \\
+4 \times 4 \times 4 \times 4 \times 4 \times 4 \times 4 & = & 16,384 \\
+\underbrace{4 \times 4 \times 4 \times \cdots \cdots \cdots \cdots \cdots \cdots \cdots \times 4}_{20\text{ times}} & = & 1,099,511,627,776 \\
+\end{array}
+$$
+</p>
+
+
+<p>As you can see these numbers become big pretty quickly.</p>
+
+<p>Now imagine having to carry around \(\underbrace{4 \times 4 \times 4 \times \cdots \cdots \cdots \cdots \cdots \cdots \cdots \times 4}_{20\text{ times}}\) everywhere in a calculation. Or even if we carried the result of this repeated multiplication, the number \( 1,099,511,627,776 \), evrywhere in our calculations. That would be a little hard too. We encountered this problem in the stories above. And it is not possible to name this number either. We can give names to some number like a million, a billion, etc. But how do we name a number such as \( 1,099,511,627,776 \)?</p>
+
+<p>Clearly, what we need is a new notation and a definition, and that is how exponentiation came about. People came up with different notations, but the one that has stuck is the notation \( 4^{20} \) to mean take 4 and repeated multiple it 20 times. Sometimes when it is not easy to use the superscript notation, where we have to type plain text, like say on a Slack channel, the other notation that is also used often is \(4\) ^ \(20\). And this is called exponentiation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;2: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 2:</th>
+<td class="bb ph2 "><p><strong>Exponentiation</strong> is simply repeated application of multiplication. Given a postive number \(a\) and a positive integer \(m\), we define \(a^m\) (pronounced &ldquo;a power m&rdquo;) simply as:</p>
+
+<p>$$ a^m = \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} $$</p>
+</td>
+</tr>
+</table>
+
+
+<p>Note that for now, we make the above definition for positive integer values of \(a\) as well as positive integer \(m\), but we will not hesitate in trying to expand the definition beyond this set of numbers.</p>
+
+<p>With this notation, we can now rewrite the above calculations much more succinctly as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+7^4 & = & 2,401 \\
+4^7 & = & 16,384 \\
+4^{20} & = & 1,099,511,627,776 \\
+\end{array}
+$$
+</p>
+
+
+<h2 id="small-numbers">Small numbers</h2>
+
+<p>What is amazing is that this notation of exponentiation comes in handy in handling very very small numbers as well.</p>
+
+<p>You may ask where do small numbers come up. And for that, lets continue Reoh&rsquo;s story from his fall.</p>
+
+<blockquote>
+<p>As Reoh was wondering if his fall would have been a nasty jolt for the 446,400,000,000,000,000,000,000 nucleotide molecules, his thoughts started wandering deeper inside the molecules. Each nucleotide molecule would have about 15 or so atoms within them, atoms of Carbon, Nitrogen and Oxygen bound together in a particular fashion. Each of these atoms would in turn have a nucleus at their core.</p>
+
+<p>This is an atom&rsquo;s nucleus and we have come deep inside the cell&rsquo;s nucleus now. The size of each of nucleus with each cell (each of the 37,200,000,000,000 cells that came crashing against the hard floor) would be about 0.000006 meters. But this cell nucleus has about 12,000,000,000 nucleotide molecules packed inside of it, and each of those molecules have maybe 15 or so atoms. The size of each of these atoms is about 0.00000000009 m, and the size of the nuclues within the atom is much much smaller, about 35,000 times smaller, and would be about 0.0000000000000027 m. Packed inside that nucleus are the protons and the neutrons, 12 each for a Carbon atom.</p>
+
+<p>Is it possible at all that Reoh&rsquo;s fall may have disloged some of the protons from even one of the atoms in his body? The thought was profound, but at that time Reoh was woken up by his brother frantically checking if he was all OK.</p>
+</blockquote>
+
+<p>You would notice that just like large numebrs, carrying around these small numbers are also equally hard. And numbers can get rapidly small.</p>
+
+<p>Check out this image released recently using a technique called unique molecular identifiers (or UMIs), touted as a DNA microscope to reveal a cell&rsquo;s hidden structures<sup class="footnote-ref" id="fnref:2"><a href="#fn:2">2</a></sup>.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/DNA-microscope.jpg"/> <figcaption>
+            <h4>Individual RNA molecules (coloured dots) in a cell culture, by analysing the products of a chemical reaction and identifying their relative position.</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>We can also intuitively guess how small numbers come about. Again by repetition!</p>
+
+<h3 id="repeated-subtraction">Repeated subtraction</h3>
+
+<p>We will not attempt to write out definitions here, but we know well from our childhood days how division works.</p>
+
+<p>If we have a 100 chocolates with us, and 20 children in the class, we can take 20 chocolates out of the 100 and give 1 chocolate to each of the childen, and then do this repeatedly until we are left with no chololates. How many chocolates would each child have? That is obvious, and that is what division is all about:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+100 - 20 - 20 - 20 - 20 - 20 & = & 0 \\
+100 \div 20 & = & 5 \\
+\end{array}
+$$
+</p>
+
+
+<p>Notice the shorthand notation that we introduced \( \div \) to succinctly represent what would have otherwise been a very long piece of text to carry around everywhere.</p>
+
+<h3 id="repeated-division">Repeated division</h3>
+
+<p>Finally, what if we imagine doing repeated division of one number by another?</p>
+
+<p>What if we get a branch from an old dry tree, a branch that measures say 1m. And we break it into two halves, the size of each half is of course 0.5m. Then, we take the first half and break it further into two halves, and we keep doing this say 20 times. What is the size of the smallest piece of the branch that we would have?</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+1 \underbrace{\div 2 \div 2 \cdots \div 2}_{20\text{ times}} & = & 0.00000095367431640625 \\
+\end{array}
+$$
+</p>
+
+
+<p>In this session, we will see how we can deal with small numbers also quite neatly using the notation of exponentiation and the laws of indices which we venture into next.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">NASA link <a href="https://www.nasa.gov/feature/goddard/2017/a-new-angle-on-two-spiral-galaxies-for-hubbles-27th-birthday">here</a>. Credits: NASA, ESA, and G. Bacon, J. DePasquale, and Z. Levay (STScI) Acknowledgment: A. Fujii; Digitized Sky Survey (DSS), STScI/AURA, Palomar/Caltech, and UKSTU/AAO; B. Franke (Focal Point Observatory); and M. Mutchler (STScI).
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+<li id="fn:2">nature.com link <a href="https://www.nature.com/articles/d41586-019-01940-x">here</a>. Credit: Joshua Weinstein/Broad Institute
+ <a class="footnote-return" href="#fnref:2"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#big-numbers">Big Numbers</a>
+<ul>
+<li><a href="#repeated-addition">Repeated addition</a></li>
+<li><a href="#repeated-multiplication">Repeated multiplication</a></li>
+</ul></li>
+<li><a href="#small-numbers">Small numbers</a>
+<ul>
+<li><a href="#repeated-subtraction">Repeated subtraction</a></li>
+<li><a href="#repeated-division">Repeated division</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
