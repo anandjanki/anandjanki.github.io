@@ -26,13 +26,10 @@
       <pubDate>Sat, 06 Jun 2020 15:11:27 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/</guid>
-      <description>First we revisit the definition of exponentiation \( a^m \)
-Next, we understand the most basic law $$a^m \times a^n = a^{m + n} $$
-Next we see how this helps us in calculating \( 2^{100} \)
-Next we understand the intutuin behind \( a^{-m} \)
-Multiplication in one way is division in the other way.
-Then we move on rational powers and understand \( a^{\frac{1}{m}} \)
-And then we are ready to work on surds&amp;hellip; :)</description>
+      <description>First lets revisit the definition of exponentiation:
+ Defn: Exponentiation is simply repeated application of multiplication. Given a postive number \(a\) and a positive integer \(m\), we define \(a^m\) (pronounced &amp;ldquo;a power m&amp;rdquo;) simply as:
+$$ a^m = \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} $$
+   Note that we are starting with both \( a \) and \( m \) as positive integers. As we go along, we will expand the realm of applicability of the exponentiation operation.</description>
     </item>
     
   </channel>

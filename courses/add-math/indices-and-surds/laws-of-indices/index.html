@@ -124,25 +124,524 @@ if (!doNotTrack) {
       <div class="body-width center pa4 mt5"> 
         
   <h1>Laws of Indices</h1>
-  <p>First we revisit the definition of exponentiation \( a^m \)</p>
+  
 
-<p>Next, we understand the most basic law $$a^m \times a^n = a^{m + n} $$</p>
+<p>First lets revisit the definition of exponentiation:</p>
 
-<p>Next we see how this helps us in calculating \( 2^{100} \)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn:</th>
+<td class="bb ph2 "><p><strong>Exponentiation</strong> is simply repeated application of multiplication. Given a postive number \(a\) and a positive integer \(m\), we define \(a^m\) (pronounced &ldquo;a power m&rdquo;) simply as:</p>
+
+<p>$$ a^m = \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} $$</p>
+</td>
+</tr>
+</table>
+
+
+<p>Note that we are starting with both \( a \) and \( m \) as positive integers. As we go along, we will expand the realm of applicability of the exponentiation operation.</p>
+
+<p>In this notation, \(a\) is called the base, and \(m\) is called the exponent or some times also called the index or the power. \(a^m\) itself is commonly pronounced in different ways - &ldquo;a power m&rdquo;, or &ldquo;m-th power of a&rdquo;, or &ldquo;a raised to m&rdquo;, or briefly as &ldquo;a to the m&rdquo;.</p>
+
+<p>So, how does this definition help us? Note that this is only a notation, one that helps reduce the amount of writing we would need to do, and makes expression succinct.</p>
+
+<p>It does not help us do any calculation any better or any faster. For e.g., if we have to find the value of \( 7^4 \), we still have to do the multiplication step by step:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+7^4 & = & 7 \times 7 \times 7 \times 7 \\
+& = & 49 \times 7 \times 7 \\
+& = & 343 \times 7 \\
+& = & 2401 \\
+\end{array}
+$$
+</p>
+
+
+<p>Now suppose we want to find the value of the \( 2^3 \times 2^4 \). We could do that as follows from the definition:</p>
+
+
+
+
+
+
+<p class="katex">
+  $$
+\begin{array}{lrcl}
+\text{First} & 2^3 & = & 2 \times 2 \times 2 \\
+& & = & 4 \times 2 \\
+& & = & 8 \\
+\text{Next} & 2^4 & = & 2 \times 2 \times 2 \times 2 \\
+& & = & 4 \times 2 \times 2 \\
+& & = & 8 \times 2 \\
+& & = & 16 \\
+\text{Hence} & 2^3 \times 2^4 & = & 8 \times 16 \\
+& & = & 128 \\
+\end{array}
+$$
+</p>
+
+
+<p>Now, independently, we can find the value of \( 2^7 \) by multiplying \( 2\) repeatedly  \( 7 \) times. We find that the value is indeed the same, i.e. \( 128 \).</p>
+
+<p>This is because:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^3 \times 2^4 & = & \underbrace{2 \times 2 \times 2}_{3\text{ times}} \times \underbrace{2 \times 2 \times 2 \times 2}_{4\text{ times}} \\ \\
+& = & \underbrace{2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2}_{7\text{ times}} \\ \\
+& = & 2^7 \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>This should not come as much of a surpise, and it gives us the first of the laws of indices.</p>
+
+<h2 id="the-first-law">The First Law</h2>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>1st Law</p></td>
+<td class=""><p>$$a^m \times a^n = a^{m + n} $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and follows from the definition, especially for integer values of \(m\) and \(n\):</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+a^m\times a^n & = & \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} \times \underbrace{a \times a \times \cdots \times a}_{n\text{ times}} \\ \\
+& = & \underbrace{a \times a \times a \times \cdots \times a \times a \times a \times \cdots \times a}_{(m + n)\text{ times}} \\ \\
+& = & a^{m + n}
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<p>We can ask again, how this helps us and we will see that this helps simplify calculations wonderfully.</p>
+
+<p>We had calcualted \(7^4\) by repeatedly multiplying \(7\) one at a time. But now, we can use the first law to speed it up.
+<p class="katex">
+  $$
+\begin{array}{rcl}
+7^4 & = & 7^2 \times 7^2 \\
+& & \text{(by using the first law)} \\
+& = & 49 \times 49 \\
+& = & 2401 \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Well that is only 2 multiplications - once to find \(7 \times 7\) and another time to find \( 49 \times 49\), as compared to 3 multiplications that we did before - first to find \(7 \times 7\), then to find \(49 \times 7\) and finally to find \(343 \times 7\).</p>
+
+<h3 id="fast-exponentiation">Fast exponentiation</h3>
+
+<p>This idea can be extended further in a very nice and systematic way. Suppose, we have to find the value of \( 2^{30} \). What is the smallest number of multiplications that we need to perform? Do we need to do all of 29 multiplications to find out the value of this? Turns out no, and one of the ways to look at this is by applying the first law of indices that we just saw.</p>
+
+<p>The key is to note that \( 30 = 16 + 8 + 4 + 2 \), and to find \( 2^2\), \(2^4\), \(2^8\), and \(2^{16}\) successively needs 4 multiplications in all, and then to find \(2^{30}\), we need to perform 3 more multiplication operations. This is illustrated below step by step:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+2^2 & = & 2^{1+1} \\
+& = & 2^1 \times 2^1 \\
+& = & 2 \times 2 & \text{-->} & \text{1st multiplication} \\
+& = & 4 \\ \\
+2^4 & = & 2^{2+2} \\ 
+& = & 2^2 \times 2^2 \\ 
+& = & 4 \times 4 & \text{-->} & \text{2nd multiplication} \\
+& = & 16 \\ \\
+2^8 & = & 2^{4+4} \\
+& = & 2^4 \times 2^4 \\ 
+& = & 16 \times 16 & \text{-->} & \text{3rd multiplication} \\
+& = & 256 \\ \\
+2^{16} & = & 2^{8+8} \\
+& = & 2^8 \times 2^8 \\
+& = & 256 \times 256 & \text{-->} & \text{4th multiplication} \\
+& = & 65,536 \\ \\
+2^{30} & = & 2^{16+8+4+2} \\
+& = & 2^{16} \times 2^8 \times 2^4 \times 2^2 \\ 
+& = & 65,536 \times 256 \times 16 \times 4 & \text{-->} & \text{5th multiplication} \\
+& = & 16,777,216 \times 16 \times 4 & \text{-->} & \text{6th multiplication} \\
+& = & 268,435,456 \times 4 & \text{-->} & \text{7th multiplication} \\
+& = & 1,073,741,824
+\end{array}
+$$
+</p>
+
+
+<h2 id="the-second-law">The Second Law</h2>
+
+<p>The second law of indices can also be stated and proved easily</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>2nd Law</p></td>
+<td class=""><p>$$a^m \div a^n = a^{m - n} $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and follows from the definition, especially for integer values of \(m\) and \(n\) and when \( m &gt; n \):</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+a^m\div a^n & = & \displaystyle \frac{\overbrace{a \times \cdots \times a \times a \times a \times \cdots \times a}^{m\text{ times}}}{\underbrace{a \times a \times \cdots \times a}_{n\text{ times}}} \\ \\
+& = & \displaystyle \frac{{a \times \cdots \times \sout{a \times a \times \cdots \times a \times a}}}{\sout{a \times a \times \cdots \times a}} \\ \\
+& & \text{Since m is greater than n, all the n a's in the denominator} \\
+& & \text{can be cancelled out with n a's in the numerator, and} \\
+& & \text{we will be left with m - n a's in the numerator} \\ \\
+& = & \underbrace{a \times \cdots \times a}_{(m - n)\text{ times}} \\ \\
+& = & a^{m - n}
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<p>What this means is that to compute lets say the value of $$ \frac{2^{30}}{2^{20}} $$ it is not necessary to compute the values of the numerator and denominator separately and then do a long division like below: $$ \frac{2^{30}}{2^{20}} = \frac{1,073,741,824}{1,048,576} = 1,024 $$
+We can simply do the following: $$ \frac{2^{30}}{2^{20}} = 2^{30-20} = 2^{10} = 1,024 $$</p>
 
 <p>Next we understand the intutuin behind \( a^{-m} \)</p>
 
-<p>Multiplication in one way is division in the other way.</p>
+<p>But this throws up an interesting question. Do we expect this law to work when \(m\) is equal to \( n\)? What if \( m\) is less than \(n\)? The point is that we only started with postiive values of the exponent, we havent defined what it means to have the exponent as \(0\), or as a negative integer. We can do that now.</p>
 
-<p>Then we move on rational powers and understand \( a^{\frac{1}{m}} \)</p>
+<h3 id="negative-exponentiation">Negative exponentiation</h3>
 
-<p>And then we are ready to work on surds&hellip; :)</p>
+<p>In order to understand this, let us go back to our original definition again. We defined
+$$ a^m = \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} $$
+for positive integer values of \(m\). For example, this means:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^1 & = & 2 \\
+2^2 & = & 2\times 2 \\
+2^3 & = & 2\times 2\times 2 \\
+2^4 & = & 2\times 2\times 2\times 2\\
+\cdots \\
+2^m & = & \underbrace{2\times 2\times 2\times \cdots \times 2}_{m \text{ times}} \\
+\end{array}
+$$
+</p>
+
+
+<p>But this can also be rewritten as follows, eah subsequent term is got by multiplying the previous term by \(2\).
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^1 & = & 2 \\
+2^2 & = & 2^1\times 2 \\
+2^3 & = & 2^2\times 2 \\
+2^4 & = & 2^3\times 2 \\
+\cdots \\
+2^m & = & 2^{m - 1}\times 2 \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>But multiplication in one way is division in the other way.</p>
+
+<p>So, we can rewrite the above in the reverse order as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^{m-1} & = & 2^m \div 2 \\
+\cdots \\
+2^4 & = & 2^5\div 2 \\
+2^3 & = & 2^4\div 2 \\
+2^2 & = & 2^3\div 2 \\
+2^1 & = & 2^2\div 2 \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Now, it should be clear how we can extend the definition of indices to 0 and further on to negative numbers. We simply extend the above as follows:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^3 & = & 2^4\div 2 \\
+2^2 & = & 2^3\div 2 \\
+2^1 & = & 2^2\div 2 \\
+2^0 & = & 2^1\div 2 \\
+2^{-1} & = & 2^0\div 2 \\
+2^{-2} & = & 2^{-1}\div 2 \\
+2^{-3} & = & 2^{-2}\div 2 \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>In other words, we have the following:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^0 & = & 1 \\ \\
+2^{-1} & = & \displaystyle \frac{1}{2} \\ \\
+2^{-2} & = & \displaystyle \frac{1}{2^2} \\ \\
+2^{-3} & = & \displaystyle \frac{1}{2^3} \\
+\cdots \\
+2^{-m} & = & \displaystyle \frac{1}{2^m} \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>Now, we <em>choose</em> to extend the original definition that we made as follows:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn:</th>
+<td class="bb ph2 "><p>Given a postive number \(a\) and a positive integer \(m\), we define the following:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+a^m & = & \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} \\ \\
+a^0 & = & 1 & & \text{if } a \neq 0\\ \\
+a^{-m} & = & \displaystyle \frac{1}{a^m} & & \text{if } a \neq 0\\ \\
+\end{array}
+$$
+</p>
+</td>
+</tr>
+</table>
+
+
+<h2 id="the-third-law">The Third Law</h2>
+
+<p>The third law of indices is stated below and is simple to prove again for positive indices.</p>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>3rd Law</p></td>
+<td class=""><p>$$(a^m)^n = a^{m.n} $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and follows from the definition for integer values of \(m\) and \(n\):</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+(a^m)^n & = & (\underbrace{a \times a \times \cdots \times a}_{m\text{ times}})^n  \\ \\
+& = & \underbrace{\underbrace{a \times a \times \cdots \times a}_{m\text{ times}}\times \underbrace{a \times a \times \cdots \times a}_{m\text{ times}} \times \cdots \times \underbrace{a \times a \times \cdots \times a}_{m\text{ times}}}_{n\text{ times}} \\ \\
+& = & \underbrace{a \times a \times \cdots \times a\times a \times a \times \cdots \times a \times \cdots \times a \times a \times \cdots \times a}_{m.n\text{ times}} \\ \\
+& = & a^{m.n}
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<p>It should be easy to see that this law would hold true even if \(m\) is negative or \(n\) is negative or even if both are negative. Lets see, for eg, what happens if the outer exponent is negative (assume that \(m\) and \(n\) are positive, hence \(-n\) is negative below):</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+(a^m)^{-n} & = & \displaystyle \frac{1}{(a^m)^n} & & \text{using the definition for negative exponents} \\ \\
+& = & \displaystyle \frac{1}{a^{m.n}} & & \text{using the third law for positive exponents} \\ \\
+& = & a^{-m.n} & & \text{using the definition for negative exponents again}
+\end{array}
+$$
+</p>
+
+
+<p>In other words, as expected, the 3rd law holds true even if \(n\) is negative. In the same way we can check that it holds true even if the inner exponent is negative or if both the exponents are negative.</p>
+
+<h3 id="squares-and-cubes">Squares and Cubes</h3>
+
+<p>It is interesting to note how we have given special names to exponent of \(2\) and exponent of \(3\). For example \(5^2\) is hardly ever referred to as &ldquo;five to the power 2&rdquo;, and is most commonly referred to as &ldquo;5-squared&rdquo;. Similarly, 4^3 is hardly ever referred to as &ldquo;four to the power of 3&rdquo;, and is most commonly referred to as &ldquo;4-cubed&rdquo;. Ever wondered why?</p>
+
+<p>It has a very simple reason. The area of a square is side x side, or side^2, so anything to the power 2 started being called squared. Likewise, because the volume of a cube is side x side x side or &ldquo;side to the power 3&rdquo;, so the name &ldquo;cubed&rdquo; stuch for anything to the power 3.</p>
+
+<h3 id="rational-exponentiation">Rational exponentiation</h3>
+
+<p>An interesting question that people started asking long ago was the reverse of exponentiation in some ways. That is the following:</p>
+
+<p>If we are given the number \(25\), is there a number when repeatedly multiplied \( 2\) times would give \(25\). We know very well the answer to that question, that number is \(5\) because: $$ 5^2 = \underbrace{5\times 5}_{2 \text{ times}} = 25 $$. For now, we are only considering positive bases.</p>
+
+<p>Similarly, if we are given the number say \(343\), is there a number when repeatedly nultiplied \(3\) times would \(343\)? This may take a little effort, btu the answer to this question is \(7\), becuase: $$ 7^3 = \underbrace{7\times 7\times 7}_{3 \text{ times}} = 343 $$</p>
+
+<p>We can ask a little harder question, for e.g., is there a number when repeatedlty multiple \(2\) times would give \(30\). Today, we can use a calculator to easily find out, but in olden days when this thought came up, one would have had to say \(5^2 = 25\) and \(6^2 = 36\), so <em>this number we are looking for</em> should be between \(5\) and \(6\). Then we could try with \(5.5^2 = 30.25 \), so <em>this number that we are looking for</em> should be between \(5\) and \(5.5\).</p>
+
+<p>As you may have noticed, it is getting cumbersome to repeatedly keep saying &ldquo;this number that we are looking for&rdquo;, or &ldquo;this number which when repeatedly multiplied twice would give thirty&rdquo;, and that calls for a new notation. The original choice of notation was the \(\sqrt{}\) sign (called the radical sign) but the real obvious choice for this notation was a rational exponent, and both of these have stuck through history. Using the notation, we would say:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\sqrt{30}\times \sqrt{30} & = & 30 \\ \\
+\text{or equivalently} \\ \\
+30^{\frac{1}{2}}\times 30^{\frac{1}{2}} & = & 30 \\
+\end{array}
+$$
+</p>
+
+
+<p>We can take one more example with this notation. The number which when multiplied repeatedly by itself \(3\) times yields \(343\) is denoted by \(343^{\frac{1}{3}}\) or equivalently \(\sqrt[3]{343}\). And since we know that \(7^3 = 343\), therefore \(343^{\frac{1}{3}} = 7\) or said in an other way \(\sqrt[3]{343} = 7\).</p>
+
+<p>As we know well this is called the square-root and the cube-root respectively of a number. Similarly, we can also find the \(m\text{-th}\) root of a number. The term root comes because finding say the fourth-root of \(25\) is synonymous with solving the polynomial equation $$ x^4 - 25 = 0$$
+or finding the point(s) where the graph of the function \( y = x^4 - 25\) cuts the x-axis!</p>
+
+<p>We are thus set to expan our definitions as follows</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn:</th>
+<td class="bb ph2 "><p>Given a postive number \(a\) and a positive integer \(m\), we define the following:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+a^m & = & \underbrace{a \times a \times a \times \cdots \times a}_{m\text{ times}} \\ \\
+\underbrace{a^{\frac{1}{m}} \times a^{\frac{1}{m}} \times a^{\frac{1}{m}} \times \cdots \times a^{\frac{1}{m}}}_{m\text{ times}} & = & a\\ \\
+a^0 & = & 1 & & \text{if } a \neq 0\\ \\
+a^{-m} & = & \displaystyle \frac{1}{a^m} & & \text{if } a \neq 0\\ \\
+\end{array}
+$$
+</p>
+</td>
+</tr>
+</table>
+
+
+<p>This definition combined with the 3rd law gives us the following identities:
+$$ a^{\frac{m}{n}} = a^{m\frac{1}{n}} = (a^m)^{\frac{1}{n}} = \sqrt[n]{a^m} $$
+$$ a^{\frac{m}{n}} = a^{\frac{1}{n}m} = (a^{\frac{1}{n}})^m = (\sqrt[n]a)^m $$</p>
+
+<h2 id="growing-our-number-sense">Growing our number sense</h2>
+
+<p>So far, we have considered the base to be a positive number, and have steadily expanded the definition of exponentiation from positive integer exponents to zero and negative integer exponents, and then to rational exponents as well. Apart from providing us the ability to handle very large numbers and very small numbers, the exponentiation operation also gave rise to new kinds of numbers.</p>
+
+<h3 id="irrational-numbers">Irrational numbers</h3>
+
+<p>We know well the exponentiation of positive numbers, even just positive integers, to rational exponents gave rise to the discovery of new kind of numbers - the irrational numbers.</p>
+
+<p>The very first irrational number to be discovered was of course \(\sqrt{2}\). We also know how this came about - in trying to find the length of the hypotenuse a right-angled triangle with both sides as 1, one had to find the square root of \(2\).</p>
+
+<p>This discovery was made by a Greek mathematician Hippasus in 5th century BC, and legend has it that he was rewarded for this discovery by being thrown into the sea, simply becasue other mathematicians (they were really philosophers then) were scared of this new kind of number and did not know how to deal with it!</p>
+
+<p>In general, the nth roots of almost all numbers (all integers except the nth powers, and all rationals except the quotients of two nth powers) are irrational. For eg, \(\sqrt[3]{5}\), \(\sqrt[5]{3}\) or \({\frac{2}{3}}^{\frac{3}{2}}\) are all of this kind. And these are called surds.</p>
+
+<h3 id="complex-numbers">Complex numbers</h3>
+
+<p>Finally, when we started exploring exponents of negative numbers, a startling discovery opened up the entire new world of complex numbers.</p>
+
+<ul>
+<li>We know well that a negative number raised to the power of an even integer is a positive number, for eg, \((-5)^2 = 25 \).</li>
+<li>We also know well that a negative number raised to the power an odd number is a negative number, for eg, \((-5)^3 = -125 \).</li>
+<li>Around the 15th century, Italian mathematician Cardano (who was working on solving cubic equations) had the courage to ask what would happen if we raise a negative number to a rational number such as \( (-1)^\frac{1}{2}\) and that opened up the fascinating new space of complex numbers.</li>
+</ul>
 
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
         
   
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#the-first-law">The First Law</a>
+<ul>
+<li><a href="#fast-exponentiation">Fast exponentiation</a></li>
+</ul></li>
+<li><a href="#the-second-law">The Second Law</a>
+<ul>
+<li><a href="#negative-exponentiation">Negative exponentiation</a></li>
+</ul></li>
+<li><a href="#the-third-law">The Third Law</a>
+<ul>
+<li><a href="#squares-and-cubes">Squares and Cubes</a></li>
+<li><a href="#rational-exponentiation">Rational exponentiation</a></li>
+</ul></li>
+<li><a href="#growing-our-number-sense">Growing our number sense</a>
+<ul>
+<li><a href="#irrational-numbers">Irrational numbers</a></li>
+<li><a href="#complex-numbers">Complex numbers</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
 
 
 
