@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-161383666-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    <title>
+  
+  Exponents at Work |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions-and-solutions/">2. FUNCTIONS AND SOLUTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/">4. INDICES AND SURDS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/sizing-up-numbers/">SIZING UP NUMBERS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/">LAWS OF INDICES</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/exponents-at-work/">EXPONENTS AT WORK</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/working-with-surds/">SURDS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/">5. POLYNOMIALS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Exponents at Work</h1>
+  
+
+<h2 id="very-large-numbers">Very large numbers</h2>
+
+<p>Lets see how the notation for exponentiation and the laws of indices can be used to effectively manage large numbers. Recall the story of Reoh, our hero, who was on the maiden human flight to Andromeda Galaxy.</p>
+
+<p>Suppose he has to estimate the size of the Milky Way Galaxy from the following:</p>
+
+<ul>
+<li>The distance from the Sun to the nearest star, Alpha Centauri, is 40,000,000,000,000 kms.</li>
+<li>The total number of stars in the Milky Way is estimated at 250,000,000,000.</li>
+</ul>
+
+<p>The intent of these calculations are not to arrive at the exact size of the Milky Way galaxy, but really to show how the exponent notation and the laws of indices come in handy while handling large numbers.</p>
+
+<p>We know that the Milky Way Galaxy can be considered a somewhat of a plane figure. Further, for ease of calculations, we will assume that the galaxy is shaped like a square. And further assume  that all the stars in the galaxy are uniformly distributed on a 2-D grid on this square shape. This is depicted pictorially here:</p>
+
+<figure class="figs">
+    <img src="images/Milky-Way-Galaxy.jpg"/> <figcaption>
+            <h4>Estimating the size of the Milky Way Galaxy.</h4>
+        </figcaption>
+</figure>
+
+
+<p>Without the exponentiation notation our calculations might have looked as follows, side of the square : $$ 40,000,000,000,000 \times \sqrt{250,000,000,000} \text{ kms} $$</p>
+
+<p>To try and continue that calculation looks onerous already, and this is where our exponentiation notation comes in handy:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+\text{Distance between any two stars} & = & 40,000,000,000,000 \text{ kms} \\
+& = & 40 \times \underbrace{10\times 10\times 10\times \cdots \times 10}_{12 \text{ times}}  \text{ kms}\\
+& = & 40 \times 10^{12}  \text{ kms} \\ \\
+\text{Number of stars on one side of the square} & = & \sqrt{250,000,000,000} \text{ stars} \\
+& = & \sqrt{25 \times 10^{10}}  \text{ stars} \\ \\
+\text{Now, using the laws of indices:} \\
+\sqrt{25 \times 10^{10}} & = & (25 \times 10^{10})^{\frac{1}{2}} \\
+& = & 25^{\frac{1}{2}} \times (10^{10})^{\frac{1}{2}} & & \text{Using 4th Law}\\
+& = & (5^2)^{\frac{1}{2}} \times (10^{10})^{\frac{1}{2}} \\ 
+& = & 5^{2\cdot \frac{1}{2}} \times 10^{10\cdot \frac{1}{2}}& & \text{Using 3rd Law}\\
+& = & 5\times 10^5 \\ \\
+\therefore \text{Size of the side of the square} & = & (5\times 10^5) \times (40 \times 10^{12}) \\
+& = & 200 \times 10^5\times 10^{12} \\
+& = & 200 \times 10^{5 + 12} & & \text{Using 1st Law}\\
+& = & 200 \times 10^{17} \\
+& = & 20 \times 10^{18} \\
+\end{array}
+$$
+</p>
+
+
+<p>So, thats our estimate of the diameter of the Milky Way Galaxy - \( 20 \times 10^{18} \text{ kms} \), which is not too far from the estimate that a <a href="https://www.google.com/search?q=what+is+the+diameter+of+the+milky+way+galaxy+in+kms">Google search</a> yields.</p>
+
+<p>More than the estimate, the key point is to note how the exponentiation notation saved us from having to write out very long sequences of digits for very large numbers throughout the calculation, and how the laws of indices helped us from doing the calculations easily.</p>
+
+<h2 id="very-small-numbers">Very small numbers</h2>
+
+<p>Next lets see how the exponentiation notation and the laws of indices help us work with small numbers. Recall again the story of Reoh, who before his maiden flight had a fall in his backyard that jolted each one of the 37 trillion cells in his body.</p>
+
+<p>Suppose we had to estimate the size of a Carbon atom fron the following:</p>
+
+<ul>
+<li>The diameter of the nucleus of a cell is 0.000006 meters</li>
+<li>The number of nucleotides packed within the nucleus is about 12,000,000,000</li>
+<li>Each nucleotide is made up of roughly 15 atoms, mostly Carbon atoms.</li>
+</ul>
+
+<p>The intent of these calculations are again not in order to arrive at the exact size of a Carbon atom, but really to show how the exponent notation and the laws of indices come in handy while handling very small numbers, just like they came in handy with handling very large numbers!</p>
+
+<p>We will approximate the nucleus of a cell by a sphere, and each atom also by a sphere and neglect all spaces. This is depicted pictorially here:</p>
+
+<figure class="figs">
+    <img src="images/Cell-Nucleus.jpg"/> <figcaption>
+            <h4>Estimating the size of a Carbon atom.</h4>
+        </figcaption>
+</figure>
+
+
+<p>Without the exponentiation notation, our calculations might have looked as follows for the size of the atom:
+$$ \sqrt[3]{(0.000,006)^3 \div 12,000,000,000 \div 15} $$</p>
+
+<p>As before, to try and continue this calculation would be quite cumbersome, and our exponentiation notations come in handy.</p>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+\text{Diameter of the nucleus of the cell} & = & 0.000,006 \text{ m} \\
+& = & 0.6 \times \underbrace{0.1\times 0.1\times 0.1\times 0.1 \times 0.1}_{5 \text{ times}}  \text{ m}\\
+& = & 0.6 \times (0.1)^5 \\
+& = & 6 \times 0.1 \times (0.1)^5 \\
+& = & 6 \times (0.1)^6 & & \text{Using 1st Law}\\ \\
+& = & 6 \times (\frac{1}{10})^6 \\ \\
+& = & 6 \times \frac{1^6}{10^6} & & \text{Using 4th Law} \\ \\
+& = & 6 \times \frac{1}{10^6} \\ \\
+& = & 6 \times 10^{-6} & & \text{Using negative exponent defn} \\ \\
+\therefore \text{Radius of the nucleus of the cell} & = & \displaystyle \frac{6 \times 10^{-6}}{2} \\ \\
+& = & 3\times 10^{-6} \\ \\
+\therefore \text{Volume of the nucleus of the cell} & = & \displaystyle \frac{4}{3}\pi (3 \times 10^{-6})^3 & & \text{Assuming the nucleus is a sphere}\\ \\
+\text{Number of atoms in the nucleus of the cell} & = & 15 \times 12\times \underbrace{10\times 10\times 10\times \cdots \times 10}_{9 \text{ times}} \\ \\
+& = & 15 \times 12\times 10^{9} \\ \\
+& = & 180 \times 10^{9} \\ \\
+\therefore \text{Volume of each atom} & = & \displaystyle \frac{\displaystyle \frac{4}{3}\pi (3 \times 10^{-6})^3}{180 \times 10^{9}} \\ \\
+\therefore \displaystyle \frac{4}{3}\pi R_{\text{atom}}^3 & = & \displaystyle \frac{\displaystyle \frac{4}{3}\pi (3 \times 10^{-6})^3}{180 \times 10^{9}} & & \text{Assuming each atom is a sphere} \\ \\
+\therefore \displaystyle \cancel{\frac{4}{3}}\pi R_{\text{atom}}^3 & = & \displaystyle \frac{\displaystyle \cancel{\frac{4}{3}\pi} (3 \times 10^{-6})^3}{180 \times 10^{9}} \\ \\
+\therefore R_{\text{atom}} & = & \bigg\lbrack \displaystyle \frac{(3 \times 10^{-6})^3}{180 \times 10^{9}} \bigg\rbrack^{\frac{1}{3}} \\ \\
+& = & \displaystyle \frac{((3 \times 10^{-6})^3)^{\frac{1}{3}}}{180^{\frac{1}{3}} \times (10^{9})^{\frac{1}{3}}} & & \text{Using 4th and 5th Law}\\ \\
+& = & \displaystyle \frac{3 \times 10^{-6}}{180^{\frac{1}{3}} \times 10^3} & & \text{Using 3rd Law}\\ \\
+\text{Now, } 5^3 & = & 125 \\
+\text{And, } 6^3 & = & 216 \\
+\text{So, for now, lets approximate, } 180^{\frac{1}{3}} & \approx & 6 \\ \\
+\therefore R_{\text{atom}} & = & \displaystyle \frac{3}{6} \times \frac{10^{-6}}{10^3} \\ \\
+& = & 0.5 \times 10^{-6-3} & & \text{Using 2nd Law} \\ \\
+& = & 5 \times 0.1 \times 10^{-9} \\ \\
+\therefore R_{\text{atom}} & = & 5 \times 10^{-10} \\ \\
+\end{array}
+$$
+</p>
+
+
+<p>So, thats our estimate of the radius of the Carbon atom - \( 5 \times 10^{-10} \text{ m} \), which is actually very close to the estimate that a <a href="https://www.google.com/search?q=what+is+the+radius+of+a+carbon+atom+in+m">Google search</a> yields.</p>
+
+<p>More than the estimate, the key point is to note how the exponentiation notation saved us from having to write out long sequences of decimal digits for very small numbers throughout the calculation, and how the laws of indices helped us from doing the calculations of such small numbers easily.</p>
+
+<h2 id="irrational-numbers">Irrational numbers</h2>
+
+<p>So far, we have considered the base to be a positive number, and have steadily expanded the definition of exponentiation from positive integer exponents to zero and negative integer exponents, and then to rational exponents as well. Apart from providing us the ability to handle very large numbers and very small numbers, the exponentiation operation also gave rise to new kinds of numbers.</p>
+
+<p>We know that the exponentiation of positive numbers, even just positive integers, to rational exponents gave rise to the discovery of new kind of numbers - the irrational numbers.</p>
+
+<p>The very first irrational number to be discovered was of course \(\sqrt{2}\). We also know how this came about - in trying to find the length of the hypotenuse a right-angled triangle with both sides as 1, one had to find the square root of \(2\).</p>
+
+<p>This discovery was made by a Greek mathematician Hippasus in 5th century BC, and legend has it that he was rewarded for this discovery by being thrown into the sea, simply becasue other mathematicians (they were really philosophers then) were scared of this new kind of number and did not know how to deal with it!</p>
+
+<p>In general, the nth roots of almost all numbers (all integers except the nth powers, and all rationals except the quotients of two nth powers) are irrational. For eg, \(\sqrt[3]{5}\), \(\sqrt[5]{3}\) or \({\frac{2}{3}}^{\frac{3}{2}}\) are all of this kind.</p>
+
+<p>These numbers are called surds.</p>
+
+<p>We may be a little suprised to find how many surds there are. Lets do a little experiment to find this out.</p>
+
+<p>Suppose we were to take the number line and lets take the points representing the numbers 0 and 1. Suppose we mark 10 intervals between these points corresponding to the fractions \(\frac{1}{10}, \frac{2}{10}, \ldots , \frac{9}{10} \). This is depicted in the pic below.</p>
+
+<figure class="figs">
+    <img src="images/How-dense-are-rationals-1.png"/> <figcaption>
+            <h4>Fractional points 0.1, 0.2, ... , 0.9 marked between 0 and 1</h4>
+        </figcaption>
+</figure>
+
+
+<p>Now, you can draw this pic on a sheet of paper, take a pencil and randomly choose a point between 0 and 1 by touching the sheet of paper with closed eyes (If you are not on the line, you can simply go vertically up or vertically down to touch the line, and if you are outside of 0 and 1, you can just close your eyes and repeat this). What&rsquo;s your guess where the pencil will land - do you generally expect it to fall on one of the 10 points or is it more likely to fall in the space between the points?</p>
+
+<p>You may probably correctly guess that the randomly chosen number is more likely to be in between these fractions, than exactly one of them.</p>
+
+<p>What if we mark out points more closely, suppose we mark 100 intervals between these points corresponding to the fractions \(\frac{1}{100}, \frac{2}{100}, \ldots, \frac{10}{100}, \frac{11}{100}, \ldots , \frac{90}{100}, \frac{91}{100}, \ldots , \frac{99}{100}\). This is depicted in the pic below.</p>
+
+<figure class="figs">
+    <img src="images/How-dense-are-rationals-2.png"/> <figcaption>
+            <h4>Fractional points 0.01, 0.02, ... , 0.99 marked between 0 and 1</h4>
+        </figcaption>
+</figure>
+
+
+<p>Now, we may start having some doubts. Maybe there is now a greater chance that the pencil will land on one of these 100 numbers, rather than in between them?</p>
+
+<p>Well, lets take it one step further and make 1000 divisions, and mare out the corresponding numbers. This is shown in the figure below:</p>
+
+<figure class="figs">
+    <img src="images/How-dense-are-rationals-3.png"/> <figcaption>
+            <h4>Fractional points 0.001, 0.002, ... , 0.999 marked between 0 and 1</h4>
+        </figcaption>
+</figure>
+
+
+<p>Now, we may be tempted to say that there is a very high chance that we will land on one of these 1000 numbers.</p>
+
+<p>Surprisingly, that would be incorrect. The key is to notice that the above pictures are just approximations. The tics that we have drawn to depict the fractional points have a certain thickness, but in reality they should not have any thickness, because they are just points. And our pencil is also a very fine pointed pencil.</p>
+
+<p>Even more suprising is the fact that even if divide the line between 0 and 1 into a billion intervals, and mark these fractions, these rational numbers using a very very very fine tip pencil, it turns out that the space between these numbers is way way more than the space occupied by the billion numbers themselves!</p>
+
+<p>Thats the space that the surds occupy!!</p>
+
+<p>As a result of this, contrary to our expectations, it turns out that there are way way more surds than there are rational numbers. When people realized this, it must have been a most mind boggling revelation.</p>
+
+<p>We can get a glimpse here of why this is so. It is easy to list out the rational numbers between 0 and 1 as follows:
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+\text{Fractions with denominator 2} & \rarr & \frac{1}{2} \\ \\
+\text{with denominator 3} & \rarr & \frac{1}{3}, \frac{2}{3} \\ \\
+\text{with denominator 4} & \rarr & \frac{1}{4}, \frac{3}{4} \\ \\
+\text{with denominator 5} & \rarr & \frac{1}{5}, \frac{2}{5}, \frac{3}{5}, \frac{4}{5} \\ \\
+\text{with denominator 6} & \rarr & \frac{1}{6}, \frac{5}{6} \\ \\
+\ldots \ldots
+\end{array}
+$$
+</p>
+</p>
+
+<p>Note that we skipped \(\frac{2}{4}\) because that is already accounted for in \(\frac{1}{2}\). Likewise, we skipped \(\frac{2}{6}\), \(\frac{3}{6}\) and \(\frac{4}{6}\) as well.</p>
+
+<p>(Technically speaking, as seen above, it is possible to create a mapping between integers and rational numbers. Hence the cardinality of the set of the integers and the set of rational numbers is said to be the same and they are called countably infinite. This is also denoted as \(\aleph_0 \)).</p>
+
+<p>Now, lets try and write out irrational numbers, just to get a feel for how many of them are there. Lets start with \( \sqrt{2}\).</p>
+
+<p>We can look at integer multiples of \( \sqrt{2}\), and they would all be irrational numbers:
+$$ 2\sqrt{2}, 3\sqrt{2}, 4\sqrt{2}, \ldots $$
+We can look at \( \sqrt{2}\) divided by integers, and they would all be irrational numbers:
+$$ \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{3}, \frac{\sqrt{2}}{4}, \ldots $$
+In fact, we can take every rational number that we listed out above, and multiply it by \( \sqrt{2}\) and we will get a new irrational number:
+$$ \frac{1}{2}\sqrt{2}, \frac{1}{3}\sqrt{2},\frac{2}{3}\sqrt{2},\frac{1}{4}\sqrt{2},\frac{3}{4}\sqrt{2},\frac{1}{5}\sqrt{2},\frac{2}{5}\sqrt{2},\frac{3}{5}\sqrt{2},\frac{4}{5}\sqrt{2},\ldots $$
+And that is just with \(\sqrt{2}\). We can get more irrational numbers by raising \(2\) to other rational exponents, for eg:
+$$ \sqrt[3]{2}, \sqrt[4]{2}, \sqrt[5]{2}, \ldots $$
+And we can raise 2 to odd integers and then take a square root:
+$$ \sqrt{2^3}, \sqrt{2^5}, \sqrt{2^7}, \ldots $$
+Really, we can take each of the rational numbers above and raise \(2\) to it, to get a new irrational number:
+$$ 2^\frac{1}{2}, 2^\frac{1}{3},2^\frac{2}{3},2^\frac{1}{4},2^\frac{3}{4},2^\frac{1}{5},2^\frac{2}{5},2^\frac{3}{5},2^\frac{4}{5},\ldots $$
+Each and every one of these is a new irrational number, and we can take any one of them and repeat what we did earlier with \(\sqrt{2}\)!! For e.g, with \(2^\frac{1}{4}\), we can do the following:
+$$ \frac{1}{2}2^\frac{1}{4}, \frac{1}{3}2^\frac{1}{4},\frac{2}{3}2^\frac{1}{4},\frac{1}{4}2^\frac{1}{4},\frac{3}{4}2^\frac{1}{4},\frac{1}{5}2^\frac{1}{4},\frac{2}{5}2^\frac{1}{4},\frac{3}{5}2^\frac{1}{4},\frac{4}{5}2^\frac{1}{4},\ldots $$
+We can also add, we can subtract and get new irrational numbers, simply as:
+$$ 1+\sqrt{2}, 2+\sqrt{2},3+\sqrt{2},4+\sqrt{2},\ldots $$
+Or by adding each rational number we listed earlier as below:
+$$ \frac{1}{2}+\sqrt{2}, \frac{1}{3}+\sqrt{2},\frac{2}{3}+\sqrt{2},\frac{1}{4}+\sqrt{2},\frac{3}{4}+\sqrt{2},\frac{1}{5}+\sqrt{2},\frac{2}{5}+\sqrt{2},\frac{3}{5}+\sqrt{2},\frac{4}{5}+\sqrt{2},\ldots $$
+We can take the first of these and repeat everything we did so far, or for eg:
+$$ \frac{1}{2}+\frac{1}{2}\sqrt{2}, \frac{1}{2}+\frac{1}{3}\sqrt{2},\frac{1}{2}+\frac{2}{3}\sqrt{2},\frac{1}{2}+\frac{1}{4}\sqrt{2},\frac{1}{2}+\frac{3}{4}\sqrt{2},\frac{1}{2}+\frac{1}{5}\sqrt{2},\ldots $$
+It seems never ending. We can take one of these irrational numbers and find an n-th root of it, that is irrational again:
+$$ \sqrt{1+\sqrt{2}}, \sqrt[3]{1+\sqrt{2}}, \sqrt[4]{1+\sqrt{2}}, \sqrt[5]{1+\sqrt{2}}, \ldots $$
+And even now, we have only scratched the surface of these surds. We can add surds to get new surds:
+$$ \sqrt{2}+\sqrt{3}, \sqrt{2}+\sqrt{5}, \sqrt{2}+\sqrt{3}+\sqrt{5}, \ldots $$
+As you may start getting the idea, these surds are all over the place. We may not have encountered them so far, and may be they dont show up so much in our day to day life, but if you start digging deeper, they are way way way more in number than the rational numbers, in some ways exponentially more. And these are just one type of irrational numbers called algebraic irrationals, there is yet another type of irrationals called transcendtal irrationals.</p>
+
+<p>We encountered this picture in the topic on Sets, and is reproduced below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b60 ">
+    <figure class="figs">
+    <img src="images/number%20sets.png"/> <figcaption>
+            <h4>Different kinds of numbers depicted as sets</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b20 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Hopefully, this would have given you a good feel for the fact that if we randomly pick a number between 0 and 1, it is way way way more likely that it will be an irrational number than a rational number.</p>
+
+<p>(Technically speaking, it is NOT possible to create a mapping between integers and irrational numbers. The cardinality of the set of the irrational numbers is said to be uncountably infinite. This is also denoted as \(\aleph_1 \)).</p>
+
+<p>Since there are so many of these surds lying around, it make sense that we figure out how to deal with them, how to work with them, and in the process we will also discover some very interesting places where surds show up, in the next session.</p>
+
+<h2 id="complex-numbers">Complex numbers</h2>
+
+<p>Finally, when we started exploring exponents of negative numbers, a startling discovery opened up the entire new world of complex numbers.</p>
+
+<ul>
+<li>We know well that a negative number raised to the power of an even integer is a positive number, for eg, \((-5)^2 = 25 \). A negative number raised to a negative exponent is also fairly simple \((-5)^{-2} = \frac{1}{25} \)</li>
+<li>We also know well that a negative number raised to the power an odd number is a negative number, for eg, \((-5)^3 = -125 \). Likewise, a negative number raised to a negative odd exponent \((-5)^{-3} = \frac{-1}{125} \).</li>
+<li>Around the 15th century, Italian mathematician Cardano (who was working on solving cubic equations) had the courage to ask what would happen if we raise a negative number to a rational number such as \( (-1)^\frac{1}{2}\) and that opened up the most fascinating new space of complex numbers.</li>
+</ul>
+
+<p>The vastness of complex numbers is even more beautiful than the irrational numbers. But for now, we will stick to irrational numbers, specifically surds in the next session.</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#very-large-numbers">Very large numbers</a></li>
+<li><a href="#very-small-numbers">Very small numbers</a></li>
+<li><a href="#irrational-numbers">Irrational numbers</a></li>
+<li><a href="#complex-numbers">Complex numbers</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
