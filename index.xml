@@ -6,10 +6,20 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 19:57:41 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 12:27:06 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Exponential Growth</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/exponential-growth/</link>
+      <pubDate>Sat, 01 Aug 2020 19:40:20 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/exponential-growth/</guid>
+      <description>We explored the Laws of Indices and Surds in a previous session. Lets take that one step further by exploring exponentials before venturing into Logarithms.
+You may have heard this puzzle in your childhood - there is a pond with a lotus plant growing. On the first day, one lotus flower blooms from the plant. On the second day, there are two flowers. On the third day, there are four flowers and so on.</description>
+    </item>
     
     <item>
       <title>Sizing Up Numbers</title>
@@ -96,6 +106,16 @@ How many were going to St Ives?
     </item>
     
     <item>
+      <title>Comparing Growth Rates</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/comparing-growth/</link>
+      <pubDate>Sun, 02 Aug 2020 09:24:30 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/comparing-growth/</guid>
+      <description>To understand the different kinds of growth rates, lets put them next to each other and compare.
+Graphs of functions Linear Functions You have learnt about linear functions in earlier Math classes and they take the following form: $$ f(x) = a\cdot x + b $$ Or the more popular form of \( y = mx + c \). For the sake of the comparison, lets make the constant term 0, and plot linear functions for different values of the slope \( m\).</description>
+    </item>
+    
+    <item>
       <title>Laws of Indices</title>
       <link>http://www.thoughtart.in/courses/add-math/indices-and-surds/laws-of-indices/</link>
       <pubDate>Sat, 06 Jun 2020 15:11:27 +0530</pubDate>
@@ -145,6 +165,16 @@ Now lets consider this same counting problem in a different scenario.</descripti
       <guid>http://www.thoughtart.in/courses/add-math/functions/mappings/</guid>
       <description>Definition Now that we have looked at sets in fair amount of detail, we can start doing some interesting math when we take two sets and start relating the elements in one set to the elements in the other.
  Defn 1: A Mapping is simply a rule that connects elements of one set to the elements of another set.   Note that implicit in the defintion is notion of a first set whose elements are connected or mapped to the elements on the other set, the second set.</description>
+    </item>
+    
+    <item>
+      <title>Exponential Decay</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/exponential-decay/</link>
+      <pubDate>Sat, 08 Aug 2020 09:12:38 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/exponential-decay/</guid>
+      <description>We have looked at exponentials to see how they aid the handling of large numbers. In that same session we also saw how exponentials aid in the study of very small numbers. Similarly, just like we saw exponential growth functions taking on very large values, we now look at exponential decay functions.
+Coffee gets cold Ever wondered how your favorite hot drink gets cold? Imagine you made yourself a hot cup of coffee or a hot chocolate and got back to your desk to read up your mails while sipping on your drink.</description>
     </item>
     
     <item>
@@ -212,6 +242,17 @@ Just count and tell me the number of kits.
       
       <guid>http://www.thoughtart.in/courses/add-math/functions/functions/</guid>
       <description>We have now covered all the background needed to delve into one of the most fundamental topics of Mathematics - we are now ready to understand what functions are. Almost every other session we do in the course of Additional Mathematics will build on this topic, so it is essential that you go through all the background we covered so far (that on Sets and Mappings and carefully understand the concept of functions described in great detail here.</description>
+    </item>
+    
+    <item>
+      <title>Laws of Logarithms</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</link>
+      <pubDate>Sat, 08 Aug 2020 12:27:06 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</guid>
+      <description>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms. Lets begin with the definition.
+ Defn 1: The logarithm of a given number \( x\) to a fixed number called a base, say \(b\), is the exponent to which the fixed number \( b\) must be raised to produce the given number \(x\), i.e.
+$$ y = \log_b (x) \iff x = b^y $$</description>
     </item>
     
     <item>

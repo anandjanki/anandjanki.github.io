@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-161383666-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    <title>
+  
+  Exponential Growth |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions-and-solutions/">2. FUNCTIONS AND SOLUTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/">4. INDICES AND SURDS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/">5. POLYNOMIALS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/">7. LOGARITHMS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/logarithms/exponential-growth/">EXPONENTIAL GROWTH</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/comparing-growth/">COMPARING GROWTH RATES</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/exponential-decay/">EXPONENTIAL DECAY</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/">LAWS OF LOGARITHMS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Exponential Growth</h1>
+  
+
+<p>We explored the Laws of Indices and Surds in a previous session. Lets take that one step further by exploring exponentials before venturing into Logarithms.</p>
+
+<p>You may have heard this puzzle in your childhood - there is a pond with a lotus plant growing. On the first day, one lotus flower blooms from the plant. On the second day, there are two flowers. On the third day, there are four flowers and so on. In other words, the number of lotus flowers doubles every day. On the 20th day, the entire water tank is filled with lotus flowers. When was the tank half full?</p>
+
+<p>Well, if you are not a little careful, the tendency is to halve 20 and blurt out the answer 10. But if you spend a few extra seconds thinking carefully, you realize that the correct answer is that the pond would have to be half full on the 19th day for it to be completely full on the 20th day.</p>
+
+<p>While we are on this topic, take a few mins to check out this lake in Thailand where the lotus blooms something like this<sup class="footnote-ref" id="fnref:redlotus"><a href="#fn:redlotus">1</a></sup>:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/red-lotus-sea.jpg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>This is so vast that it is sometimes referred to as the Red Lotus Sea, you can read a travelog about the lake <a href="https://www.tielandtothailand.com/red-lotus-sea-udon-thani/">here</a>.</p>
+
+<h2 id="growth-of-bacteria">Growth of Bacteria</h2>
+
+<p>While lotuses do not really exhibit such growth patterns, the growth of bacteria is indeed of this nature! Shown below is a false color time-lapse video of an E.coli colony growing on microscope slide<sup class="footnote-ref" id="fnref:ecoli"><a href="#fn:ecoli">2</a></sup>. E.coli is a common bacteria found in the intestines of many animals including humans.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/Ecoli-colony.gif"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Notice the timescales in the video. For the first 100mins or so, there are hardly any bacteria, only a handful of them that you can literally count. Around 150mins or so, you see that the growth seems to accelerate and by 300mins, the entire slide is filled with the bacteria.</p>
+
+<h2 id="human-population">Human Population</h2>
+
+<p>What&rsquo;s interesting (and in some ways scary too) is that humans have also exhibited similar growth patterns over our history on this planet.</p>
+
+<iframe 
+   src="https://www.worldometers.info/world-population/#pastfuture"  
+   width="100%"   
+   height="600px"   
+   frameborder="1">
+</iframe>
+
+
+<p>As can be noted from the graph above - whereas it had taken all of human history until around 1800 for world population to reach one billion, the second billion was achieved in only 130 years (1930), the third billion in 30 years (1960), the fourth billion in 15 years (1974), and the fifth billion in only 13 years (1987). More details can be found by scrolling within the picture above, or by visiting the website <a href="https://www.worldometers.info/world-population/#pastfuture">here</a>.</p>
+
+<p>Fortunately, the growth rate has been dropping recently and we can witness that in the last part of the graph that is showing signs of slowing down. The last part of the graph is not exactly exponential, it is called a logistic curve. But we can ignore that detail for now.</p>
+
+<h2 id="compound-interest">Compound Interest</h2>
+
+<p>The idea of compound interest is based on exponential growth, which is why if you have a little money and you can save it in a bank or such, you should always prefer compounding returns as opposed to simple.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/compound-interest-diagram.jpg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The formula for the final Amount, \( A \) in terms of the original Principal, \( P \), the Rate of Interest, \( R\) and crucially the Number of years, \( N\) is as well known in both cases:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+A_{SI} & = & P\cdot (1 + \displaystyle \frac{NR}{100}) \\ \\
+A_{CI} & = & P\cdot (1 + \displaystyle \frac{R}{100})^N \\ \\
+\end{array}
+$$
+</p>
+
+
+<p>Notice the small change in the placement of the variable \( N\) in both the formulae, that makes all the difference. In words, in the case of Simple Interest, once the original principal yields some interest in the first year, that interest is withdrawn, and the next year the <em>same</em> original principal yields an interest. But in the case of compound interest, the interest from the first year itself contributes to <em>additional</em> interest in the second year, and in the long run that makes all the difference. We will look more carefully into this idea in a later session.</p>
+
+<h2 id="the-chess-reward">The Chess reward</h2>
+
+<p>By now it should be clear that exponential growth quickly gets to be very very large. Another story that you may have heard is the reward the inventor of the game of chess asked from a king. While the story itself is likely cooked up, it brings out the how large exponentials can quickly grow to.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/chessboard.jpeg"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>The 5th row above already has 512 billion grains of rice! And if we keep going to the end of the board, in order to fill just the last square, we will have to plant the entire land area of earth with rice, not just once but four times over!!</p>
+
+<h2 id="virus-spread">Virus spread</h2>
+
+<p>The scare associated with the spread of the Coronavirus (SARS-Cov-v2) is similar, it exhibits exponential growth. The infection can keep spreading from the first person who got the infection, and also from every new person who gets the infection. that is what causes the exponential growth.</p>
+
+<p>The number of cases in India over the last 5 months (Feb-2020 to Jul-2020) is shown below<sup class="footnote-ref" id="fnref:coronajhu"><a href="#fn:coronajhu">3</a></sup>:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/corona-india.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Italy, and other European countries which were soaring with cases earlier on, have managed to successfully curb the spread using extensive testing, effective containment and other such strategies to have a graph as shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/corona-italy.png"/> 
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>On that note, lets explore exponentials and logartihms.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:redlotus">Photo details <a href="https://in.pinterest.com/pin/394205773627036784/">here</a> / Credit : Tara Greene / No licensing details
+ <a class="footnote-return" href="#fnref:redlotus"><sup>[return]</sup></a></li>
+<li id="fn:ecoli">Photo details <a href="https://commons.wikimedia.org/wiki/File:E.coli-colony-growth.gif">here</a> / CC BY-SA 4.0
+ <a class="footnote-return" href="#fnref:ecoli"><sup>[return]</sup></a></li>
+<li id="fn:coronajhu">Snapshot from JHU COVID-19 dashboard <a href="https://coronavirus.jhu.edu/map.html">here</a>.
+ <a class="footnote-return" href="#fnref:coronajhu"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#growth-of-bacteria">Growth of Bacteria</a></li>
+<li><a href="#human-population">Human Population</a></li>
+<li><a href="#compound-interest">Compound Interest</a></li>
+<li><a href="#the-chess-reward">The Chess reward</a></li>
+<li><a href="#virus-spread">Virus spread</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+
