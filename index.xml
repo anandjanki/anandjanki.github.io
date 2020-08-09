@@ -6,7 +6,7 @@
     <description>Recent content on Thought Thou Art</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2020 12:27:06 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2020 08:50:14 +0530</lastBuildDate>
     
 	<atom:link href="http://www.thoughtart.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -245,12 +245,13 @@ Just count and tell me the number of kits.
     </item>
     
     <item>
-      <title>Laws of Logarithms</title>
-      <link>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</link>
-      <pubDate>Sat, 08 Aug 2020 12:27:06 +0530</pubDate>
+      <title>Logarithm Basics</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/</link>
+      <pubDate>Sun, 09 Aug 2020 08:50:14 +0530</pubDate>
       
-      <guid>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</guid>
-      <description>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms. Lets begin with the definition.
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/</guid>
+      <description>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms.
+Lets begin with the definition.
  Defn 1: The logarithm of a given number \( x\) to a fixed number called a base, say \(b\), is the exponent to which the fixed number \( b\) must be raised to produce the given number \(x\), i.e.
 $$ y = \log_b (x) \iff x = b^y $$</description>
     </item>
@@ -293,6 +294,15 @@ Examples Here are a few examples of APs:
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/permutations/</guid>
       <description>We have had a glimpse of counting problems, and looked at two fundamental principles of counting - namely the product rule and the sum rule. We now take next steps in exploring more kinds of counting problems. This session on Permutations and the next one on Combinations are the basic kinds of counting problems commonly studied.
 Arrangements of n-items School Championship Suppose you have 3 houses in your school for the Sports Championship.</description>
+    </item>
+    
+    <item>
+      <title>Laws of Logarithms</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</link>
+      <pubDate>Sat, 08 Aug 2020 12:27:06 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</guid>
+      <description>TBD</description>
     </item>
     
     <item>

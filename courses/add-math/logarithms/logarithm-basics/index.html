@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    
+<meta charset='UTF-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-161383666-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    <title>
+  
+  Logarithm Basics |  Thought Thou Art
+  
+</title>
+
+    
+<script src="/js/progress-nav.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,300i,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+<link rel="stylesheet" href="/sass/courseware.css" integrity="">
+
+<link rel="stylesheet" href="http://www.thoughtart.in/css/bar.css">
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+  <div class="flex justify-between items-center header-padding bg-near-white bb b--light-silver fixed w-100 sidefnt z-999">
+    <div>
+      <a href="http://www.thoughtart.in/"><img src="/logo.png" alt="Logo" class="w2"/></a>
+
+
+    </div>
+    <div>
+      
+  <a href="http://www.thoughtart.in/courses/" class="ttu">Courses</a>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <div class="flex flex-column min-vh-100">
+    <div class="flex justify-between flex1">
+      <div class="sidebar-display w-20 mw5 fixed-top-left mt6 sidefnt"> 
+        
+  
+
+ 
+<nav id="CourseContents">
+<ul id="root-nav">
+  <li ><a href="http://www.thoughtart.in/courses/add-math/">ADDITIONAL MATH</a></li>
+  <ul id="parent-nav">
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions/">1. FUNCTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/functions-and-solutions/">2. FUNCTIONS AND SOLUTIONS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/indices-and-surds/">4. INDICES AND SURDS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/polynomials/">5. POLYNOMIALS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/">7. LOGARITHMS</a>
+    </li>
+    <ul id="page-nav">
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/exponential-growth/">EXPONENTIAL GROWTH</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/comparing-growth/">COMPARING GROWTH RATES</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/exponential-decay/">EXPONENTIAL DECAY</a></li>
+     
+      <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/">LOGARITHM BASICS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/">LAWS OF LOGARITHMS</a></li>
+    
+    </ul>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/combinatorics/">11. COMBINATORICS</a>
+    
+   
+    <li ><a href="http://www.thoughtart.in/courses/add-math/series/">12. SERIES</a>
+    
+  
+  </ul>
+</ul>
+</nav>
+
+
+
+
+      </div>
+      <div class="body-width center pa4 mt5"> 
+        
+  <h1>Logarithm Basics</h1>
+  
+
+<p>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms.</p>
+
+<p>Lets begin with the definition.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table id=Defn&#32;1: class="w-100 collapse">
+<tr>
+<th class="bt bl bb w-10  pv3 v-top">Defn 1:</th>
+<td class="bb ph2 "><p>The <strong>logarithm</strong> of a given number \( x\) to a fixed number called a base, say \(b\), is the <strong>exponent</strong> to which the fixed number \( b\) must be raised to produce the given number \(x\), i.e.</p>
+
+<p>$$ y = \log_b (x) \iff x = b^y $$</p>
+
+<p>under the following conditions - \( b &gt; 0, b \neq 1 \text{, and } x &gt; 0 \)</p>
+</td>
+</tr>
+</table>
+
+
+<h2 id="logarithm-examples">Logarithm Examples</h2>
+
+<p>Lets understand this with a few examples.</p>
+
+<h3 id="log10-examples">log10 examples</h3>
+
+<p>In the first set of examples below. we will use \( 10\) as the base in these examples so that it is easy to do the calculation without the need for a calculator.</p>
+
+<p>We know very well what the powers of \( 10 \) are as listed below:
+<p class="katex">
+  $$
+\begin{array}{rcl}
+10^1 & = & 10 \\
+10^2 & = & 100 \\
+10^3 & = & 1,000 \\
+10^4 & = & 10,000 \\
+\ldots \\
+10^8 & = & 100,000,000 \\
+\ldots \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>The logarithm follows directly from these:
+<p class="katex">
+  $$
+\begin{array}{rclcrcl}
+10^1 & = & 10 & \iff & \log_{10} (10) & = & 1 \\ \\
+10^2 & = & 100 & \iff & \log_{10} (100) & = & 2 \\ \\
+10^3 & = & 1,000 & \iff & \log_{10} (1,000) & = & 3 \\ \\
+10^4 & = & 10,000 & \iff & \log_{10} (10,000) & = & 4 \\ \\
+\ldots \\
+10^8 & = & 100,000,000 & \iff & \log_{10} (100,000,000) & = & 8 \\ \\
+\ldots \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>To understand \( \log_{10} (1,000) = 3 \) better, it is good to note the following points with respect to the definition:</p>
+
+<ul>
+<li>The given number is \( x = 1,000 \)</li>
+<li>The fixed number or the base is \( b = 10 \)</li>
+<li>We note that \( b &gt; 0, b \neq 1 \text{, and } x &gt; 0 \), so all conditions for the definition are satisfied.</li>
+<li>In order to find the logarithm of the given number \( 1,000 \) to the base \( 10 \), we have to find the <em>exponent</em> to which the base \( 10 \) must be raised to produce the given number \( 1,000 \).</li>
+<li>Now, we know that \( 10^3 \) is equal to \( 1,000 \).</li>
+<li>Hence the logarithm of the given number \( 1,000 \) to the base or the fixed number \( 10 \) is simply \( 3 \).</li>
+</ul>
+
+<p>Thus,
+$$ \log_{10} (1,000) = 3 $$</p>
+
+<h3 id="log2-examples">log2 examples</h3>
+
+<p>In the next set of examples below, lets use \( 2\) as the base, powers of \( 2 \) are again not that hard to calculate, as listed below:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+2^1 & = & 2 \\
+2^2 & = & 4 \\
+2^3 & = & 8 \\
+2^4 & = & 16 \\
+\ldots \\
+2^8 & = & 256 \\
+\ldots \\
+\end{array}
+$$
+</p>
+
+
+<p>The logarithm once again follows directly from these:
+<p class="katex">
+  $$
+\begin{array}{rclcrcl}
+2^1 & = & 2 & \iff & \log_{2} (2) & = & 1 \\ \\
+2^2 & = & 4 & \iff & \log_{2} (4) & = & 2 \\ \\
+2^3 & = & 8 & \iff & \log_{2} (8) & = & 3 \\ \\
+2^4 & = & 16 & \iff & \log_{2} (16) & = & 4 \\ \\
+\ldots \\
+2^8 & = & 256 & \iff & \log_{2} (256) & = & 8 \\ \\
+\ldots \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>As before, to understand \( \log_{2} (256) = 8 \) better, it is good to note the following points with respect to the definition:</p>
+
+<ul>
+<li>The given number is \( x = 256 \)</li>
+<li>The fixed number or the base is \( b = 2 \)</li>
+<li>We note that \( b &gt; 0, b \neq 1 \text{, and } x &gt; 0 \), so all conditions for the definition are satisfied.</li>
+<li>In order to find the logarithm of the given number \( 256 \) to the base \( 2 \), we have to find the <em>exponent</em> to which the base \( 2 \) must be raised to produce the given number \( 256 \).</li>
+<li>Now, we know that \( 2^8 \) is equal to \( 256 \).</li>
+<li>Hence the logarithm of the given number \( 256 \) to the base or the fixed number \( 2 \) is simply \( 8 \).</li>
+</ul>
+
+<p>Thus,
+$$ \log_{2} 256 = 8 $$
+Note that we do not need to have the bracket when it is obvious what is the given number whose logartihm is being sought.</p>
+
+<h3 id="log-when-x-b">log when x &lt; b</h3>
+
+<p>In all the above examples, the given number \( x \) was greater than the fixed number \( b \). But the definition of logarithm does not have any constraint on this.</p>
+
+<p>So, lets take the fixed number as \( b = 1000 \), and try to find the logarithms in a few cases where the given number \( x \) is \( &lt; 1000 \). What will be the values of these logarithms?</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+\log_{1000} 100 & = & ? \\ \\
+\log_{1000} 10 & = & ? \\ \\
+\log_{1000} 1 & = & ? \\ \\
+\end{array}
+$$
+</p>
+
+
+<p>Take a minute to go back to the definition of logarithms and find these out carefully.</p>
+
+<p>Lets consider \( \log_{1000} (10) \) and we note the following:</p>
+
+<ul>
+<li>The given number is \( x = 10 \)</li>
+<li>The fixed number or the base is \( b = 1000 \)</li>
+<li>We note that \( b &gt; 0, b \neq 1 \text{, and } x &gt; 0 \), so all conditions for the definition are satisfied.</li>
+<li>In order to find the logarithm of the given number \( 10 \) to the base \( 1000 \), we have to find the <em>exponent</em> to which the base \( 1000 \) must be raised to produce the given number \( 10 \).</li>
+<li>Is is possible at all? Can we raise \( 1000 \) to some power and get \( 10 \). Indeed it is possible.</li>
+<li>We know that \( 1000 \) is equal to \( 10^3 \), hence</li>
+</ul>
+
+<p class="katex">
+  $$
+\begin{array}{rclcl}
+1000^\frac{1}{3} & = & (10^3)^\frac{1}{3} \\ \\
+& = & 10^{(3\times \frac{1}{3})} & & \text{Using the 3rd Law - } (a^m)^n = a^{m\cdot n}\\ \\
+& = & 10^1 \\ \\
+& = & 10
+\end{array}
+$$
+</p>
+
+
+<p>Hence the logarithm of the given number \( 10 \) to the base or the fixed number \( 1000 \) is:
+$$ \log_{1000} 10 = \displaystyle \frac{1}{3} $$</p>
+
+<p>We can similarly write out the rest of the logarithms above:
+<p class="katex">
+  $$
+\begin{array}{rclcrcl}
+\log_{1000} 100 & = & \displaystyle \frac{2}{3} & \because & 1000^\frac{2}{3} & = & (10^3)^\frac{1}{3} \\
+& & & & & = & 10^{(3\times \frac{1}{3})} \\
+& & & & & = & 10^2 \\
+& & & & & = & 100 \\ \\
+\log_{1000} 10 & = & \displaystyle \frac{1}{3} & \because & 1000^\frac{1}{3} & = & 10 \\ \\
+\log_{1000} 1 & = & 0 & \because & 1000^0 & = & 1 \\ \\
+\end{array}
+$$
+</p>
+</p>
+
+<h3 id="log-of-1">log of 1</h3>
+
+<p>The last example above is of particular interest. In fact we can take <em>any</em> fixed number \( b \) (satisfying the definition constraints of course), and we know that
+$$ b^0 = 1 $$
+Hence, we can say that if the given number is \( 1\), then the logarithm of the given number to any base is \( 0 \), i.e.
+$$ \log_b 1 = 0 $$</p>
+
+<h3 id="log-when-0-x-1">log when 0 &lt; x &lt; 1</h3>
+
+<p>In the definition of logarithm, we have a condition that the given number \( x \) should be \( &gt; 0\), and the fixed number or the base \( b\) should also be \( &gt; 0 \). But the result of finding the logarithm of the given number to a base number can perfectly well be negative. This happens only when \( 0 &lt; x &lt; 1 \).</p>
+
+<p>We see a few examples of this below, using the base as \( 10 \):
+<p class="katex">
+  $$
+\begin{array}{rcl}
+10^{-1} & = & 0.1 \\
+10^{-2} & = & 0.01 \\
+10^{-3} & = & 0.001 \\
+\ldots \\
+10^{-5} & = & \displaystyle \frac{1}{100,000} \\
+\ldots \\
+\end{array}
+$$
+</p>
+</p>
+
+<p>The logarithm follows directly from these, and note that the logarithm in each of these case is negative:
+<p class="katex">
+  $$
+\begin{array}{rclcrcl}
+10^{-1} & = & 0.1 & \iff & \log_{10} 0.1 & = & -1 \\ \\
+10^{-2} & = & 0.01 & \iff & \log_{10} 0.01 & = & -2 \\ \\
+10^{-3} & = & 0.001 & \iff & \log_{10} 0.001 & = & -3 \\ \\
+\ldots \\
+10^{-5} & = & \displaystyle \frac{1}{100,000} & \iff & \log_{10} (\displaystyle \frac{1}{100,000}) & = & -5 \\ \\
+\ldots \\
+\end{array}
+$$
+</p>
+</p>
+
+<h3 id="log-when-x-0">log when x &lt;= 0</h3>
+
+<p>Finally, if the given number \( x\) is \( \leq 0 \), then the logarithm of the given number is not defined. This is because no matter what base \( b \) we take, as long as the base is a real number, there is no way to raise the base to some power and get 0 or get a negative number.</p>
+
+<p>Take a minute to think about it, if the base is real, there is no way to fill the boxes below with any number</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+10^\Box & = & 0 \\
+10^\Box & = & -1 \\
+\end{array}
+$$
+</p>
+
+
+<p>Hence the logarithm of negative numbers is undefined.</p>
+
+<h2 id="plotting-logarithm">Plotting Logarithm</h2>
+
+<p>Next, lets figure out how the graph of the logarithm function looks.</p>
+
+<h3 id="graph-of-exponential-function">Graph of Exponential function</h3>
+
+<p>In order to do that we first start with the graph of the exponential function. We saw this briefly in the previous section, but lets go through it step by step here.</p>
+
+<p>Lets use a fixed number or base of \( 2 \) and plot the graph of the function \( 2^x \).</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">\(x\)</th>
+<th align="left">\(2^x \)</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+
+<tr>
+<td align="left">2</td>
+<td align="left">4</td>
+</tr>
+
+<tr>
+<td align="left">3</td>
+<td align="left">8</td>
+</tr>
+
+<tr>
+<td align="left">4</td>
+<td align="left">16</td>
+</tr>
+
+<tr>
+<td align="left">5</td>
+<td align="left">32</td>
+</tr>
+
+<tr>
+<td align="left">6</td>
+<td align="left">64</td>
+</tr>
+
+<tr>
+<td align="left">7</td>
+<td align="left">128</td>
+</tr>
+
+<tr>
+<td align="left">8</td>
+<td align="left">256</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">\(x\)</th>
+<th align="left">\(2^x \)</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">-1</td>
+<td align="left"><sup>1</sup>&frasl;<sub>2</sub> = 0.5</td>
+</tr>
+
+<tr>
+<td align="left">-2</td>
+<td align="left"><sup>1</sup>&frasl;<sub>4</sub> = 0.25</td>
+</tr>
+
+<tr>
+<td align="left">-3</td>
+<td align="left"><sup>1</sup>&frasl;<sub>8</sub> = 0.125</td>
+</tr>
+
+<tr>
+<td align="left">-4</td>
+<td align="left"><sup>1</sup>&frasl;<sub>16</sub> = 0.0625</td>
+</tr>
+
+<tr>
+<td align="left">-5</td>
+<td align="left"><sup>1</sup>&frasl;<sub>32</sub> ≈ 0.03125</td>
+</tr>
+
+<tr>
+<td align="left">-6</td>
+<td align="left"><sup>1</sup>&frasl;<sub>64</sub> ≈ 0</td>
+</tr>
+
+<tr>
+<td align="left">-7</td>
+<td align="left"><sup>1</sup>&frasl;<sub>128</sub> ≈ 0</td>
+</tr>
+
+<tr>
+<td align="left">-8</td>
+<td align="left"><sup>1</sup>&frasl;<sub>256</sub> ≈ 0</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>In addition, we know that \( 2^0 = 1 \). We mark these points on the Cartesian co-ordinate system as shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/graph-of-2powx.png"/> <figcaption>
+            <h4>Points on the graph of 2^x</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>And then we connect up the points to get the graph of \( 2^x \):
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/graph-of-2powx-2.png"/> <figcaption>
+            <h4>Graph of 2^x</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+</p>
+
+<h3 id="graph-of-logarithm-function">Graph of Logarithm function</h3>
+
+<p>Now, we are ready to draw the graph of the Logarithm function.</p>
+
+<p>Lets draw up a table for the logarithm values. Recall that this follows from the definition of logarithms. If we know that \( 2^3 = 8 \), then that implies by definition that \( \log_2 8 = 3 \)</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">\(x\)</th>
+<th align="left">\(2^x \)</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">3</td>
+<td align="left">8</td>
+</tr>
+
+<tr>
+<td align="left">2</td>
+<td align="left">4</td>
+</tr>
+
+<tr>
+<td align="left">1</td>
+<td align="left">2</td>
+</tr>
+
+<tr>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+
+<tr>
+<td align="left">-1</td>
+<td align="left">0.5</td>
+</tr>
+
+<tr>
+<td align="left">-3</td>
+<td align="left">0.125</td>
+</tr>
+
+<tr>
+<td align="left">-5</td>
+<td align="left"><sup>1</sup>&frasl;<sub>32</sub></td>
+</tr>
+
+<tr>
+<td align="left">-7</td>
+<td align="left"><sup>1</sup>&frasl;<sub>128</sub></td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <table class="horizontal-table">
+<thead class="">
+<tr>
+<th align="left">\(x\)</th>
+<th align="left">\(\log_2 (x) \)</th>
+</tr>
+</thead>
+
+<tbody class="">
+<tr>
+<td align="left">8</td>
+<td align="left">3</td>
+</tr>
+
+<tr>
+<td align="left">4</td>
+<td align="left">2</td>
+</tr>
+
+<tr>
+<td align="left">2</td>
+<td align="left">1</td>
+</tr>
+
+<tr>
+<td align="left">1</td>
+<td align="left">0</td>
+</tr>
+
+<tr>
+<td align="left">0.5</td>
+<td align="left">-1</td>
+</tr>
+
+<tr>
+<td align="left">0.125</td>
+<td align="left">-3</td>
+</tr>
+
+<tr>
+<td align="left"><sup>1</sup>&frasl;<sub>32</sub></td>
+<td align="left">-5</td>
+</tr>
+
+<tr>
+<td align="left"><sup>1</sup>&frasl;<sub>128</sub></td>
+<td align="left">-7</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>As before we can mark the points on the Cartesian coordinate system and then connect up the points to get the graph of \( \log_2 (x) \), as depicted in the picture below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/graph-of-2powx-log2x.png"/> <figcaption>
+            <h4>Graph of log2(x)</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<h3 id="sections-of-the-graph">Sections of the graph</h3>
+
+<p>As we saw in the examples on logarithms, we can mark out three sections of the graph as shown below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/graph-of-log2x-sections.png"/> <figcaption>
+            <h4>Sections on the graph of log2(x)</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<ul>
+<li>One colored in blue above, where the given number is greater than the base, i.e. \( x &gt; 2 \), in this section the value of the logarithm is greater than 1,</li>
+<li>Second colored in pink, where the given number is between 1 and the base, i.e. \( 1 \leq x \leq 2 \), in this section the value of the logarithm is a fraction between 0 and 1, and</li>
+<li>Third colored in purple above, where the given number is less than 1 but still positive, i.e. \( 0 &lt; x &lt; 1 \), in this section, the value of the logarithm is negative.</li>
+</ul>
+
+<p>Finally, we note as before that the value of the logarithm is not defined for \( x \leq 0 \).</p>
+
+<h3 id="log-as-inverse-of-exp">Log as inverse of Exp</h3>
+
+<p>The last concept we notice in the basics is the inverse function relationship between the logarithm and the exponential functions.</p>
+
+<p>Recall the definition of the <a href="http://www.thoughtart.in/courses/add-math/functions/inverse-function/">inverse functions</a>. Given a function, say \( f \) that maps some \( x\) to a value \( y\), if there is another function, say \( g \) which maps that \( y \) back to the original \( x\) and if that is true for each and every value of \( x\) mapped by the function \( f\), then the other function \(g\) is called the inverse function of \(f\).</p>
+
+<p>For the logarithm function, we note that this follows from the very definition of the logarithm in terms of the exponent. As we have seen above, the exponential function \( 2^x \) maps \( x = 3\) to the value \( y = 2^3 = 8\) and the logarithm function maps \( x = 8 \) back to the value \( y = \log_2 8 = 3 \). And this is true for each and every value of \( x\) mapped by the exponential function. Thus the logarithm function is the inverse of the exponential function.</p>
+
+<p class="katex">
+  $$
+\begin{array}{lrcl}
+\text{If } & f(x) & = & 2^x \\ \\
+\text{Then }& f^{-1}(x) & = & \log_2 (x) \\
+\end{array}
+$$
+</p>
+
+
+<p>Also recall how the graph of the inverse function is a <a href="http://www.thoughtart.in/courses/add-math/functions/inverse-function/#finding-inverse-graphically">reflection</a> of the original function on the line \( y = x\). As expected, that is indeed the case with the graph of the exponential funciton and the corresponding logarithm function. This is shown in the picture below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b80 ">
+    <figure class="figs">
+    <img src="images/log2x-inverse-2powx.png"/> <figcaption>
+            <h4>2^x and log2(x) as reflections on y = x</h4>
+        </figcaption>
+</figure>
+  </div>
+  
+  <div class="flex-1 flex-b10 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>Finally, recall how a function and its inverse are related using <a href="http://www.thoughtart.in/courses/add-math/functions/inverse-function/#another-definition">function composition</a>. If a function \(g\) is the inverse of a function \( f\), then:</p>
+
+<p>$$ (g\circ f)(x) = (f\circ g)(x) = x $$</p>
+
+<p>From this, or even just using the definition of logarithms directly, we get the following relationships:</p>
+
+<p class="katex">
+  $$
+\begin{array}{rcl}
+b^{\log_b x} & = & x \\ \\
+\log_b b^x & = & x
+\end{array}
+$$
+</p>
+
+
+<p>With that, we have uncovered a lot of basics on logarithms, and we now set to explore a few laws pertaining to logarithms.</p>
+
+
+      </div>
+      <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
+        
+  
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#logarithm-examples">Logarithm Examples</a>
+<ul>
+<li><a href="#log10-examples">log10 examples</a></li>
+<li><a href="#log2-examples">log2 examples</a></li>
+<li><a href="#log-when-x-b">log when x &lt; b</a></li>
+<li><a href="#log-of-1">log of 1</a></li>
+<li><a href="#log-when-0-x-1">log when 0 &lt; x &lt; 1</a></li>
+<li><a href="#log-when-x-0">log when x &lt;= 0</a></li>
+</ul></li>
+<li><a href="#plotting-logarithm">Plotting Logarithm</a>
+<ul>
+<li><a href="#graph-of-exponential-function">Graph of Exponential function</a></li>
+<li><a href="#graph-of-logarithm-function">Graph of Logarithm function</a></li>
+<li><a href="#sections-of-the-graph">Sections of the graph</a></li>
+<li><a href="#log-as-inverse-of-exp">Log as inverse of Exp</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
+
+
+
+
+      </div>
+    </div>
+
+    <div class="flexi">
+    <footer>
+  <div class="flex justify-between items-center bg-near-white pa3 bt b--light-silver sidefnt">
+    <div>
+      
+
+  
+    <a href="/about/" class="ttu pa2">About</a>
+  
+
+
+    </div>
+    <div>
+      
+
+  
+    <a href="/terms/" class="ttu pa2">Terms</a>
+  
+
+  
+    <a href="/follow/" class="ttu pa2">Follow</a>
+  
+
+  
+    <a href="/contact/" class="ttu pa2">Contact</a>
+  
+
+
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    </div>
+
+  </body>
+
+
+
+</html>
+

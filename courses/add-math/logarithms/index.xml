@@ -42,14 +42,24 @@ Coffee gets cold Ever wondered how your favorite hot drink gets cold? Imagine yo
     </item>
     
     <item>
+      <title>Logarithm Basics</title>
+      <link>http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/</link>
+      <pubDate>Sun, 09 Aug 2020 08:50:14 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/</guid>
+      <description>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms.
+Lets begin with the definition.
+ Defn 1: The logarithm of a given number \( x\) to a fixed number called a base, say \(b\), is the exponent to which the fixed number \( b\) must be raised to produce the given number \(x\), i.e.
+$$ y = \log_b (x) \iff x = b^y $$</description>
+    </item>
+    
+    <item>
       <title>Laws of Logarithms</title>
       <link>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</link>
       <pubDate>Sat, 08 Aug 2020 12:27:06 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</guid>
-      <description>Having explored exponentials in great detail, we are now in a position to explore the world of Logarithms. Lets begin with the definition.
- Defn 1: The logarithm of a given number \( x\) to a fixed number called a base, say \(b\), is the exponent to which the fixed number \( b\) must be raised to produce the given number \(x\), i.e.
-$$ y = \log_b (x) \iff x = b^y $$</description>
+      <description>TBD</description>
     </item>
     
   </channel>
