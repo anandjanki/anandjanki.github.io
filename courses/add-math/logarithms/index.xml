@@ -59,7 +59,7 @@ $$ y = \log_b (x) \iff x = b^y $$</description>
       <pubDate>Sat, 08 Aug 2020 12:27:06 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/</guid>
-      <description>TBD</description>
+      <description>We have already come across the following properties from the basics of logarithms: $$ \begin{array}{rcl} \log_b 1 &amp; = &amp; 0 \\ \\ \log_b b &amp; = &amp; 1 \\ \\ b^{\log_b x} &amp; = &amp; x \\ \\ \log_b b^x &amp; = &amp; x \end{array} $$ We now derive the following laws from the basic definition and the above properties: $$ \begin{array}{rcl} \log_b (x\cdot y) &amp; = &amp; \log_b (x) + \log_b (y) \\ \\ \displaystyle \log_b (\frac{x}{y}) &amp; = &amp; \log_b (x) - \log_b (y) \\ \\ \log_b (x^y) &amp; = &amp; y\cdot \log_b (x) \\ \end{array} $$ </description>
     </item>
     
   </channel>
