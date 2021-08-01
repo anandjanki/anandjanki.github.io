@@ -214,15 +214,8 @@ Quadrilaterals  Defn 1: A quadrilateral is a planar figure with 4 sides (edges) 
       <pubDate>Sat, 25 Jan 2020 01:26:59 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/factorial/</guid>
-      <description>St Ives revisted Here is a new version of the St Ives poem:
- As I was going to St Ives,
-Upon the road I met 2 wives;
-Every wife had 3 sacks,
-Every sack had 4 cats,
-Every cat had 5 kits,
-I am not playing any tricks,
-Just count and tell me the number of kits.
- Counting the number of kittens is similar to before except that the numbers involved here are a little different.</description>
+      <description>The notion of what is called the Factorial of a number, comes up often in counting problems. Before we define factorials, lets get an intuition of where this comes up.
+Arrangements of n-items School Championship Suppose you have 3 houses in your school for the Sports Championship. Let&amp;rsquo;s say they are named by colors, say Purple, Orange and Green. What are the different ways in which the houses may be placed at the end of the Sports Championship?</description>
     </item>
     
     <item>
@@ -292,8 +285,7 @@ Examples Here are a few examples of APs:
       <pubDate>Sat, 18 Jan 2020 19:38:34 +0530</pubDate>
       
       <guid>http://www.thoughtart.in/courses/add-math/combinatorics/permutations/</guid>
-      <description>We have had a glimpse of counting problems, and looked at two fundamental principles of counting - namely the product rule and the sum rule. We now take next steps in exploring more kinds of counting problems. This session on Permutations and the next one on Combinations are the basic kinds of counting problems commonly studied.
-Arrangements of n-items School Championship Suppose you have 3 houses in your school for the Sports Championship.</description>
+      <description>We have had a glimpse of counting problems, and looked at two fundamental principles of counting - namely the product rule and the sum rule. Then we looked at the notion of factorials and how they come about naturally when we try to arrange n things in n places. We now take next steps in exploring more kinds of counting problems. This session on Permutations and the next one on Combinations are the basic kinds of counting problems commonly studied.</description>
     </item>
     
     <item>

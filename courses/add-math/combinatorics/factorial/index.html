@@ -140,42 +140,384 @@ if (!doNotTrack) {
   <h1>Factorial</h1>
   
 
-<h2 id="st-ives-revisted">St Ives revisted</h2>
+<p>The notion of what is called the Factorial of a number, comes up often in counting problems. Before we define factorials, lets get an intuition of where this comes up.</p>
 
-<p>Here is a new version of the St Ives poem:</p>
+<h2 id="arrangements-of-n-items">Arrangements of n-items</h2>
 
-<blockquote>
-<p>As I was going to St Ives,<br />
-Upon the road I met 2 wives;<br />
-Every wife had 3 sacks,<br />
-Every sack had 4 cats,<br />
-Every cat had 5 kits,<br />
-I am not playing any tricks,<br />
-Just count and tell me the number of kits.</p>
-</blockquote>
+<h3 id="school-championship">School Championship</h3>
 
-<p>Counting the number of kittens is similar to before except that the numbers involved here are a little different. The pictorial depiction for counting all the kittens is shown below.</p>
+<p>Suppose you have 3 houses in your school for the Sports Championship. Let&rsquo;s say they are named by colors, say Purple, Orange and Green. What are the different ways in which the houses may be placed at the end of the Sports Championship?</p>
+
+<p>We just enumerate out the possibilities, aiming to do so systematically:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">1st Place</th>
+<th align="center">2nd Place</th>
+<th align="center">3rd Place</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Purple</td>
+<td align="center">Orange</td>
+<td align="center">Green</td>
+</tr>
+
+<tr>
+<td align="center">Purple</td>
+<td align="center">Green</td>
+<td align="center">Orange</td>
+</tr>
+
+<tr>
+<td align="center">Orange</td>
+<td align="center">Purple</td>
+<td align="center">Green</td>
+</tr>
+
+<tr>
+<td align="center">Orange</td>
+<td align="center">Green</td>
+<td align="center">Purple</td>
+</tr>
+
+<tr>
+<td align="center">Green</td>
+<td align="center">Purple</td>
+<td align="center">Orange</td>
+</tr>
+
+<tr>
+<td align="center">Green</td>
+<td align="center">Orange</td>
+<td align="center">Purple</td>
+</tr>
+</tbody>
+</table>
+
+<p>As before, for ease of writing and counting, lets call the teams A, B and C. The possibilities are written out again below (we will assume ties are not allowed):</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>A    B    C
+A    C    B
+--
+B    A    C
+B    C    A
+--
+C    A    B
+C    B    A
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>We wrote it in the particular way above, so that it is also easy to read.</p>
+
+<ul>
+<li>Suppose team A comes first.
+
+<ul>
+<li>It is possible team B may come second, and team C may be third. Or,</li>
+<li>It is possible that team C may come second and team B may come third.</li>
+</ul></li>
+<li>Suppose team B comes first.
+
+<ul>
+<li>It is possible team A comes second, and team C may be third. Or,</li>
+<li>It is possible that team C may be placed second and team A may come third.</li>
+</ul></li>
+<li>Suppose team C comes first.
+
+<ul>
+<li>second place to A, third to B, or</li>
+<li>second place to B, third to A.</li>
+</ul></li>
+</ul>
+
+<p>From this enumeration of all the possiblities, we see that the number of ways in which the houses may be placed at the end of the school championship is 6.</p>
+
+<p>We could also arrive at this number without enumerating all the possibilities. We would argue as follows:</p>
+
+<ul>
+<li>The number of ways in the which the first place can be filled is 3 ways. And,</li>
+<li>having filled the first place position, there are two houses left, so the second place can be filled in 2 ways. And,</li>
+<li>having filled the first and second place positions, there is only one house left, so the third place can be filled in just 1 way.</li>
+<li>By using the product rule, we can conclude that there are 3 x 2 x 1 = 6 ways in which the school results can end up.</li>
+</ul>
+
+<h3 id="factorial-shows-up">Factorial shows up</h3>
+
+<p>Suppose there is a fourth house now, and we want to know what are the possible championship results. Do we have to work out all the possibilities from scratch like we did above? Or can we intelligently use the possibilities we found with 3 teams? It turns out that is possible.</p>
+
+<p>Lets call this new team, team D. Suppose this team comes first. What are the possibilities of the end results? D is in first place, and for the ways in which the remaining 3 teams can be placed, we can reuse what we had done before with the 3 teams. This is depicted below:</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>D    A    B    C
+D    A    C    B
+D    B    A    C
+D    B    C    A
+D    C    A    B
+D    C    B    A
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>That is really cool, because we dont need to do the hard work of writing out all the possibilities for 3 teams again, and simply reuse what we had done before.</p>
+
+<p>Now, it is possible team D may come last, i.e. be placed fourth. It is also possible that team D may come second, or come third. How do we account for these possibilities.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>     A    B    C
+     A    C    B
+     B    A    C
+     B    C    A
+     C    A    B
+     C    B    A
+  ^D   ^D   ^D   ^D
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    
+  </div>
+  
+</div>
+
+
+
+<p>As shown above, we can take all the possiblities with 3 teams and come up with new possibilites when the fourth team joins the fray, by simply considering <em>the 4 new possibilities for each of the possibilities with 3 teams</em>. This is shown below compactly.</p>
+
+<div class="book-columns flex justify-between">
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>D  A B C
+D  A C B
+D  B A C
+D  B C A
+D  C A B
+D  C B A
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>A  D  B C
+A  D  C B
+B  D  A C
+B  D  C A
+C  D  A B
+C  D  B A
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>_ _  D  _
+_ _  D  _
+_ _  D  _
+_ _  D  _
+_ _  D  _
+_ _  D  _
+</code></pre>
+  </div>
+  
+  <div class="flex-1 flex-b0 ">
+    <pre><code>A B C  D
+A C B  D
+B A C  D
+B C A  D
+C A B  D
+C B A  D
+</code></pre>
+  </div>
+  
+</div>
+
+
+
+<p>One set of possiblities above (with team D in the third position) is left blank for you to practice.</p>
+
+<p>What is happening is that the number of results possible with 4 teams is turning out to be 4 times the number of results possible with 3 teams. If we call the number of results with 4 teams as \(R(4)\) and the number of results with 3 teams as \(R(3)\), then this statement can be represented mathematically as follows:</p>
+
+<p>$$ R(4) = 4\cdot R(3) $$</p>
+
+<p>And we can now do a <em>recursive</em> calculation to find \(R(4)\).</p>
+
+<p class="katex">
+  $$
+
+\begin{array}{rclcl}
+R(1) & = & 1 \\
+R(2) & = & 2\cdot R(1) & = & 2\cdot 1 \\
+R(3) & = & 3\cdot R(2) & = & 3\cdot 2\cdot 1 \\
+R(4) & = & 4\cdot R(3) & = & 4\cdot 3\cdot 2\cdot 1 \\ \\
+\end{array}
+
+$$
+</p>
+
+
+<p>It should not be a surprise how many ways in which the championship can end up if there are 5 teams.
+<p class="katex">
+  $$
+
+\begin{array}{rclcl}
+R(5) & = & 5\cdot R(4) & = & 5\cdot 4\cdot 3\cdot 2\cdot 1 \\ \\
+\end{array}
+
+$$
+</p>
+</p>
+
+<p>In general, it can be seen that if there are \(n\) teams participating in the championship, then the number of ways in which the teams can be placed in \(n\) positions at the end of the championship is:
+<p class="katex">
+  $$
+
+\begin{array}{rcl}
+R(n) & = & n\cdot (n - 1)\cdot \cdots 5\cdot 4\cdot 3\cdot 2\cdot 1 \\ \\
+\end{array}
+
+$$
+</p>
+</p>
+
+<h3 id="group-photo">Group photo</h3>
+
+<p>Lets look at another example. Suppose there are 6 friends. How many different ways can they pose for a photograph (standing in a straight line facing a camera)?</p>
 
 <figure class="figs">
-    <img src="StIves-factorial.png"/> <figcaption>
-            <h4>A picture to aid the counting of the kittens</h4>
+    <img src="images/friends-cast-v3.jpg"/> <figcaption>
+            <h4>6 &#34;friends&#34; posing for a group photo</h4>
         </figcaption>
 </figure>
 
 
-<p>And the counting can be done as follows:</p>
+<p>We know now from the previous section that this can be done in 6! ways.</p>
 
-<pre><code>The First wife's --&gt; First sack's --&gt; First cat has =&gt; 5 kittens
-First wife's --&gt; First sack --&gt; has 4 cats with =&gt; 4x5 kittens
-First wife --&gt; has 3 sacks with =&gt; 3x4x5 kittens
-2 wives have =&gt; 2x3x4x5 kittens
-</code></pre>
+<p>Another way to go about this is the following:</p>
 
-<p>Thus the total number of kittens is 120.</p>
+<ul>
+<li>The first position (the leftmost spot) can be taken up any one of the 6 friends. And,</li>
+<li>Once that is done, the second position can now be taken by any of the remaining 5 friends. And,</li>
+<li>Once that is done, the third position can now be taken up any of the remaining 4 friends. And,</li>
+<li>Once that is done, the fourth position can now be taken up any of the remaining 3 friends. And,</li>
+<li>Once that is done, the fifth position can now be taken up any of the remaining 2 friends. And,</li>
+<li>Once that is done, the sixth and last position can now be taken by the remaining 1 friend.</li>
+</ul>
+
+<p>So, the number of ways of posing for the group photograph is 6 x 5 x 4 x 3 x 2 x 1 = 6! = 720 ways.</p>
 
 <h2 id="factorial-definition">Factorial definition</h2>
 
-<p>The number 5 x 4 x 3 x 2 x 1 is called the factorial of 5 and is denoted by 5!</p>
+<p>As we can see, the number that is coming up repeatedly is this number where you multiple all numbers less than equal to that number. The number 5 x 4 x 3 x 2 x 1 is called the factorial of 5 and is denoted by 5!</p>
 
 <p>In general, for any natural number n, the factorial of the number is defined as follows:
 <p class="katex">
@@ -184,10 +526,6 @@ n! \equiv n \cdot (n - 1) \cdot (n - 2) \cdots 2 \cdot 1
 $$
 </p>
 </p>
-
-<p>It is important to note that in the above counting problem, the occurence of the factorial is purely incidental. The author could have seen 3 wives, each carrying say 2 sacks, each with say 20 cats and so on. In that case, the answer will not be a factorial of any number.</p>
-
-<p>But in the next topic of permutations, we will see that the factorial of a number shows up naturally in many kinds of counting problems.</p>
 
 <h3 id="a-property-of-factorial">A property of factorial</h3>
 
@@ -240,6 +578,16 @@ $$
 </code></pre>
 
 <p>We finally arrived at the same answer for 5!, as we could have got by multiplying 5 x 4 x 3 x 2 x 1, but the nice thing about this approach is that in the process we have also found the values of 4!, 3!, and all factorials lesser than the number we start with.</p>
+
+<h3 id="queueing-up">Queueing up</h3>
+
+<p>Let&rsquo;s take one more example. Suppose there are 20 children in your class, its lunch time, and every one is queueing up for picking up their lunch. How many different ways can the class queue up for lunch?</p>
+
+<p>Can you try out all possible ways to queue up in one lunch session?</p>
+
+<p>Well, the total number of ways as we now know is 20! ways.</p>
+
+<p>It turns out that this is a very large number. It will take many many years to try out all the possible ways to queue up. In fact, even if you are superfast and can try one way to queue up in 1sec, it will ake about 77billion years to try out all possible ways, even with a small class of just 20.</p>
 
 <h3 id="factorials-are-large">Factorials are large</h3>
 
@@ -381,10 +729,16 @@ $$
 <ul>
 <li>
 <ul>
-<li><a href="#st-ives-revisted">St Ives revisted</a></li>
+<li><a href="#arrangements-of-n-items">Arrangements of n-items</a>
+<ul>
+<li><a href="#school-championship">School Championship</a></li>
+<li><a href="#factorial-shows-up">Factorial shows up</a></li>
+<li><a href="#group-photo">Group photo</a></li>
+</ul></li>
 <li><a href="#factorial-definition">Factorial definition</a>
 <ul>
 <li><a href="#a-property-of-factorial">A property of factorial</a></li>
+<li><a href="#queueing-up">Queueing up</a></li>
 <li><a href="#factorials-are-large">Factorials are large</a></li>
 </ul></li>
 </ul></li>
