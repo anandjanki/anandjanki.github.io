@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Permutations and Combinations on Thought Thou Art</title>
+    <link>http://www.thoughtart.in/courses/s1-math/permutations-and-combinations/</link>
+    <description>Recent content in Permutations and Combinations on Thought Thou Art</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Aug 2021 10:10:12 +0530</lastBuildDate>
+    
+	<atom:link href="http://www.thoughtart.in/courses/s1-math/permutations-and-combinations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Same Kind Objects</title>
+      <link>http://www.thoughtart.in/courses/s1-math/permutations-and-combinations/same-kind-objects/</link>
+      <pubDate>Sun, 01 Aug 2021 11:11:43 +0530</pubDate>
+      
+      <guid>http://www.thoughtart.in/courses/s1-math/permutations-and-combinations/same-kind-objects/</guid>
+      <description>Notes TBD.</description>
+    </item>
+    
+  </channel>
+</rss>
