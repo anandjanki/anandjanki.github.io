@@ -112,6 +112,8 @@ if (!doNotTrack) {
       <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/logarithm-basics/">LOGARITHM BASICS</a></li>
      
       <li  id="current-page" ><a href="http://www.thoughtart.in/courses/add-math/logarithms/laws-of-logarithms/">LAWS OF LOGARITHMS</a></li>
+     
+      <li ><a href="http://www.thoughtart.in/courses/add-math/logarithms/logarithm-uses/">LOGARITHM USES</a></li>
     
     </ul>
     
@@ -136,7 +138,9 @@ if (!doNotTrack) {
       <div class="body-width center pa4 mt5"> 
         
   <h1>Laws of Logarithms</h1>
-  <p>We have already come across the following properties from the basics of logarithms:
+  
+
+<p>We have already come across the following properties from the basics of logarithms:
 <p class="katex">
   $$
 \begin{array}{rcl}
@@ -149,7 +153,7 @@ $$
 </p>
 </p>
 
-<p>We now derive the following laws from the basic definition and the above properties:
+<p>We now derive the following laws from the basic definition of Logarithm, the <a href="{{ref &quot;laws-of-indices&quot;}}">Laws of Indices</a> and the above properties:
 <p class="katex">
   $$
 \begin{array}{rcl}
@@ -161,11 +165,168 @@ $$
 </p>
 </p>
 
+<h2 id="the-first-law">The First Law</h2>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>1st Law</p></td>
+<td class=""><p>$$ \log_b (x\cdot y) = \log_b (x) + \log_b (y) $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and starts as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lrcl}
+\text{Let } & x & = & b^u \\ \\
+\text{And let } &  y & = & b^v \\ \\
+\end{array}
+$$
+</p>
+
+<p>Note that, from the definition of Logarithms, \(b &gt; 0 \text{ and } b \neq 1\) as always, \(x\) and \(y\) have to be positive, and since they are positive, it is possible to find \(u\) and \(v\), which can be positive, zero or negative such that the above are satisfied. Then we proceed as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lclr}
+\text{LHS } & = & \log_b (x\cdot y) & \\ \\
+& = & \log_b (b^u \cdot b^v) & \text{by substitution above}\\ \\
+& = & \log_b (b^{(u+v)}) & \text{by Laws of Indices}\\ \\
+& = & u+v & \text{by Basics of Logarithms}\\ \\
+& = & \log_b (x) + \log_b (y) & \text{by definition of Logarithm}\\ \\
+& = & \text{RHS} \\
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<h2 id="the-second-law">The Second Law</h2>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>2nd Law</p></td>
+<td class=""><p>$$ \log_b (\frac{x}{y}) = \log_b (x) - \log_b (y) $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and works the same way as above, parts of it are left blank to try out:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lrcl}
+\text{Let } & x & = & b^u \\ \\
+\text{And let } &  y & = & b^v \\ \\
+\end{array}
+$$
+</p>
+
+<p>Then we proceed as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lclr}
+\text{LHS } & = & \log_b (\frac{x}{y}) & \\ \\
+& = & & \text{by substitution above}\\ \\
+& = & & \text{by Laws of Indices}\\ \\
+& = & & \text{by Basics of Logarithms}\\ \\
+& = & & \text{by definition of Logarithm}\\ \\
+& = & \text{RHS} \\
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<h2 id="the-third-law">The Third Law</h2>
+
+
+
+
+
+
+
+
+<table class="w-100">
+<tr class="">
+<td class="w-10 ph2 v-top light-red bb -dark-blue"><p>3rd Law</p></td>
+<td class=""><p>$$ \log_b (x^y) = y\cdot \log_b (x) $$</p></td>
+</tr>
+<tr>
+<td class="v-top ph2 gold"><p>Proof</p></td>
+<td class=""><p><p>The proof is fairly simple and is very similar to the ones above, parts of it are left blank to try out:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lrcl}
+\text{Let } & x & = & b^u \\ \\
+\text{i.e., by definition } & \log_b (x) & = & u \\ \\
+\end{array}
+$$
+</p>
+
+<p>Then we proceed as follows:</p>
+
+<p class="katex">
+  $$
+\begin{array}{lclr}
+\text{LHS } & = & \log_b (x^y) & \\ \\
+& = & \log_b ((b^u)^y) & \text{by substitution above}\\ \\
+& = & \log_b (b^{u\cdot y}) & \text{by Laws of Indices}\\ \\
+& = & u\cdot y & \text{by Basics of Logarithms}\\ \\
+& = & y\cdot u & \\ \\
+& = & y \cdot \log_b (x) & \text{by definition of Logarithm}\\ \\
+& = & \text{RHS} \\
+\end{array}
+$$
+</p>
+</p></td>
+</tr>
+</table>
+
+
+<p>The above laws made logarithms extremely valuable in the recent centuries before calculators were invented aiding engineers and everyone else of course in easily doing otherwise complex arithmetic computations. We take a look at how this was done in the next session.</p>
+
 
       </div>
       <div class="sidebar-display w-20 mw5 fixed-top-right mt6 sidefnt">
         
   
+
+  <aside>
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#the-first-law">The First Law</a></li>
+<li><a href="#the-second-law">The Second Law</a></li>
+<li><a href="#the-third-law">The Third Law</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+  <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#00449E" stroke-width="1" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+  </svg>          
 
 
 
